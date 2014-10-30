@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_TYPE_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193" moduleId="org.eclipse.cdt.core.settings" name="Car">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.fujitsuF2MC16.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="abs" artifactName="FW-Motion" buildProperties="FujitsuF2MC16 Plugin.Target=FujitsuF2MC16 Plugin.Target.MB96F348HSB" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.fujitsuF2MC16.errorparser" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193" name="Car" parent="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193." name="/" resourcePath="">
+						<toolChain errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.898290445" name="MB96F348HSB" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc">
+							<option id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.category.addtools.flashly.458202468" name="FLASHly" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.category.addtools.flashly" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.Platform.1484724796" isAbstract="false" name="Fujitsu 16bit MCU" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.Platform"/>
+							<builder arguments="-k" buildPath="${workspace_loc:/freeRTOS/Release}" command="make" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.builder.1684932010" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Builder" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.builder"/>
+							<tool command="fcc907s" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.cc.835703221" name="Fujitsu C Compiler" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.cc">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1253580064" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.otherflags.940470392" name="Other flags" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.otherflags" value="-INF srcin -T p,-B -x vTaskSwitchContext,vTaskIncrementTick -xauto 30 -c" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.targetdepend.const.2068084882" name="Const variables in RAM" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.targetdepend.const" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.varorder.1719462159" name="Change order of static variables stored in memory to order in which they are declared" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.varorder" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.stackfile.663618825" name="Output used stack information file" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.stackfile" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.symbols.defined.1923127173" name="Define symbols (-D)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__96340"/>
+									<listOptionValue builtIn="false" value="RF_DEBUG"/>
+									<listOptionValue builtIn="false" value="WIRELESS_DEBUG=0"/>
+									<listOptionValue builtIn="false" value="__CONFIG__=3"/>
+									<listOptionValue builtIn="false" value="DEBUG=1"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.aslistfile.436551498" name="Create an assembly list file" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.aslistfile" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind.220236258" name="Optimization Level" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind" value="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind.speed" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.sbit.1250677419" name="If int type specified in bit field, treat msb as sign bit" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.sbit" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.realos.1573303121" name="Inline of ITRON system call development" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.realos" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.schar.733031895" name="Treat msb of char type as sign bit" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.schar" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.floattype.694455950" name="Treat floating-point numbers for which suffixes not specified as float type" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.floattype" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.inline.806053330" name="In-line expansion of standard library function, or replacment to equivalent function" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.inline" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.directories.select.1223432132" name="Include path (-I)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mcu-files}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/freertos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/freertos/portable/Softune/MB96340}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ES}/softune/lib/907/include&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.addsp.190973584" name="Optimization of argument area on stack" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.addsp" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning.914056702" name="Warning Level" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning" value="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning.5" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.debug.1094340014" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.debug" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.loop.905666433" name="Loop unrolling" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.loop" value="false" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.cc.input.64648174" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.input"/>
+							</tool>
+							<tool command="fasm907s" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.as.1699601623" name="Fujitsu Assembler" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.as">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1266973311" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.otherflags.1015462695" name="Other flags" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.otherflags" value="-pl 60 -pw 100 -lexp OBJ" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.symbols.defined.604415258" name="Define symbols (-D)" superClass="org.eclipse.cdt.fujitsuF2MC16.as.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CONFIG__=3"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.src.539457629" name="Output source list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.src" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.sec.1661770269" name="Output section list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.sec" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inf.45947193" name="Output information list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inf" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inc.1026558437" name="Output include list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inc" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.warning.1864938767" name="Warning Level" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.warning" value="org.eclipse.cdt.fujitsuF2MC16.as.general.warning.2" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.debug.777002648" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.as.input.849143252" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.as.input"/>
+							</tool>
+							<tool command="flnk907s" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.ld.1397649274" name="Fujitsu C Linker" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.ld">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1272407865" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.general.linkingmode.464317092" name="Relocatable linking mode (-r)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.general.linkingmode" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.disposition.section.163148039" name="Section addresses (-sc)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.disposition.section" valueType="stringList">
+									<listOptionValue builtIn="false" value="CONST/Data/BYTE=0xFF8000"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.ram.1971215075" name="RAM addresses (-ra)" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.ram" valueType="stringList">
+									<listOptionValue builtIn="false" value="_INRAM01=0x00002240/0x00007fff"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.rom.1430620890" name="ROM addresses (-ro)" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.rom" valueType="stringList">
+									<listOptionValue builtIn="false" value="_INROM01=0x00fe0000/0x00ffffff"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.libs.855350637" name="Libraries (-l)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.libs" valueType="libFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw-motion/DriveLibrary_SK-16FX-EUROSCOPE_.lib}&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.searchpath.1186786511" name="Library search path" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.searchpath"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.map.785369871" name="Create a link map list file" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.map" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.memorymap.578461281" name="Output memory usage information list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.memorymap" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.detailmap.1726694449" name="Create a section details map list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.detailmap" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.external.1647154404" name="Create an external symbol mutual reference information list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.external" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlis.local.594042367" name="Create a local symbol list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlis.local" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.general.debug.1860000043" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.ld.input.977253302" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="f2ms" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.converter.1854162329" name="Fujitsu Object Copy Flash" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.converter"/>
+							<tool command="flashly" commandLinePattern="${COMMAND} ${FLAGS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.flashly.1064833404" name="FLASHly - Flash programmer" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.flashly">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1354788056" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.com.1389758516" name="COM Port" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.com" value="0" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erasesections.1094377440" name="Erase selected sectors of flash before programming" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erasesections" valueType="stringList">
+									<listOptionValue builtIn="false" value="FE0000"/>
+									<listOptionValue builtIn="false" value="FF0000"/>
+									<listOptionValue builtIn="false" value="DF0000"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erase.1012455315" name="Erase whole flash before programming" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erase" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.delay.1088221748" name="Delay after reset before connection (ms)" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.delay" value="30" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset.202609336" name="Reset control while reset" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset" value="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset.dtrp" valueType="enumerated"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="sdcard|gps|cartography|adapterboard/buffercar2pc.c|adapterboard/main.c|mcu-files/start_debug.asm|examples/task.c|adapterboard/buffercar2pc.h|cartography/slam" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.992859651">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.992859651" moduleId="org.eclipse.cdt.core.settings" name="Car-Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.fujitsuF2MC16.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="abs" artifactName="FW-Motion" buildProperties="FujitsuF2MC16 Plugin.Target=FujitsuF2MC16 Plugin.Target.MB96F348HSB" description="No output on USART0 so debugging is possible" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.992859651" name="Car-Debug" parent="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release">
+					<folderInfo id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.992859651." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.109701210" name="MB96F348HSB" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc">
+							<option id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.category.addtools.flashly.621165617" name="FLASHly" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.category.addtools.flashly" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.Platform.1420670669" isAbstract="false" name="Fujitsu 16bit MCU" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.Platform"/>
+							<builder arguments="-k" buildPath="${workspace_loc:/freeRTOS/Release}" command="make" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.builder.46844422" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Builder" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.builder"/>
+							<tool id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.cc.325247332" name="Fujitsu C Compiler" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.cc">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.735661402" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.otherflags.1635049898" name="Other flags" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.otherflags" value="-INF srcin -T p,-B -x vTaskSwitchContext,vTaskIncrementTick -xauto 127 -c" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.targetdepend.const.1109662687" name="Const variables in RAM" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.targetdepend.const" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.varorder.95908027" name="Change order of static variables stored in memory to order in which they are declared" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.varorder" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.stackfile.95121438" name="Output used stack information file" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.stackfile" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.symbols.defined.1420365541" name="Define symbols (-D)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__96340"/>
+									<listOptionValue builtIn="false" value="ANALYZE_MEMORY=1"/>
+									<listOptionValue builtIn="false" value="DEBUGMCU=1"/>
+									<listOptionValue builtIn="false" value="WIRELESS_DEBUG=0"/>
+									<listOptionValue builtIn="false" value="__CONFIG__=3"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.aslistfile.1752752637" name="Create an assembly list file" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.aslistfile" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind.407595534" name="Optimization Level" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind" value="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind.1" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.sbit.1902829015" name="If int type specified in bit field, treat msb as sign bit" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.sbit" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.realos.2034002616" name="Inline of ITRON system call development" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.realos" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.schar.525575224" name="Treat msb of char type as sign bit" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.schar" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.floattype.1205695259" name="Treat floating-point numbers for which suffixes not specified as float type" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.floattype" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.inline.438407891" name="In-line expansion of standard library function, or replacment to equivalent function" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.inline" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.directories.select.2094686402" name="Include path (-I)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mcu-files}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/freertos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/freertos/portable/Softune/MB96340}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ES}/softune/lib/907/include&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.addsp.947750006" name="Optimization of argument area on stack" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.addsp" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning.1359662753" name="Warning Level" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning" value="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning.5" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.debug.904868205" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.cc.input.1478549413" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.as.1688775362" name="Fujitsu Assembler" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.as">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.261081143" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.otherflags.370923898" name="Other flags" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.otherflags" value="-pl 60 -pw 100 -lexp OBJ" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.symbols.defined.1270762727" name="Define symbols (-D)" superClass="org.eclipse.cdt.fujitsuF2MC16.as.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CONFIG__=3"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.src.267717750" name="Output source list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.src" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.sec.1479394220" name="Output section list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.sec" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inf.2024895995" name="Output information list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inf" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inc.200926157" name="Output include list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inc" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.warning.1054669686" name="Warning Level" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.warning" value="org.eclipse.cdt.fujitsuF2MC16.as.general.warning.2" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.debug.1727617712" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.as.input.134633733" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.as.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.ld.1717680385" name="Fujitsu C Linker" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.ld">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.536846251" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.general.linkingmode.1405267130" name="Relocatable linking mode (-r)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.general.linkingmode" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.disposition.section.1313652673" name="Section addresses (-sc)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.disposition.section" valueType="stringList">
+									<listOptionValue builtIn="false" value="CONST/Data/BYTE=0xFF8000"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.ram.1171933212" name="RAM addresses (-ra)" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.ram" valueType="stringList">
+									<listOptionValue builtIn="false" value="_INRAM01=0x00002240/0x00007fff"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.rom.1628703631" name="ROM addresses (-ro)" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.rom" valueType="stringList">
+									<listOptionValue builtIn="false" value="_INROM01=0xFE0000/0xFFFFFF"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.libs.2087373190" name="Libraries (-l)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.libs" valueType="libFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fw-motion/DriveLibrary_SK-16FX-EUROSCOPE_.lib}&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.searchpath.684594585" name="Library search path" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.searchpath"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.map.1390591150" name="Create a link map list file" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.map" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.memorymap.1505770542" name="Output memory usage information list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.memorymap" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.detailmap.1079377967" name="Create a section details map list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.detailmap" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.external.669672941" name="Create an external symbol mutual reference information list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.external" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlis.local.241502589" name="Create a local symbol list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlis.local" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.general.debug.565312487" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.ld.input.1522473073" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.converter.979893679" name="Fujitsu Object Copy Flash" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.converter"/>
+							<tool id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.flashly.1507072271" name="FLASHly - Flash programmer" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.flashly">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.2009492694" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.com.1363122421" name="COM Port" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.com" value="0" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erasesections.2034645142" name="Erase selected sectors of flash before programming" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erasesections" valueType="stringList">
+									<listOptionValue builtIn="false" value="DF0000"/>
+									<listOptionValue builtIn="false" value="FE0000"/>
+									<listOptionValue builtIn="false" value="FF0000"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erase.2003750266" name="Erase whole flash before programming" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erase" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.delay.105451278" name="Delay after reset before connection (ms)" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.delay" value="30" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset.173576204" name="Reset control while reset" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset" value="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset.dtrp" valueType="enumerated"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="sdcard|gps|cartography|mcu-files/start.asm|cartography/slam" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.1266424681">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.1266424681" moduleId="org.eclipse.cdt.core.settings" name="Car-MemoryAnalysis">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.fujitsuF2MC16.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="abs" artifactName="FW-Motion" buildProperties="FujitsuF2MC16 Plugin.Target=FujitsuF2MC16 Plugin.Target.MB96F348HSB" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.fujitsuF2MC16.errorparser" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.1266424681" name="Car-MemoryAnalysis" parent="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.200303193.1266424681." name="/" resourcePath="">
+						<toolChain errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.291120427" name="MB96F348HSB" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc">
+							<option id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.category.addtools.flashly.1702885888" name="FLASHly" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.category.addtools.flashly" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.Platform.996547175" isAbstract="false" name="Fujitsu 16bit MCU" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.Platform"/>
+							<builder arguments="-k" buildPath="${workspace_loc:/freeRTOS/Release}" command="make" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.builder.718938009" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Builder" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.builder"/>
+							<tool command="fcc907s" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.cc.1154454680" name="Fujitsu C Compiler" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.cc">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.668500165" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.otherflags.1888114812" name="Other flags" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.otherflags" value="-INF srcin -T p,-B -x vTaskSwitchContext,vTaskIncrementTick -xauto 5 -c" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.targetdepend.const.1127762841" name="Const variables in RAM" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.targetdepend.const" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.varorder.2110949131" name="Change order of static variables stored in memory to order in which they are declared" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.varorder" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.stackfile.1303584310" name="Output used stack information file" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.stackfile" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.symbols.defined.1889882669" name="Define symbols (-D)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__96340"/>
+									<listOptionValue builtIn="false" value="WIRELESS_DEBUG=0"/>
+									<listOptionValue builtIn="false" value="__CONFIG__=3"/>
+									<listOptionValue builtIn="false" value="DEBUG=1"/>
+									<listOptionValue builtIn="false" value="ANALYZE_MEMORY=1"/>
+									<listOptionValue builtIn="false" value="configGENERATE_RUN_TIME_STATS=1"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.aslistfile.2050957520" name="Create an assembly list file" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.aslistfile" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind.1644565011" name="Optimization Level" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind" value="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.kind.speed" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.sbit.236532531" name="If int type specified in bit field, treat msb as sign bit" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.sbit" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.realos.1048011471" name="Inline of ITRON system call development" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.realos" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.schar.720939621" name="Treat msb of char type as sign bit" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.schar" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.language.floattype.572003609" name="Treat floating-point numbers for which suffixes not specified as float type" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.language.floattype" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.inline.1460457499" name="In-line expansion of standard library function, or replacment to equivalent function" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.inline" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.directories.select.2115142820" name="Include path (-I)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/mcu-files}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/freertos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/freertos/portable/Softune/MB96340}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ES}/softune/lib/907/include&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.addsp.1285699794" name="Optimization of argument area on stack" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.addsp" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning.1812179248" name="Warning Level" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning" value="org.eclipse.cdt.fujitsuF2MC16.cc.general.warning.5" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.general.debug.859686395" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.general.debug" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.loop.748280561" name="Loop unrolling" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.optimization.loop" value="false" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.cc.input.254306561" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.cc.input"/>
+							</tool>
+							<tool command="fasm907s" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.as.1341516771" name="Fujitsu Assembler" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.as">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1985858680" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.otherflags.438801470" name="Other flags" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.otherflags" value="-pl 60 -pw 100 -lexp OBJ" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.symbols.defined.530945110" name="Define symbols (-D)" superClass="org.eclipse.cdt.fujitsuF2MC16.as.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CONFIG__=3"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.src.1578387728" name="Output source list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.src" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.sec.892067903" name="Output section list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.sec" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inf.802057721" name="Output information list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inf" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inc.1137149089" name="Output include list" superClass="org.eclipse.cdt.fujitsuF2MC16.as.outlist.inc" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.warning.190212153" name="Warning Level" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.warning" value="org.eclipse.cdt.fujitsuF2MC16.as.general.warning.2" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.as.general.debug.1115408930" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.as.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.as.input.1422628089" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.as.input"/>
+							</tool>
+							<tool command="flnk907s" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT} ${INPUTS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.ld.1448793583" name="Fujitsu C Linker" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.release.tc.ld">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1985626817" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.general.linkingmode.1509400831" name="Relocatable linking mode (-r)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.general.linkingmode" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.disposition.section.1518930402" name="Section addresses (-sc)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.disposition.section" valueType="stringList">
+									<listOptionValue builtIn="false" value="CONST=ROMCONST"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.ram.143099396" name="RAM addresses (-ra)" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.ram" valueType="stringList">
+									<listOptionValue builtIn="false" value="_INRAM01=0x00002240/0x00007fff"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.rom.371686944" name="ROM addresses (-ro)" superClass="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.release.MB96F348HSB.tc.ld.disposition.rom" valueType="stringList">
+									<listOptionValue builtIn="false" value="_INROM01=0x00fe0000/0x00ff7fff"/>
+									<listOptionValue builtIn="false" value="ROMCONST=0x00ff8000/0x00ffffff"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.libs.1002365148" name="Libraries (-l)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.libs"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.searchpath.1228367820" name="Library search path" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.libraries.searchpath"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.map.1360263775" name="Create a link map list file" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.map" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.memorymap.1239761099" name="Output memory usage information list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.memorymap" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.detailmap.528688749" name="Create a section details map list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.detailmap" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.external.420810458" name="Create an external symbol mutual reference information list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlist.external" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.outlis.local.606592138" name="Create a local symbol list" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.outlis.local" value="true" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.ld.general.debug.1529249990" name="Output debug information (-g)" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.general.debug" value="true" valueType="boolean"/>
+								<inputType id="org.eclipse.cdt.fujitsuF2MC16.ld.input.1467536014" name="Input" superClass="org.eclipse.cdt.fujitsuF2MC16.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="f2ms" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.converter.1417541928" name="Fujitsu Object Copy Flash" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.converter"/>
+							<tool command="flashly" commandLinePattern="${COMMAND} ${FLAGS}" errorParsers="" id="org.eclipse.cdt.fujitsuF2MC16.executable.tc.flashly.1774973457" name="FLASHly - Flash programmer" superClass="org.eclipse.cdt.fujitsuF2MC16.executable.tc.flashly">
+								<option id="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.1603202419" name="Toolchain Target" superClass="org.eclipse.cdt.fujitsuF2MC16.target.mcpu" value="org.eclipse.cdt.fujitsuF2MC16.target.mcpu.MB96F348HSB" valueType="enumerated"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.com.1220103737" name="COM Port" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.com" value="0" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erasesections.1353093720" name="Erase selected sectors of flash before programming" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erasesections" valueType="stringList">
+									<listOptionValue builtIn="false" value="FE0000"/>
+									<listOptionValue builtIn="false" value="FF0000"/>
+									<listOptionValue builtIn="false" value="DF0000"/>
+								</option>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erase.586600479" name="Erase whole flash before programming" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.erase" value="false" valueType="boolean"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.delay.257126006" name="Delay after reset before connection (ms)" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.delay" value="30" valueType="string"/>
+								<option id="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset.944151534" name="Reset control while reset" superClass="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset" value="org.eclipse.cdt.fujitsuF2MC16.flashly.general.reset.dtrp" valueType="enumerated"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="sdcard|gps|cartography|adapterboard/buffercar2pc.c|adapterboard/main.c|mcu-files/start_debug.asm|examples/task.c|adapterboard/buffercar2pc.h|cartography/slam" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="freeRTOS.org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB.992711122" name="Fujitsu 16bit Executable" projectType="org.eclipse.cdt.fujitsuF2MC16.exe.target.win32.MB96F348HSB"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/fw-motion"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="makefileGenerator">
+				<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>
