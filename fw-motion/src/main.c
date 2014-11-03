@@ -71,7 +71,9 @@ static void testtask(void) {
 	for (;;) {
 		os_frequency(&lastWakeTime, 10000);
 		wirelessFormattedDebugMessage(WI_IF_AMB8420, "Dist before: %d", (uint16_t) Drive_GetTotalDrivenDistance());
-//		RuntimeStats_Print();
+		wirelessFormattedDebugMessage(WI_IF_AMB8420, "batterie power: %d", Battery_GetVoltage());
+
+		//		RuntimeStats_Print();
 	}
 }
 
@@ -102,7 +104,7 @@ void main(void) {
 #endif
 
 //	Drive_SetMotor(3);
-	Drive_SetMotorForDistance(-1, 300);
+//	Drive_SetMotorForDistance(-1, 300);
 
 	DDR03 = 0xff;
 	PDR03 = 0x00;
