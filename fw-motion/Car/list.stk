@@ -1,0 +1,15 @@
+@..\src\freertos\list.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         6	E	_vListInitialise
+#
+         2	E	_vListInitialiseItem
+#
+         8	E	_vListInsertEnd
+#
+        10	E	_vListInsert
+#
+         6	E	_uxListRemove

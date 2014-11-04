@@ -1,0 +1,24 @@
+!..\src\api\serial.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        16	E	_Serial_GetcharAsync
+	->	E	_xQueueGenericReceive
+#
+        20	E	_Serial_Getchar
+	->	E	_xQueueGenericReceive
+#
+        26	E	_Serial_Init	A
+	->	E	_interrupts_setHandler
+	->	E	_xQueueGenericCreate
+#
+        16	E	_Serial_PutChar	A
+	->	E	_xQueueGenericSend
+#
+        38	I	_UART0_RxISR	A
+	->	E	_xQueueGenericSendFromISR
+#
+        32	I	_UART0_TxISR
+	->	E	_xQueueReceiveFromISR

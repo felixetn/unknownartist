@@ -1,0 +1,26 @@
+@..\src\mode_controller.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         0	E	_initModeController
+#
+         0	E	_startModeController
+#
+         6	E	_stopModeController
+	->	E	_os_suspendTask
+#
+        18	E	_ModeControllerThread
+	->	*	$pointer_call
+	->	E	_Seg_Hex
+	->	E	_Seg_Init
+	->	E	_os_wait
+#
+         4	E	_registerMode
+#
+        18	E	_switchMode
+	->	*	$pointer_call
+	->	E	_Seg_Hex
+	->	E	_Seg_Init
+	->	E	_os_wait

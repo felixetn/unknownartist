@@ -1,0 +1,24 @@
+@..\src\api\fram.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        10	E	_FRAM_Init
+	->	E	_I2C_BUS1_CheckAddressPresence
+	->	E	_I2C_BUS1_Init
+#
+         4	E	_FRAM_Available
+#
+        18	E	_FRAM_Write
+	->	E	_I2C_BUS1_Start
+	->	E	_I2C_BUS1_Stop
+	->	E	_I2C_BUS1_Write
+#
+        20	E	_FRAM_Read
+	->	E	_I2C_BUS1_Continue
+	->	E	_I2C_BUS1_LastRead
+	->	E	_I2C_BUS1_Read
+	->	E	_I2C_BUS1_Start
+	->	E	_I2C_BUS1_Stop
+	->	E	_I2C_BUS1_Write

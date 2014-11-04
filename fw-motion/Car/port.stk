@@ -1,0 +1,24 @@
+!..\src\freertos\portable\softune\mb96340\port.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        16	E	_pxPortInitialiseStack
+	->	E	_xGet_DPR_ADB_bank
+	->	E	_xGet_DTB_PCB_bank
+#
+         0	S	_prvSetupRLT0Interrupt
+#
+         0	E	_xPortStartScheduler	A
+#
+         0	E	_vPortEndScheduler
+#
+        20	I	_prvRLT0_TICKISR
+	->	E	_vTaskIncrementTick
+#
+        16	I	_vPortYield	A
+	->	E	_vTaskSwitchContext
+#
+        16	I	_vPortYieldDelayed	A
+	->	E	_vTaskSwitchContext

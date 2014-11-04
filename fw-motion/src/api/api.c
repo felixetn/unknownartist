@@ -150,6 +150,32 @@ uint16_t driven_before(int8_t type, uint16_t SensorRange) {
 }
 
 /**
+ * @unkownartist
+ * Gibt die Distanz des vorderen Sensors zurück.
+ */
+uint16_t us_getFrontDistance(void){
+	return Us_Data.Front_Distance;
+}
+
+/**
+ * @unkownartist
+ * Gibt die Distanz des linken Sensors zurück.
+ */
+uint16_t us_getLeftDistance(void){
+	return Us_Data.Left_Distance;
+}
+
+/**
+ * @unkownartist
+ * Gibt die Distanz des rechten Sensors zurück.
+ */
+uint16_t us_getRightDistance(void){
+	return Us_Data.Right_Distance;
+}
+
+
+
+/**
  * Wertet die Ultraschallsensoren und die befahrene Karte aus. Der minimale Abstand bis zu einer Kollision wird
  * in das struct UsSensorData geschrieben
  */

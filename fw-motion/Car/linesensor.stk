@@ -1,0 +1,24 @@
+@..\src\api\linesensor.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        12	E	_Linesensor_Init
+	->	E	_os_registerProcessStack
+#
+        10	E	_readSensorData
+	->	E	_ADC_GetValue
+#
+        50	S	_Linesensor_calcLinePosition
+	->	E	DIVL
+	->	E	MULL
+	->	E	_ADC_GetValue
+	->	E	_os_frequency
+	->	E	_os_getTime
+#
+        12	E	_Linesensor_Calibrate
+	->	E	_ADC_GetValue
+	->	E	_os_resumeTask
+	->	E	_os_suspendTask
+	->	E	_printf

@@ -1,0 +1,34 @@
+!..\src\api\wireless\bluetooth\bluetooth.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        16	S	_Bluetooth_Layer1_GetChar_Async
+	->	E	_xQueueGenericReceive
+#
+        32	E	_Bluetooth_Init	A
+	->	E	_interrupts_setHandler
+	->	E	_os_registerProcessStackPriority
+	->	E	_xQueueGenericCreate
+#
+        14	S	_getNextMessageToSend
+	->	E	_xQueueReceiveFromISR
+#
+         6	S	_putStuffedByte
+#
+        20	S	_startSendingNextMessage
+	->	E	_xQueueReceiveFromISR
+#
+        38	I	_UART7_RxISR	A
+	->	E	_xQueueGenericSendFromISR
+#
+        12	I	_UART7_TxISR
+#
+        98	S	_Bluetooth_Layer3_ReceivePacket
+	->	E	_wirelessReceive
+	->	E	_xQueueGenericReceive
+#
+        16	E	_Bluetooth_Send
+	->	S	_startSendingNextMessage
+	->	E	_xQueueGenericSendFromISR

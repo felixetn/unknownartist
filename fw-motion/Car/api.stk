@@ -1,0 +1,66 @@
+@..\src\api\api.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         0	E	_drive_barrierFrontDetected
+#
+         0	E	_drive_barrierRearDetected
+#
+        12	E	_api_init
+	->	E	_ADC_Init
+	->	E	_Battery_Init
+	->	E	_CarId_Init
+	->	E	_Drive_Init
+	->	E	_FRAM_Init
+	->	E	_Linesensor_Init
+	->	E	_Seg_Init
+	->	E	_Serial_Init
+	->	E	_Us_Init
+	->	E	_interrupts_init
+	->	E	_wirelessInit
+	->	E	_xQueueGenericCreate
+	->	E	_xQueueGenericSend
+#
+        22	E	_driven_before
+	->	E	DTOUI
+#
+         0	E	_us_getFrontDistance
+#
+        38	E	_us_getSensorMapData
+	->	E	DTOUI
+	->	E	_xTaskGetTickCount
+#
+         4	E	_api_StartScheduler
+	->	E	_vTaskStartScheduler
+#
+        26	E	_os_registerProcess
+	->	E	_xTaskGenericCreate
+#
+        28	E	_os_registerProcessStack
+	->	E	_xTaskGenericCreate
+#
+        28	E	_os_registerProcessStackPriority
+	->	E	_xTaskGenericCreate
+#
+         8	E	_os_deleteTask
+	->	E	_vTaskDelete
+#
+         8	E	_os_suspendTask
+	->	E	_vTaskSuspend
+#
+         8	E	_os_resumeTask
+	->	E	_vTaskResume
+#
+         8	E	_os_isTaskSuspended
+	->	E	_xTaskIsTaskSuspended
+#
+         8	E	_os_wait
+	->	E	_vTaskDelay
+#
+        10	E	_os_frequency
+	->	E	_vTaskDelayUntil
+#
+         4	E	_os_getTime
+	->	E	_xTaskGetTickCount

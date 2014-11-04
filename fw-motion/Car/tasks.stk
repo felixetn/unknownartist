@@ -1,0 +1,144 @@
+!..\src\freertos\tasks.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        38	E	_xTaskGenericCreate	A
+	->	E	_memset
+	->	E	_pvPortMalloc
+	->	E	_pxPortInitialiseStack
+	->	E	_strncpy
+	->	E	_vListInitialise
+	->	E	_vListInitialiseItem
+	->	E	_vListInsertEnd
+	->	E	_vPortFree
+#
+        16	E	_vTaskDelete	A
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+        16	E	_vTaskDelayUntil	A
+	->	E	_uxListRemove
+	->	E	_vListInsert
+	->	E	_xTaskResumeAll
+#
+        16	E	_vTaskDelay	A
+	->	E	_uxListRemove
+	->	E	_vListInsert
+	->	E	_xTaskResumeAll
+#
+         6	E	_uxTaskPriorityGet	A
+#
+        20	E	_vTaskPrioritySet	A
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+        16	E	_vTaskSuspend	A
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+         4	E	_xTaskIsTaskSuspended
+#
+        18	E	_vTaskResume	A
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+        18	E	_xTaskResumeFromISR
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+        30	E	_vTaskStartScheduler	A
+	->	E	_xPortStartScheduler
+	->	E	_xTaskGenericCreate
+#
+         4	E	_vTaskEndScheduler	A
+	->	E	_vPortEndScheduler
+#
+         0	E	_vTaskSuspendAll
+#
+        22	E	_xTaskResumeAll	A
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+         2	E	_xTaskGetTickCount	A
+#
+         0	E	_xTaskGetTickCountFromISR
+#
+         0	E	_uxTaskGetNumberOfTasks
+#
+        44	E	_vTaskList
+	->	E	_sprintf
+	->	E	_strcat
+	->	E	_xTaskResumeAll
+#
+        12	E	_vTaskIncrementTick
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+         2	E	_vTaskSwitchContext
+#
+        14	E	_vTaskPlaceOnEventList
+	->	E	_uxListRemove
+	->	E	_vListInsert
+	->	E	_vListInsertEnd
+#
+        16	E	_xTaskRemoveFromEventList
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+         2	E	_vTaskSetTimeOutState
+#
+         8	E	_xTaskCheckForTimeOut	A
+#
+         0	E	_vTaskMissedYield
+#
+         2	E	_uxTaskGetTaskNumber
+#
+         2	E	_vTaskSetTaskNumber
+#
+         4	S	_prvIdleTask	A
+	->	S	_prvCheckTasksWaitingTermination
+#
+        16	S	_prvInitialiseTCBVariables
+	->	E	_strncpy
+	->	E	_vListInitialiseItem
+#
+        12	S	_prvInitialiseTaskLists
+	->	E	_vListInitialise
+#
+        12	S	_prvCheckTasksWaitingTermination	A
+	->	E	_uxListRemove
+	->	E	_vPortFree
+	->	E	_xTaskResumeAll
+#
+        14	S	_prvAddCurrentTaskToDelayedList
+	->	E	_vListInsert
+#
+        16	S	_prvAllocateTCBAndStack
+	->	E	_memset
+	->	E	_pvPortMalloc
+	->	E	_vPortFree
+#
+        32	S	_prvListTaskWithinSingleList
+	->	E	_sprintf
+	->	E	_strcat
+#
+         6	S	_usTaskCheckFreeStackSpace
+#
+         6	E	_uxTaskGetStackHighWaterMark
+#
+        10	S	_prvDeleteTCB
+	->	E	_vPortFree
+#
+         0	E	_xTaskGetCurrentTaskHandle
+#
+         0	E	_xTaskGetSchedulerState
+#
+        14	E	_vTaskPriorityInherit
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd
+#
+        14	E	_vTaskPriorityDisinherit
+	->	E	_uxListRemove
+	->	E	_vListInsertEnd

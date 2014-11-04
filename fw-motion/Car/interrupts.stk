@@ -1,0 +1,14 @@
+@..\src\api\interrupts.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        10	E	_interrupts_init
+	->	E	_InitIrqLevels
+#
+        14	E	_interrupts_setHandler
+	->	E	_InitIrqLevels
+#
+        14	E	_interrupts_disableInterrupt
+	->	E	_InitIrqLevels

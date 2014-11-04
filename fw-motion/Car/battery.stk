@@ -1,0 +1,15 @@
+@..\src\api\battery.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        16	E	_Battery_Init
+	->	E	_os_registerProcessStack
+#
+         6	E	_Battery_GetVoltage
+#
+        16	S	_battery_task
+	->	E	_ADC_GetValue
+	->	E	_os_frequency
+	->	E	_os_getTime

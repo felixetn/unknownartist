@@ -1,0 +1,56 @@
+!..\src\api\wireless\amb8420\amb8420.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        30	S	_AMB8420_config
+	->	E	_os_deleteTask
+	->	E	_os_wait
+	->	E	_wirelessDebugMessage
+	->	E	_wirelessFormattedDebugMessage
+#
+        36	E	_AMB8420_Init	A
+	->	E	_interrupts_setHandler
+	->	E	_os_registerProcessStack
+	->	E	_os_registerProcessStackPriority
+	->	E	_xQueueGenericCreate
+#
+         0	S	_sendCommandBuffer
+#
+         4	S	_AMB8420_CS_calc
+#
+        18	S	_getNextMessageToSend
+	->	E	_uxQueueMessagesWaiting
+	->	E	_xQueueReceiveFromISR
+#
+        18	S	_AMB8420_startSendingNextMessage
+	->	E	_uxQueueMessagesWaiting
+	->	E	_xQueueReceiveFromISR
+#
+        20	E	_AMB8420_Send
+	->	S	_AMB8420_startSendingNextMessage
+	->	E	_xQueueGenericSendFromISR
+#
+        12	I	_UART8_TxISR
+#
+        12	S	_writeCommand
+	->	E	_os_wait
+#
+        12	S	_readCommand
+	->	E	_os_wait
+#
+        16	S	_AMB8420_GetChar_Async
+	->	E	_xQueueGenericReceive
+#
+        14	S	_replyReceived
+	->	E	_printf
+#
+        92	S	_AMB8420_ReceiveMessage
+	->	S	_AMB8420_startSendingNextMessage
+	->	E	_printf
+	->	E	_wirelessReceive
+	->	E	_xQueueGenericReceive
+#
+        40	I	_UART8_RxISR	A
+	->	E	_xQueueGenericSendFromISR

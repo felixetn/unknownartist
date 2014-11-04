@@ -1,0 +1,12 @@
+@..\src\api\adc.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        16	E	_ADC_Init
+	->	E	_interrupts_setHandler
+#
+         4	E	_ADC_GetValue
+#
+        16	I	_irq_adc

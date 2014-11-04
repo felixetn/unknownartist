@@ -1,0 +1,29 @@
+@..\src\androidbtcontrol.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        10	E	_motorControlTest_bt
+	->	E	_Drive_SetMotor
+	->	E	_Drive_SetServo
+#
+        10	E	_calibrate_us_bt
+	->	E	_Us_Calibrate
+	->	E	_Us_Cmd_Wait
+	->	E	_Us_IO_DDR
+	->	E	_Us_IO_Value
+#
+         4	E	_calibrate_ls_bt
+	->	E	_Linesensor_Calibrate
+#
+        84	E	_bt_send_sensor_data
+	->	E	_Battery_GetVoltage
+	->	E	_os_frequency
+	->	E	_os_getTime
+	->	E	_wirelessSend
+#
+        12	E	_Init_AndroidBTControl
+	->	E	_os_registerProcessStack
+	->	E	_printf
+	->	E	_wirelessSubscribe

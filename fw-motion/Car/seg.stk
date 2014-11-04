@@ -1,0 +1,11 @@
+@..\src\api\seg.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         0	E	_Seg_Init
+#
+         2	E	_Seg_Hex
+#
+         2	E	_Seg_Dec

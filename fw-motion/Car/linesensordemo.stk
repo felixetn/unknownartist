@@ -1,0 +1,20 @@
+@..\src\linesensordemo.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         0	E	_Init_LineSensorDemo
+#
+         6	E	_laneChange
+	->	E	_Drive_SetServo
+	->	E	_os_resumeTask
+	->	E	_os_suspendTask
+	->	E	_os_wait
+#
+        20	E	_runDemoLine
+	->	E	DIVL
+	->	E	_Drive_SetMotor
+	->	E	_Drive_SetServo
+	->	E	_Linesensor_Calibrate
+	->	E	_os_wait

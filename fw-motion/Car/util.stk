@@ -1,0 +1,21 @@
+@..\src\api\util.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         2	E	_abs8
+#
+         2	E	_abs16
+#
+         6	E	_abs32
+#
+        14	E	_intToStr
+	->	E	DIVUL
+	->	E	MODUL
+#
+         6	E	_wait
+#
+         2	E	_wait1us
+#
+         2	E	_wait1ms

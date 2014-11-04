@@ -1,0 +1,42 @@
+@..\src\api\trigonometry.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         2	E	_sin_
+#
+         6	E	_cos_
+#
+        10	E	_uint16AngleToDegree
+	->	E	DIVL
+	->	E	MULL
+#
+        10	E	_AnglePlus
+#
+         6	E	_AngleMinus
+#
+        10	E	_uint16DegreeRelativeToX
+	->	E	DIVL
+	->	E	MULL
+#
+        10	E	_angleToDegree
+	->	E	DIVL
+#
+         6	E	_DegreeToUint16
+#
+        56	E	_cos_Taylor
+	->	E	DTOL
+	->	E	FADDL
+	->	E	FDIVL
+	->	E	FMULL
+	->	E	LTOD
+	->	E	_pow
+#
+        56	E	_sin_Taylor
+	->	E	DTOL
+	->	E	FADDL
+	->	E	FDIVL
+	->	E	FMULL
+	->	E	LTOD
+	->	E	_pow

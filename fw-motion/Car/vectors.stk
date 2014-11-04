@@ -1,0 +1,10 @@
+@..\src\mcu-files\vectors.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         4	E	_InitIrqLevels
+#
+        24	I	_DefaultIRQHandler
+	->	E	_Seg_Hex

@@ -1,0 +1,15 @@
+@..\src\freertos\portable\memmang\heap_3.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        10	E	_pvPortMalloc
+	->	E	_malloc
+	->	E	_vTaskSuspendAll
+	->	E	_xTaskResumeAll
+#
+         8	E	_vPortFree
+	->	E	_free
+	->	E	_vTaskSuspendAll
+	->	E	_xTaskResumeAll

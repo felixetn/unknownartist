@@ -1,0 +1,34 @@
+@..\src\api\wireless\wireless.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        10	E	_wirelessSend
+	->	E	_AMB8420_Send
+	->	E	_Bluetooth_Send
+#
+        12	E	_wirelessDebugMessage
+	->	E	_AMB8420_Send
+	->	E	_Bluetooth_Send
+	->	E	_memcpy
+	->	E	_strlen
+#
+        16	E	_wirelessFormattedDebugMessage
+	->	E	_AMB8420_Send
+	->	E	_Bluetooth_Send
+	->	E	_print
+	->	E	_strlen
+#
+         8	E	_wirelessInit
+	->	E	_AMB8420_Init
+	->	E	_Bluetooth_Init
+#
+         6	E	_wirelessSubscribe
+#
+         6	E	_isSubscribed
+#
+         6	E	_wirelessUnsubscribe
+#
+        18	E	_wirelessReceive
+	->	*	$pointer_call

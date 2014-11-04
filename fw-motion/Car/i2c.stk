@@ -1,0 +1,41 @@
+@..\src\api\i2c.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         0	E	_I2C_BUS0_Init
+#
+         0	E	_I2C_BUS0_Acknowlegde
+#
+         2	E	_I2C_BUS0_CheckAddressPresence
+#
+         2	E	_I2C_BUS0_Start
+#
+         2	E	_I2C_BUS0_Continue
+#
+         0	E	_I2C_BUS0_Stop
+#
+         2	E	_I2C_BUS0_Write
+#
+         0	E	_I2C_BUS0_Read
+#
+         0	E	_I2C_BUS0_LastRead
+#
+         0	E	_I2C_BUS1_Init
+#
+         0	E	_I2C_BUS1_Acknowlegde
+#
+         2	E	_I2C_BUS1_CheckAddressPresence
+#
+         2	E	_I2C_BUS1_Start
+#
+         2	E	_I2C_BUS1_Continue
+#
+         0	E	_I2C_BUS1_Stop
+#
+         2	E	_I2C_BUS1_Write
+#
+         0	E	_I2C_BUS1_Read
+#
+         0	E	_I2C_BUS1_LastRead

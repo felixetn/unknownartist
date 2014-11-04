@@ -1,0 +1,13 @@
+@..\src\scanf_stdarg.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        14	E	_scanWhitespaces
+	->	E	_Serial_Getchar
+	->	E	_Serial_PutChar
+#
+        18	E	_scanWord
+	->	E	_Serial_Getchar
+	->	E	_Serial_PutChar

@@ -1,5 +1,5 @@
 /* Demo application includes. */
-// Ich hasse Git
+// Ich hasse Git, ich auch!gdg
 #include "api/api.h"
 #include "api/seg.h"
 #include "AndroidBTControl.h"
@@ -68,11 +68,16 @@ void SDCardThread(void) {
 
 static void testtask(void) {
 	portTickType lastWakeTime = os_getTime();
+	Drive_SetMotor(1);
 
 	for (;;) {
-		os_frequency(&lastWakeTime, 10000);
+		os_frequency(&lastWakeTime, 2000);
+		if(us_getFrontDistance() <= 50){
+				Drive_SetMotor(0);
+		}
 		wirelessFormattedDebugMessage(WI_IF_AMB8420, "Dist before: %d", (uint16_t) Drive_GetTotalDrivenDistance());
 		wirelessFormattedDebugMessage(WI_IF_AMB8420, "batterie power: %d", Battery_GetVoltage());
+		wirelessFormattedDebugMessage(WI_IF_AMB8420, "Distanz Vorne: %d", us_getFrontDistance());
 
 		//		RuntimeStats_Print();
 	}
@@ -104,7 +109,7 @@ void main(void) {
 	ownID = carid;
 #endif
 
-//	Drive_SetMotor(3);
+ Drive_SetMotor(5);
 //	Drive_SetMotorForDistance(-1, 300);
 
 	DDR03 = 0xff;

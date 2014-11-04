@@ -1,0 +1,85 @@
+!..\src\freertos\queue.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        12	E	_xQueueGenericReset	A
+	->	E	_vListInitialise
+	->	E	_xTaskRemoveFromEventList
+#
+        16	E	_xQueueGenericCreate
+	->	E	_pvPortMalloc
+	->	E	_vPortFree
+	->	E	_xQueueGenericReset
+#
+        16	E	_xQueueCreateMutex
+	->	E	_pvPortMalloc
+	->	E	_vListInitialise
+	->	E	_xQueueGenericSend
+#
+        28	E	_xQueueGenericSend	A
+	->	E	_memcpy
+	->	S	_prvIsQueueFull
+	->	S	_prvUnlockQueue
+	->	E	_vTaskPlaceOnEventList
+	->	E	_vTaskPriorityDisinherit
+	->	E	_vTaskSetTimeOutState
+	->	E	_vTaskSuspendAll
+	->	E	_xTaskCheckForTimeOut
+	->	E	_xTaskRemoveFromEventList
+	->	E	_xTaskResumeAll
+#
+        22	E	_xQueueGenericSendFromISR
+	->	E	_memcpy
+	->	E	_vTaskPriorityDisinherit
+	->	E	_xTaskRemoveFromEventList
+#
+        26	E	_xQueueGenericReceive	A
+	->	E	_memcpy
+	->	S	_prvIsQueueEmpty
+	->	S	_prvUnlockQueue
+	->	E	_vTaskPlaceOnEventList
+	->	E	_vTaskPriorityInherit
+	->	E	_vTaskSetTimeOutState
+	->	E	_vTaskSuspendAll
+	->	E	_xTaskCheckForTimeOut
+	->	E	_xTaskGetCurrentTaskHandle
+	->	E	_xTaskRemoveFromEventList
+	->	E	_xTaskResumeAll
+#
+        18	E	_xQueueReceiveFromISR
+	->	E	_memcpy
+	->	E	_xTaskRemoveFromEventList
+#
+         6	E	_uxQueueMessagesWaiting	A
+#
+         2	E	_uxQueueMessagesWaitingFromISR
+#
+         8	E	_vQueueDelete
+	->	E	_vPortFree
+#
+         2	E	_ucQueueGetQueueNumber
+#
+         2	E	_vQueueSetQueueNumber
+#
+         2	E	_ucQueueGetQueueType
+#
+        16	S	_prvCopyDataToQueue
+	->	E	_memcpy
+	->	E	_vTaskPriorityDisinherit
+#
+        14	S	_prvCopyDataFromQueue
+	->	E	_memcpy
+#
+        12	S	_prvUnlockQueue	A
+	->	E	_vTaskMissedYield
+	->	E	_xTaskRemoveFromEventList
+#
+         6	S	_prvIsQueueEmpty	A
+#
+         2	E	_xQueueIsQueueEmptyFromISR
+#
+         6	S	_prvIsQueueFull	A
+#
+         2	E	_xQueueIsQueueFullFromISR

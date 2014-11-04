@@ -1,0 +1,7 @@
+@..\src\freertos\portable\softune\mb96340\__std_lib_sbrk.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         6	E	_sbrk

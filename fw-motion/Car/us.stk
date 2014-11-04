@@ -1,0 +1,23 @@
+@..\src\api\us.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        14	E	_Us_Init
+	->	E	_I2CUs_Init
+	->	E	_interrupts_setHandler
+	->	E	_os_registerProcessStackPriority
+#
+         2	E	_Us_Cmd_Wait
+#
+         2	E	_Us_Calibrate
+#
+         4	E	_Us_IO_DDR
+#
+         4	E	_Us_IO_Value
+#
+         4	S	_Us_Systick
+	->	E	_I2CUs_Systick
+#
+        18	I	_irq_us2_Rx

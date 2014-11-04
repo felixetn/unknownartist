@@ -1,0 +1,21 @@
+@..\src\api\printf_stdarg.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        16	S	_prints
+	->	E	_Serial_PutChar
+#
+        68	E	_print
+	->	E	_Serial_PutChar
+	->	S	_prints
+#
+        12	E	_printf
+	->	E	_print
+#
+        12	E	_sprintf
+	->	E	_print
+#
+        12	E	_snprintf
+	->	E	_print
