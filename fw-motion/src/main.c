@@ -68,12 +68,27 @@ void SDCardThread(void) {
 
 static void testtask(void) {
 	portTickType lastWakeTime = os_getTime();
-	Drive_SetMotor(1);
+	uint8_t a = 0;
 
+	Drive_SetMotor(0);
+	Drive_SetServo(-100);
 	for (;;) {
-		os_frequency(&lastWakeTime, 2000);
-		if(us_getFrontDistance() <= 50){
-				Drive_SetMotor(0);
+		os_frequency(&lastWakeTime, 1500);
+		if(us_getLeftDistance()<=10 && a <=2){
+			a++;
+		}
+		if(us_getLeftDistance()<=25 && a>2){
+						a=0;
+		}
+
+		if(a==0){
+			Drive_SetServo(0);
+		}
+		if(a==1){
+			Drive_SetServo(100);
+		}
+		if(a==2){
+					Drive_SetServo(-100);
 		}
 		wirelessFormattedDebugMessage(WI_IF_AMB8420, "Dist before: %d", (uint16_t) Drive_GetTotalDrivenDistance());
 		wirelessFormattedDebugMessage(WI_IF_AMB8420, "batterie power: %d", Battery_GetVoltage());

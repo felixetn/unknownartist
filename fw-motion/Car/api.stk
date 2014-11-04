@@ -28,6 +28,10 @@
 #
          0	E	_us_getFrontDistance
 #
+         0	E	_us_getLeftDistance
+#
+         0	E	_us_getRightDistance
+#
         38	E	_us_getSensorMapData
 	->	E	DTOUI
 	->	E	_xTaskGetTickCount
