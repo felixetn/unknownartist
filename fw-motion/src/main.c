@@ -1,5 +1,5 @@
 /* Demo application includes. */
-// TEST
+// TEST2
 #include "api/api.h"
 #include "api/seg.h"
 #include "AndroidBTControl.h"
