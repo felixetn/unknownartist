@@ -1,4 +1,4 @@
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     1
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     1
 
 Module(s)
    1. androidbtcontrol
@@ -31,42 +31,45 @@ Module(s)
   28. interrupts
   29. linesensor
   30. printf_stdarg
-  31. runtime_stats
-  32. seg
-  33. serial
-  34. trigonometry
-  35. us
-  36. us_i2c
-  37. util
-  38. __STD_LIB_divl
-  39. __STD_LIB_divul
-  40. __STD_LIB_fadto_
-  41. __STD_LIB_fafaddl
-  42. __STD_LIB_fafdivl
-  43. __STD_LIB_fafmull
-  44. __STD_LIB_fa_ltod
-  45. __STD_LIB_modul
-  46. __STD_LIB_mull
-  47. __STD_LIB_mulul
-  48. __STD_LIB_fashl
-  49. __STD_LIB_fashr
-  50. __STD_LIB_free
-  51. __STD_LIB_malloc
-  52. __STD_LIB_memcpy
-  53. __STD_LIB_memset
-  54. __STD_LIB_pow
-  55. __STD_LIB_strcat
-  56. __STD_LIB_strlen
-  57. __STD_LIB_strncpy
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     2
+  31. regler
+  32. runtime_stats
+  33. seg
+  34. serial
+  35. speed
+  36. trigonometry
+  37. us
+  38. us_i2c
+  39. util
+  40. __STD_LIB_divl
+  41. __STD_LIB_divul
+  42. __STD_LIB_fadto_
+  43. __STD_LIB_fafaddl
+  44. __STD_LIB_fafdivl
+  45. __STD_LIB_fafmull
+  46. __STD_LIB_fa_itod
+  47. __STD_LIB_fa_ltod
+  48. __STD_LIB_modul
+  49. __STD_LIB_mull
+  50. __STD_LIB_mulul
+  51. __STD_LIB_fashl
+  52. __STD_LIB_fashr
+  53. __STD_LIB_free
+  54. __STD_LIB_malloc
+  55. __STD_LIB_memcpy
+  56. __STD_LIB_memset
+  57. __STD_LIB_pow
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     2
 
-  58. __STD_LIB_fafcmpl
-  59. __STD_LIB_balloc
-  60. __STD_LIB_math
-  61. __STD_LIB_noreentrant
-  62. __STD_LIB_errno
-  63. __STD_LIB_otherinit
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     3
+  58. __STD_LIB_strcat
+  59. __STD_LIB_strlen
+  60. __STD_LIB_strncpy
+  61. __STD_LIB_fafcmpl
+  62. __STD_LIB_balloc
+  63. __STD_LIB_math
+  64. __STD_LIB_noreentrant
+  65. __STD_LIB_errno
+  66. __STD_LIB_otherinit
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     3
 
  === Module No. 1 (androidbtcontrol) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
@@ -88,48 +91,51 @@ Module(s)
  steerD                  Var.    s 0x00224A
  steerI                  Var.    s 0x002246
  integ                   Var.    s 0x002242
- xHandleSteerToLine      Var.    s 0x0023D2
+ xHandleSteerToLine      Var.    s 0x0023E0
  Kd                      Var.    s 0xFF803E
  Ki                      Var.    s 0xFF803C
 
  === Module No. 3 (main) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
  testtask                Func.   s 0xFE02BF
- main                    Func.   g 0xFE0363
+ main                    Func.   g 0xFE0322
+ Kp                      Var.    g 0x0023F2
+ Ki                      Var.    g 0x0023EA
+ Kd                      Var.    g 0x0023E2
 
  === Module No. 4 (mode_controller) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- initModeController      Func.   g 0xFE039D
- startModeController     Func.   g 0xFE039E
- stopModeController      Func.   g 0xFE039F
- ModeControllerThread    Func.   g 0xFE03AB
- registerMode            Func.   g 0xFE0455
- switchMode              Func.   g 0xFE047E
- xHandleModeControlle>   Var.    g 0x0023D4
- currentMode             Var.    g 0x0023D6
+ initModeController      Func.   g 0xFE0356
+ startModeController     Func.   g 0xFE0357
+ stopModeController      Func.   g 0xFE0358
+ ModeControllerThread    Func.   g 0xFE0364
+ registerMode            Func.   g 0xFE040E
+ switchMode              Func.   g 0xFE0437
+ xHandleModeControlle>   Var.    g 0x0023FA
+ currentMode             Var.    g 0x0023FC
  startModeHandlers       Var.    g 0x002264
  stopModeHandlers        Var.    g 0x002254
 
  === Module No. 5 (modes) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- registerModes           Func.   g 0xFE04EC
+ registerModes           Func.   g 0xFE04A5
 
  === Module No. 6 (scanf_stdarg) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- scanWhitespaces         Func.   g 0xFE04ED
- scanWord                Func.   g 0xFE0524
+ scanWhitespaces         Func.   g 0xFE04A6
+ scanWord                Func.   g 0xFE04DD
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
  __scr1                  Addr.   g 0x0000CB
  __ddr04                 Addr.   g 0x000434
- PIER04                  EQU     s 0x00000448
- __bapm5                 Addr.   g 0x000129
- __fmwc0                 Addr.   g 0x0003F8
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     4
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     4
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ PIER04                  EQU     s 0x00000448
+ __bapm5                 Addr.   g 0x000129
+ __fmwc0                 Addr.   g 0x0003F8
  PFD2                    EQU     s 0x000003D4
  __occp1                 Addr.   g 0x00002C
  __pcnl5                 Addr.   g 0x0000AA
@@ -183,13 +189,13 @@ Module(s)
  __pdut11                Addr.   g 0x000594
  __if2cmskh0             Addr.   g 0x000743
  __pcnh6                 Addr.   g 0x00056B
- TCCSH1                  EQU     s 0x00000027
- IF2MCTRL0               EQU     s 0x0000074C
- ITMKL1                  EQU     s 0x000000BA
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     5
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     5
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ TCCSH1                  EQU     s 0x00000027
+ IF2MCTRL0               EQU     s 0x0000074C
+ ITMKL1                  EQU     s 0x000000BA
  __pcsr11                Addr.   g 0x000592
  PUCR03                  EQU     s 0x000004AB
  IF2MCTRL1               EQU     s 0x0000084C
@@ -243,13 +249,13 @@ Module(s)
  BGRL8                   EQU     s 0x0000054E
  PDUT10                  EQU     s 0x0000058C
  TMCSR2                  EQU     s 0x00000068
- __eac5                  Addr.   g 0x0006EA
- PODR05                  EQU     s 0x00000485
- SCR7                    EQU     s 0x0000053F
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     6
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     6
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __eac5                  Addr.   g 0x0006EA
+ PODR05                  EQU     s 0x00000485
+ SCR7                    EQU     s 0x0000053F
  BGRL9                   EQU     s 0x00000558
  TREQR2L0                EQU     s 0x00000782
  MTCRA                   EQU     s 0x000003F2
@@ -303,13 +309,13 @@ Module(s)
  PIER07                  EQU     s 0x0000044B
  __prrr7                 Addr.   g 0x0004DD
  __pcnh0                 Addr.   g 0x00007F
- __gcn11                 Addr.   g 0x000098
- __ssr9                  Addr.   g 0x000555
- EDSU2H                  EQU     s 0x000003AD
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     7
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     7
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __gcn11                 Addr.   g 0x000098
+ __ssr9                  Addr.   g 0x000555
+ EDSU2H                  EQU     s 0x000003AD
  CKFCRL                  EQU     s 0x00000404
  WTCRL                   EQU     s 0x000004E8
  CUTDL                   EQU     s 0x000004EC
@@ -363,13 +369,13 @@ Module(s)
  EPSR06                  EQU     s 0x000004C2
  CTRLRH1                 EQU     s 0x00000801
  __ipcpl1                Addr.   g 0x000044
- __ptmr6                 Addr.   g 0x000564
- __gcn2l1                Addr.   g 0x00009A
- __dct5                  Addr.   g 0x00012E
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     8
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     8
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __ptmr6                 Addr.   g 0x000564
+ __gcn2l1                Addr.   g 0x00009A
+ __dct5                  Addr.   g 0x00012E
  __if1mctr0              Addr.   g 0x00071C
  IF1DTB10                EQU     s 0x00000722
  RDR2                    EQU     s 0x000000D6
@@ -423,13 +429,13 @@ Module(s)
  __ctrlrh0               Addr.   g 0x000701
  __pdut9                 Addr.   g 0x000584
  __ctrlrh1               Addr.   g 0x000801
- PILR06                  EQU     s 0x0000045E
- GCN2L2                  EQU     s 0x00000576
- __pfam3                 Addr.   g 0x0003C2
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:     9
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:     9
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ PILR06                  EQU     s 0x0000045E
+ GCN2L2                  EQU     s 0x00000576
+ __pfam3                 Addr.   g 0x0003C2
  __each2                 Addr.   g 0x0006E5
  __brper1                Addr.   g 0x00080C
  COAR                    EQU     s 0x00000415
@@ -483,13 +489,13 @@ Module(s)
  __tmcsrh1               Addr.   g 0x000065
  IPCPL7                  EQU     s 0x00000056
  __btrh1                 Addr.   g 0x000807
- __tmcsrh2               Addr.   g 0x000069
- __podr03                Addr.   g 0x000483
- __pcsr7                 Addr.   g 0x00056E
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    10
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    10
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __tmcsrh2               Addr.   g 0x000069
+ __podr03                Addr.   g 0x000483
+ __pcsr7                 Addr.   g 0x00056E
  COER0                   EQU     s 0x000007CE
  __tmcsrh3               Addr.   g 0x00006D
  __pier09                Addr.   g 0x00044D
@@ -543,13 +549,13 @@ Module(s)
  __dcth2                 Addr.   g 0x000117
  __prrr12                Addr.   g 0x000662
  DERH                    EQU     s 0x00000395
- __ioa1                  Addr.   g 0x00010C
- IDAR0                   EQU     s 0x000000B4
- __rccsrc                Addr.   g 0x00040B
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    11
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    11
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __ioa1                  Addr.   g 0x00010C
+ IDAR0                   EQU     s 0x000000B4
+ __rccsrc                Addr.   g 0x00040B
  EPSR09                  EQU     s 0x000004C5
  TESTRL0                 EQU     s 0x0000070A
  __elvr1                 Addr.   g 0x00005E
@@ -603,13 +609,13 @@ Module(s)
  __ioal0                 Addr.   g 0x000104
  IF1MSK20                EQU     s 0x00000716
  IF1DTA20                EQU     s 0x00000720
- IF2MSK10                EQU     s 0x00000744
- IF2DTA10                EQU     s 0x0000074E
- __tccsh1                Addr.   g 0x000027
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    12
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    12
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ IF2MSK10                EQU     s 0x00000744
+ IF2DTA10                EQU     s 0x0000074E
+ __tccsh1                Addr.   g 0x000027
  __ptmr14                Addr.   g 0x0005AC
  __if1dtb1l1             Addr.   g 0x000822
  PILR09                  EQU     s 0x00000461
@@ -663,13 +669,13 @@ Module(s)
  __pfah7                 Addr.   g 0x0003CF
  OCS6                    EQU     s 0x0000003A
  IOA0                    EQU     s 0x00000104
- __if1arb10              Addr.   g 0x000718
- __if1arb20              Addr.   g 0x00071A
- __if2arb10              Addr.   g 0x000748
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    13
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    13
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __if1arb10              Addr.   g 0x000718
+ __if1arb20              Addr.   g 0x00071A
+ __if2arb10              Addr.   g 0x000748
  __pfdh7                 Addr.   g 0x0003DF
  __if1creql0             Addr.   g 0x000710
  __if2arb20              Addr.   g 0x00074A
@@ -723,13 +729,13 @@ Module(s)
  PCN4                    EQU     s 0x000000A2
  __if2creqh1             Addr.   g 0x000841
  OCCP5                   EQU     s 0x00000038
- __pfal0                 Addr.   g 0x0003B8
- __pier10                Addr.   g 0x00044E
- __gcn1h3                Addr.   g 0x000599
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    14
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    14
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __pfal0                 Addr.   g 0x0003B8
+ __pier10                Addr.   g 0x00044E
+ __gcn1h3                Addr.   g 0x000599
  OCCP6                   EQU     s 0x0000003C
  TREQR21                 EQU     s 0x00000882
  OCCP7                   EQU     s 0x0000003E
@@ -783,13 +789,13 @@ Module(s)
  __itmkl1                Addr.   g 0x0000BA
  IPCPL2                  EQU     s 0x00000048
  EIRR0                   EQU     s 0x00000059
- __intrl1                Addr.   g 0x000808
- PFAH6                   EQU     s 0x000003CC
- FMWC5                   EQU     s 0x000003FD
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    15
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    15
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __intrl1                Addr.   g 0x000808
+ PFAH6                   EQU     s 0x000003CC
+ FMWC5                   EQU     s 0x000003FD
  EIRR1                   EQU     s 0x0000005D
  __pfdh1                 Addr.   g 0x0003D3
  __pier02                Addr.   g 0x000446
@@ -843,13 +849,13 @@ Module(s)
  __epsr08                Addr.   g 0x0004C4
  AECSR0                  EQU     s 0x00000561
  TDR3                    EQU     s 0x000000E0
- __pfd4                  Addr.   g 0x0003D8
- PFAL0                   EQU     s 0x000003B8
- EPSR04                  EQU     s 0x000004C0
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    16
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    16
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __pfd4                  Addr.   g 0x0003D8
+ PFAL0                   EQU     s 0x000003B8
+ EPSR04                  EQU     s 0x000004C0
  PFAL1                   EQU     s 0x000003BB
  __dct3                  Addr.   g 0x00011E
  PFAL2                   EQU     s 0x000003BE
@@ -903,13 +909,13 @@ Module(s)
  ERRCNTL1                EQU     s 0x00000804
  GCN2L0                  EQU     s 0x00000076
  PILR04                  EQU     s 0x0000045C
- STATRH0                 EQU     s 0x00000703
- __ipcph2                Addr.   g 0x000049
- __itbal0                Addr.   g 0x0000AE
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    17
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    17
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ STATRH0                 EQU     s 0x00000703
+ __ipcph2                Addr.   g 0x000049
+ __itbal0                Addr.   g 0x0000AE
  DSSR                    EQU     s 0x00000392
  __ics23                 Addr.   g 0x000046
  __ipcpl6                Addr.   g 0x000054
@@ -963,13 +969,13 @@ Module(s)
  TMR6                    EQU     s 0x00000072
  BGR3                    EQU     s 0x000000E4
  __epilr02               Addr.   g 0x00046E
- __pcn15                 Addr.   g 0x0005BA
- __if1cmsk1              Addr.   g 0x000812
- IF1DTB1H1               EQU     s 0x00000823
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    18
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    18
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __pcn15                 Addr.   g 0x0005BA
+ __if1cmsk1              Addr.   g 0x000812
+ IF1DTB1H1               EQU     s 0x00000823
  __epilr03               Addr.   g 0x00046F
  __if2cmsk1              Addr.   g 0x000842
  PIER08                  EQU     s 0x0000044C
@@ -1023,13 +1029,13 @@ Module(s)
  IF2DTB2L1               EQU     s 0x00000854
  EACH0                   EQU     s 0x000006E1
  ADCSL                   EQU     s 0x00000018
- __wtbrl0                Addr.   g 0x0004E0
- EACH1                   EQU     s 0x000006E3
- __pfd7                  Addr.   g 0x0003DE
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    19
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    19
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __wtbrl0                Addr.   g 0x0004E0
+ EACH1                   EQU     s 0x000006E3
+ __pfd7                  Addr.   g 0x0003DE
  __pucr02                Addr.   g 0x0004AA
  EPSR07                  EQU     s 0x000004C3
  EACH2                   EQU     s 0x000006E5
@@ -1083,13 +1089,13 @@ Module(s)
  IF1DTA21                EQU     s 0x00000820
  IF2MSK11                EQU     s 0x00000844
  IF2DTA11                EQU     s 0x0000084E
- __ddr03                 Addr.   g 0x000433
- __if1msk10              Addr.   g 0x000714
- __bapm4                 Addr.   g 0x000121
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    20
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    20
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __ddr03                 Addr.   g 0x000433
+ __if1msk10              Addr.   g 0x000714
+ __bapm4                 Addr.   g 0x000121
  __ptmr15                Addr.   g 0x0005B4
  __if1msk20              Addr.   g 0x000716
  __if2msk10              Addr.   g 0x000744
@@ -1143,13 +1149,13 @@ Module(s)
  DCTH2                   EQU     s 0x00000117
  EACL4                   EQU     s 0x000006E8
  IF2CMSK1                EQU     s 0x00000842
- __adcs                  Addr.   g 0x000018
- PDUT0                   EQU     s 0x0000007C
- DCTH3                   EQU     s 0x0000011F
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    21
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    21
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __adcs                  Addr.   g 0x000018
+ PDUT0                   EQU     s 0x0000007C
+ DCTH3                   EQU     s 0x0000011F
  DSSRL                   EQU     s 0x00000392
  EACL5                   EQU     s 0x000006EA
  PDUT1                   EQU     s 0x00000084
@@ -1203,13 +1209,13 @@ Module(s)
  __pcnh3                 Addr.   g 0x000097
  TMCSRH2                 EQU     s 0x00000069
  __msgval1l1             Addr.   g 0x0008B0
- __idar0                 Addr.   g 0x0000B4
- __dmacs1                Addr.   g 0x00010B
- __newdt2l1              Addr.   g 0x000892
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    22
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    22
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __idar0                 Addr.   g 0x0000B4
+ __dmacs1                Addr.   g 0x00010B
+ __newdt2l1              Addr.   g 0x000892
  __msgval2l1             Addr.   g 0x0008B2
  CKMR                    EQU     s 0x00000403
  PTMR13                  EQU     s 0x000005A4
@@ -1263,13 +1269,13 @@ Module(s)
  __wtbr0                 Addr.   g 0x0004E0
  __eacl4                 Addr.   g 0x0006E8
  GCN12                   EQU     s 0x00000574
- GCN13                   EQU     s 0x00000598
- IF1ARB11                EQU     s 0x00000818
- RDR0                    EQU     s 0x000000C2
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    23
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    23
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ GCN13                   EQU     s 0x00000598
+ IF1ARB11                EQU     s 0x00000818
+ RDR0                    EQU     s 0x000000C2
  ESIR0                   EQU     s 0x000000C8
  PCNH14                  EQU     s 0x000005B3
  ESIR1                   EQU     s 0x000000D2
@@ -1323,13 +1329,13 @@ Module(s)
  __pcn4                  Addr.   g 0x0000A2
  PCNH7                   EQU     s 0x00000573
  IOAH0                   EQU     s 0x00000105
- __pcnl14                Addr.   g 0x0005B2
- PCNH8                   EQU     s 0x0000057F
- NEWDT1L1                EQU     s 0x00000890
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    24
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    24
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __pcnl14                Addr.   g 0x0005B2
+ PCNH8                   EQU     s 0x0000057F
+ NEWDT1L1                EQU     s 0x00000890
  IPCPL0                  EQU     s 0x00000042
  IOAH1                   EQU     s 0x0000010D
  __pfam6                 Addr.   g 0x0003CB
@@ -1383,13 +1389,13 @@ Module(s)
  DDR00                   EQU     s 0x00000430
  EBCS                    EQU     s 0x000006F5
  IF2CMSKL1               EQU     s 0x00000842
- IF2ARB2H1               EQU     s 0x0000084B
- __dctl4                 Addr.   g 0x000126
- PFAM1                   EQU     s 0x000003BC
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    25
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    25
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ IF2ARB2H1               EQU     s 0x0000084B
+ __dctl4                 Addr.   g 0x000126
+ PFAM1                   EQU     s 0x000003BC
  DDR01                   EQU     s 0x00000431
  __ptmr3                 Addr.   g 0x000090
  __if1arb11              Addr.   g 0x000818
@@ -1443,13 +1449,13 @@ Module(s)
  PCNL7                   EQU     s 0x00000572
  NEWDT1H1                EQU     s 0x00000891
  ITMKH0                  EQU     s 0x000000B1
- ESCR0                   EQU     s 0x000000C5
- IOAL0                   EQU     s 0x00000104
- __pfam2                 Addr.   g 0x0003BF
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    26
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    26
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ ESCR0                   EQU     s 0x000000C5
+ IOAL0                   EQU     s 0x00000104
+ __pfam2                 Addr.   g 0x0003BF
  __each1                 Addr.   g 0x0006E3
  PRRR7                   EQU     s 0x000004DD
  PCNL8                   EQU     s 0x0000057E
@@ -1503,13 +1509,13 @@ Module(s)
  __bapl1                 Addr.   g 0x000108
  __msgval10              Addr.   g 0x0007B0
  ESCR8                   EQU     s 0x0000054D
- PCSR7                   EQU     s 0x0000056E
- PDR08                   EQU     s 0x00000008
- ITBAL0                  EQU     s 0x000000AE
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    27
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    27
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ PCSR7                   EQU     s 0x0000056E
+ PDR08                   EQU     s 0x00000008
+ ITBAL0                  EQU     s 0x000000AE
  __mtcra                 Addr.   g 0x0003F2
  __msgval20              Addr.   g 0x0007B2
  ESCR9                   EQU     s 0x00000557
@@ -1563,13 +1569,13 @@ Module(s)
  __pcsr4                 Addr.   g 0x00009E
  IPCPH3                  EQU     s 0x0000004B
  CUTR1                   EQU     s 0x000004F0
- __ioal3                 Addr.   g 0x00011C
- __if1arb1h1             Addr.   g 0x000819
- CUTR2                   EQU     s 0x000004EE
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    28
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    28
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __ioal3                 Addr.   g 0x00011C
+ __if1arb1h1             Addr.   g 0x000819
+ CUTR2                   EQU     s 0x000004EE
  IF1ARB1L0               EQU     s 0x00000718
  MSGVAL21                EQU     s 0x000008B2
  __epilr10               Addr.   g 0x000476
@@ -1623,13 +1629,13 @@ Module(s)
  ISMK1                   EQU     s 0x000000BD
  PFD1                    EQU     s 0x000003D2
  TMISR                   EQU     s 0x000004FA
- __ioah4                 Addr.   g 0x000125
- ROMM                    EQU     s 0x000003AE
- TREQR1H0                EQU     s 0x00000781
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    29
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    29
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __ioah4                 Addr.   g 0x000125
+ ROMM                    EQU     s 0x000003AE
+ TREQR1H0                EQU     s 0x00000781
  ISBA0                   EQU     s 0x000000B2
  CTRLR1                  EQU     s 0x00000800
  ISBA1                   EQU     s 0x000000BC
@@ -1683,13 +1689,13 @@ Module(s)
  __pfdl5                 Addr.   g 0x0003DA
  INTPND21                EQU     s 0x000008A2
  ENIR0                   EQU     s 0x00000058
- __eccr7                 Addr.   g 0x000542
- __pcsr10                Addr.   g 0x00058A
- ENIR1                   EQU     s 0x0000005C
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    30
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    30
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __eccr7                 Addr.   g 0x000542
+ __pcsr10                Addr.   g 0x00058A
+ ENIR1                   EQU     s 0x0000005C
  __cutr1l                Addr.   g 0x0004F0
  __if1creql1             Addr.   g 0x000810
  __if2creql1             Addr.   g 0x000840
@@ -1743,13 +1749,13 @@ Module(s)
  __epsr02                Addr.   g 0x0004BE
  __pcsr14                Addr.   g 0x0005AE
  PFDH5                   EQU     s 0x000003DB
- PFDH6                   EQU     s 0x000003DD
- MTCRAL                  EQU     s 0x000003F2
- ECCR0                   EQU     s 0x000000C4
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    31
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    31
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ PFDH6                   EQU     s 0x000003DD
+ MTCRAL                  EQU     s 0x000003F2
+ ECCR0                   EQU     s 0x000000C4
  __pfdh4                 Addr.   g 0x0003D9
  PFDH7                   EQU     s 0x000003DF
  MTCRBL                  EQU     s 0x000003F6
@@ -1803,13 +1809,13 @@ Module(s)
  __ioa0                  Addr.   g 0x000104
  INTPND2H1               EQU     s 0x000008A3
  EPSR08                  EQU     s 0x000004C4
- __disel1                Addr.   g 0x000381
- GCN20                   EQU     s 0x00000076
- TCDT0                   EQU     s 0x00000020
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    32
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    32
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __disel1                Addr.   g 0x000381
+ GCN20                   EQU     s 0x00000076
+ TCDT0                   EQU     s 0x00000020
  GCN21                   EQU     s 0x0000009A
  TCDT1                   EQU     s 0x00000024
  PFDL0                   EQU     s 0x000003D0
@@ -1863,13 +1869,13 @@ Module(s)
  PILR08                  EQU     s 0x00000460
  STATRL0                 EQU     s 0x00000702
  BAPL2                   EQU     s 0x00000110
- BAPL3                   EQU     s 0x00000118
- __pilr04                Addr.   g 0x00045C
- __podr10                Addr.   g 0x00048A
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    33
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    33
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ BAPL3                   EQU     s 0x00000118
+ __pilr04                Addr.   g 0x00045C
+ __podr10                Addr.   g 0x00048A
  GCN1H2                  EQU     s 0x00000575
  DMACS2                  EQU     s 0x00000113
  BAPL4                   EQU     s 0x00000120
@@ -1923,13 +1929,13 @@ Module(s)
  __statrl1               Addr.   g 0x000802
  __ipcp4                 Addr.   g 0x00004E
  PDR10                   EQU     s 0x0000000A
- __pfd0                  Addr.   g 0x0003D0
- EPSR00                  EQU     s 0x000004BC
- PCSR12                  EQU     s 0x0000059E
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    34
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    34
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __pfd0                  Addr.   g 0x0003D0
+ EPSR00                  EQU     s 0x000004BC
+ PCSR12                  EQU     s 0x0000059E
  EPSR10                  EQU     s 0x000004C6
  ERRCNT0                 EQU     s 0x00000704
  __pilr08                Addr.   g 0x000460
@@ -1983,13 +1989,13 @@ Module(s)
  PTMR8                   EQU     s 0x00000578
  __escr7                 Addr.   g 0x000543
  PTMR9                   EQU     s 0x00000580
- __wtcrl                 Addr.   g 0x0004E8
- TDR9                    EQU     s 0x00000554
- __tmrlr0                Addr.   g 0x000062
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    35
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    35
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ __wtcrl                 Addr.   g 0x0004E8
+ TDR9                    EQU     s 0x00000554
+ __tmrlr0                Addr.   g 0x000062
  __ddr08                 Addr.   g 0x000438
  PLLCRH                  EQU     s 0x00000407
  TREQR11                 EQU     s 0x00000880
@@ -2043,13 +2049,13 @@ Module(s)
  __intpnd1               Addr.   g 0x0008A0
  __tccsh0                Addr.   g 0x000023
  NEWDT2L1                EQU     s 0x00000892
- IPCPL1                  EQU     s 0x00000044
- __ckmr                  Addr.   g 0x000403
- __ptmr13                Addr.   g 0x0005A4
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    36
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    36
 
  === Module No. 7 (MB96348HS) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ IPCPL1                  EQU     s 0x00000044
+ __ckmr                  Addr.   g 0x000403
+ __ptmr13                Addr.   g 0x0005A4
  __if1dta1l1             Addr.   g 0x00081E
  WTCR                    EQU     s 0x000004E8
  CUTD                    EQU     s 0x000004EC
@@ -2082,299 +2088,299 @@ Module(s)
  ICE1011                 EQU     s 0x0000051B
  MTCRA                   EQU     s 0x000003F2
  MTCRB                   EQU     s 0x000003F6
- __userstack             Addr.   g 0x00662C
+ __userstack             Addr.   g 0x006694
  DIRDATA_S               Addr.   s 0x002240
- LABEL1                  Addr.   s 0xFE0657
- __systemstack           Addr.   g 0x005E2C
- end                     Addr.   s 0xFE06BC
- LABEL4                  Addr.   s 0xFE068F
+ LABEL1                  Addr.   s 0xFE0610
+ __systemstack           Addr.   g 0x005E94
+ end                     Addr.   s 0xFE0675
+ LABEL4                  Addr.   s 0xFE0648
  VRCR                    EQU     s 0x0000042C
  CKFCR                   EQU     s 0x00000404
  TCCSL2                  EQU     s 0x00000502
- no_PLL_yet              Addr.   s 0xFE06A7
+ no_PLL_yet              Addr.   s 0xFE0660
  CKSR                    EQU     s 0x00000401
  ICE67                   EQU     s 0x00000053
- LABEL2                  Addr.   s 0xFE0670
- __userstack_top         Addr.   g 0x00662E
+ LABEL2                  Addr.   s 0xFE0629
+ __userstack_top         Addr.   g 0x006696
  CKMR                    EQU     s 0x00000403
  PLLCR                   EQU     s 0x00000406
  MCSRA                   EQU     s 0x000003F1
  MCSRB                   EQU     s 0x000003F5
- SSTACK_TOP              Addr.   s 0x00662C
- USTACK_TOP              Addr.   s 0x00662E
- _start                  Addr.   g 0xFE05DB
- ROMM                    EQU     s 0x000003AE
- TCCSL3                  EQU     s 0x00000506
- __systemstack_top       Addr.   g 0x00662C
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    37
+ SSTACK_TOP              Addr.   s 0x006694
+ USTACK_TOP              Addr.   s 0x006696
+ _start                  Addr.   g 0xFE0594
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    37
 
  === Module No. 8 (STARTUP) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ ROMM                    EQU     s 0x000003AE
+ TCCSL3                  EQU     s 0x00000506
+ __systemstack_top       Addr.   g 0x006694
  ROMM_CONFIG             EQU     s 0x000000F7
- notresetyet             Addr.   s 0xFE05DC
+ notresetyet             Addr.   s 0xFE0595
  CKSSR                   EQU     s 0x00000402
  ICS89                   EQU     s 0x00000514
- LABEL3                  Addr.   s 0xFE067F
+ LABEL3                  Addr.   s 0xFE0638
  ICS1011                 EQU     s 0x0000051A
  ICE01                   EQU     s 0x00000041
 
  === Module No. 9 (vectors) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- InitIrqLevels           Func.   g 0xFE06BE
- DefaultIRQHandler       Func.   g 0xFE06E6
+ InitIrqLevels           Func.   g 0xFE0677
+ DefaultIRQHandler       Func.   g 0xFE069F
 
  === Module No. 11 (list) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- vListInitialise         Func.   g 0xFE071D
- vListInitialiseItem     Func.   g 0xFE073C
- vListInsertEnd          Func.   g 0xFE0746
- vListInsert             Func.   g 0xFE0774
- uxListRemove            Func.   g 0xFE07BC
+ vListInitialise         Func.   g 0xFE06D6
+ vListInitialiseItem     Func.   g 0xFE06F5
+ vListInsertEnd          Func.   g 0xFE06FF
+ vListInsert             Func.   g 0xFE072D
+ uxListRemove            Func.   g 0xFE0775
 
  === Module No. 12 (queue) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- xQueueGenericReset      Func.   g 0xFE07E9
- xQueueGenericCreate     Func.   g 0xFE0856
- xQueueCreateMutex       Func.   g 0xFE08A4
- xQueueGenericSend       Func.   g 0xFE08FC
- xQueueGenericSendFro>   Func.   g 0xFE0A39
- xQueueGenericReceive    Func.   g 0xFE0AE4
- xQueueReceiveFromISR    Func.   g 0xFE0C27
- uxQueueMessagesWaiti>   Func.   g 0xFE0C91
- uxQueueMessagesWaiti>   Func.   g 0xFE0CA4
- vQueueDelete            Func.   g 0xFE0CAD
- ucQueueGetQueueNumbe>   Func.   g 0xFE0CC3
- vQueueSetQueueNumber    Func.   g 0xFE0CCD
- ucQueueGetQueueType     Func.   g 0xFE0CDA
- prvCopyDataToQueue      Func.   s 0xFE0CE4
- prvCopyDataFromQueue    Func.   s 0xFE0D4C
- prvUnlockQueue          Func.   s 0xFE0D7A
- prvIsQueueEmpty         Func.   s 0xFE0DEE
- xQueueIsQueueEmptyFr>   Func.   g 0xFE0E08
- prvIsQueueFull          Func.   s 0xFE0E18
- xQueueIsQueueFullFro>   Func.   g 0xFE0E36
+ xQueueGenericReset      Func.   g 0xFE07A2
+ xQueueGenericCreate     Func.   g 0xFE080F
+ xQueueCreateMutex       Func.   g 0xFE085D
+ xQueueGenericSend       Func.   g 0xFE08B5
+ xQueueGenericSendFro>   Func.   g 0xFE09F2
+ xQueueGenericReceive    Func.   g 0xFE0A9D
+ xQueueReceiveFromISR    Func.   g 0xFE0BE0
+ uxQueueMessagesWaiti>   Func.   g 0xFE0C4A
+ uxQueueMessagesWaiti>   Func.   g 0xFE0C5D
+ vQueueDelete            Func.   g 0xFE0C66
+ ucQueueGetQueueNumbe>   Func.   g 0xFE0C7C
+ vQueueSetQueueNumber    Func.   g 0xFE0C86
+ ucQueueGetQueueType     Func.   g 0xFE0C93
+ prvCopyDataToQueue      Func.   s 0xFE0C9D
+ prvCopyDataFromQueue    Func.   s 0xFE0D05
+ prvUnlockQueue          Func.   s 0xFE0D33
+ prvIsQueueEmpty         Func.   s 0xFE0DA7
+ xQueueIsQueueEmptyFr>   Func.   g 0xFE0DC1
+ prvIsQueueFull          Func.   s 0xFE0DD1
+ xQueueIsQueueFullFro>   Func.   g 0xFE0DEF
 
  === Module No. 13 (tasks) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- xTaskGenericCreate      Func.   g 0xFE0E4A
- vTaskDelete             Func.   g 0xFE0FFF
- vTaskDelayUntil         Func.   g 0xFE1063
- vTaskDelay              Func.   g 0xFE1109
- uxTaskPriorityGet       Func.   g 0xFE117F
- vTaskPrioritySet        Func.   g 0xFE119C
- vTaskSuspend            Func.   g 0xFE123B
- xTaskIsTaskSuspended    Func.   g 0xFE12EE
- vTaskResume             Func.   g 0xFE1329
- xTaskResumeFromISR      Func.   g 0xFE13BB
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    38
+ xTaskGenericCreate      Func.   g 0xFE0E03
+ vTaskDelete             Func.   g 0xFE0FB8
+ vTaskDelayUntil         Func.   g 0xFE101C
+ vTaskDelay              Func.   g 0xFE10C2
+ uxTaskPriorityGet       Func.   g 0xFE1138
+ vTaskPrioritySet        Func.   g 0xFE1155
+ vTaskSuspend            Func.   g 0xFE11F4
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    38
 
  === Module No. 13 (tasks) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- vTaskStartScheduler     Func.   g 0xFE144C
- vTaskEndScheduler       Func.   g 0xFE148D
- vTaskSuspendAll         Func.   g 0xFE1497
- xTaskResumeAll          Func.   g 0xFE149C
- xTaskGetTickCount       Func.   g 0xFE161F
- xTaskGetTickCountFro>   Func.   g 0xFE162D
- uxTaskGetNumberOfTas>   Func.   g 0xFE1631
- vTaskList               Func.   g 0xFE1635
-   pcStatusString        loc.    s 0x00244A
-   pcStatusString        loc.    s 0x00244A
-   pcStatusString        loc.    s 0x00244A
-   pcStatusString        loc.    s 0x00244A
-   pcStatusString        loc.    s 0x00244A
- vTaskIncrementTick      Func.   g 0xFE19A2
- vTaskSwitchContext      Func.   g 0xFE1A6F
- vTaskPlaceOnEventLis>   Func.   g 0xFE1AB9
- xTaskRemoveFromEvent>   Func.   g 0xFE1B3D
- vTaskSetTimeOutState    Func.   g 0xFE1B9B
- xTaskCheckForTimeOut    Func.   g 0xFE1BAE
- vTaskMissedYield        Func.   g 0xFE1C07
- uxTaskGetTaskNumber     Func.   g 0xFE1C0C
- vTaskSetTaskNumber      Func.   g 0xFE1C1F
- prvIdleTask             Func.   s 0xFE1C2E
- prvInitialiseTCBVari>   Func.   s 0xFE1C37
- prvInitialiseTaskLis>   Func.   s 0xFE1C84
- prvCheckTasksWaiting>   Func.   s 0xFE1CD4
- prvAddCurrentTaskToD>   Func.   s 0xFE1D26
- prvAllocateTCBAndSta>   Func.   s 0xFE1D73
- prvListTaskWithinSin>   Func.   s 0xFE1DBC
-   pcStatusString        loc.    s 0x00244A
- usTaskCheckFreeStack>   Func.   s 0xFE1E53
- uxTaskGetStackHighWa>   Func.   g 0xFE1E6F
- prvDeleteTCB            Func.   s 0xFE1E9C
- xTaskGetCurrentTaskH>   Func.   g 0xFE1EB7
- xTaskGetSchedulerSta>   Func.   g 0xFE1EBB
- vTaskPriorityInherit    Func.   g 0xFE1ECE
- vTaskPriorityDisinhe>   Func.   g 0xFE1F40
+ xTaskIsTaskSuspended    Func.   g 0xFE12A7
+ vTaskResume             Func.   g 0xFE12E2
+ xTaskResumeFromISR      Func.   g 0xFE1374
+ vTaskStartScheduler     Func.   g 0xFE1405
+ vTaskEndScheduler       Func.   g 0xFE1446
+ vTaskSuspendAll         Func.   g 0xFE1450
+ xTaskResumeAll          Func.   g 0xFE1455
+ xTaskGetTickCount       Func.   g 0xFE15D8
+ xTaskGetTickCountFro>   Func.   g 0xFE15E6
+ uxTaskGetNumberOfTas>   Func.   g 0xFE15EA
+ vTaskList               Func.   g 0xFE15EE
+   pcStatusString        loc.    s 0x002470
+   pcStatusString        loc.    s 0x002470
+   pcStatusString        loc.    s 0x002470
+   pcStatusString        loc.    s 0x002470
+   pcStatusString        loc.    s 0x002470
+ vTaskIncrementTick      Func.   g 0xFE195B
+ vTaskSwitchContext      Func.   g 0xFE1A28
+ vTaskPlaceOnEventLis>   Func.   g 0xFE1A72
+ xTaskRemoveFromEvent>   Func.   g 0xFE1AF6
+ vTaskSetTimeOutState    Func.   g 0xFE1B54
+ xTaskCheckForTimeOut    Func.   g 0xFE1B67
+ vTaskMissedYield        Func.   g 0xFE1BC0
+ uxTaskGetTaskNumber     Func.   g 0xFE1BC5
+ vTaskSetTaskNumber      Func.   g 0xFE1BD8
+ prvIdleTask             Func.   s 0xFE1BE7
+ prvInitialiseTCBVari>   Func.   s 0xFE1BF0
+ prvInitialiseTaskLis>   Func.   s 0xFE1C3D
+ prvCheckTasksWaiting>   Func.   s 0xFE1C8D
+ prvAddCurrentTaskToD>   Func.   s 0xFE1CDF
+ prvAllocateTCBAndSta>   Func.   s 0xFE1D2C
+ prvListTaskWithinSin>   Func.   s 0xFE1D75
+   pcStatusString        loc.    s 0x002470
+ usTaskCheckFreeStack>   Func.   s 0xFE1E0C
+ uxTaskGetStackHighWa>   Func.   g 0xFE1E28
+ prvDeleteTCB            Func.   s 0xFE1E55
+ xTaskGetCurrentTaskH>   Func.   g 0xFE1E70
+ xTaskGetSchedulerSta>   Func.   g 0xFE1E74
+ vTaskPriorityInherit    Func.   g 0xFE1E87
+ vTaskPriorityDisinhe>   Func.   g 0xFE1EF9
  pxCurrentTCB            Var.    g 0x00228C
- pxReadyTasksLists       Var.    s 0x00240E
- xDelayedTaskList1       Var.    s 0x002404
- xDelayedTaskList2       Var.    s 0x0023FA
- pxDelayedTaskList       Var.    s 0x0023F8
- pxOverflowDelayedTas>   Var.    s 0x0023F6
- xPendingReadyList       Var.    s 0x0023EC
- xTasksWaitingTermina>   Var.    s 0x0023E2
+ pxReadyTasksLists       Var.    s 0x002434
+ xDelayedTaskList1       Var.    s 0x00242A
+ xDelayedTaskList2       Var.    s 0x002420
+ pxDelayedTaskList       Var.    s 0x00241E
+ pxOverflowDelayedTas>   Var.    s 0x00241C
+ xPendingReadyList       Var.    s 0x002412
+ xTasksWaitingTermina>   Var.    s 0x002408
  uxTasksDeleted          Var.    s 0x00228A
- xSuspendedTaskList      Var.    s 0x0023D8
+ xSuspendedTaskList      Var.    s 0x0023FE
  uxCurrentNumberOfTas>   Var.    s 0x002288
  xTickCount              Var.    s 0x002286
  uxTopUsedPriority       Var.    s 0x002284
  uxTopReadyPriority      Var.    s 0x002282
  xSchedulerRunning       Var.    s 0x002280
  uxSchedulerSuspended    Var.    s 0x00227E
- uxMissedTicks           Var.    s 0x00227C
- xMissedYield            Var.    s 0x00227A
- xNumOfOverflows         Var.    s 0x002278
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    39
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    39
 
  === Module No. 13 (tasks) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
+ uxMissedTicks           Var.    s 0x00227C
+ xMissedYield            Var.    s 0x00227A
+ xNumOfOverflows         Var.    s 0x002278
  uxTaskNumber            Var.    s 0x002276
  xNextTaskUnblockTime    Var.    s 0x002274
 
  === Module No. 15 (__std_lib_sbrk) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- sbrk                    Func.   g 0xFE1F88
+ sbrk                    Func.   g 0xFE1F41
    brk_siz               loc.    s 0x00228E
-   _heap                 loc.    s 0x00247C
+   _heap                 loc.    s 0x0024A2
 
  === Module No. 16 (port) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- pxPortInitialiseStac>   Func.   g 0xFE1FB5
- prvSetupRLT0Interrup>   Func.   s 0xFE2087
- xPortStartScheduler     Func.   g 0xFE2090
- vPortEndScheduler       Func.   g 0xFE20C7
- prvRLT0_TICKISR         Func.   g 0xFE20C8
- vPortYield              Func.   g 0xFE20D4
- vPortYieldDelayed       Func.   g 0xFE2132
+ pxPortInitialiseStac>   Func.   g 0xFE1F6E
+ prvSetupRLT0Interrup>   Func.   s 0xFE2040
+ xPortStartScheduler     Func.   g 0xFE2049
+ vPortEndScheduler       Func.   g 0xFE2080
+ prvRLT0_TICKISR         Func.   g 0xFE2081
+ vPortYield              Func.   g 0xFE208D
+ vPortYieldDelayed       Func.   g 0xFE20EB
 
  === Module No. 17 (heap_3) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- pvPortMalloc            Func.   g 0xFE21AA
- vPortFree               Func.   g 0xFE21C4
+ pvPortMalloc            Func.   g 0xFE2163
+ vPortFree               Func.   g 0xFE217D
 
  === Module No. 18 (wireless) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- wirelessSend            Func.   g 0xFE21DC
- wirelessDebugMessage    Func.   g 0xFE2209
- wirelessFormattedDeb>   Func.   g 0xFE2258
- wirelessInit            Func.   g 0xFE22B4
- wirelessSubscribe       Func.   g 0xFE22E2
- isSubscribed            Func.   g 0xFE2327
- wirelessUnsubscribe     Func.   g 0xFE2359
- wirelessReceive         Func.   g 0xFE2395
-   subscribers           loc.    s 0x005B2C
-   msg                   loc.    s 0x005BE0
+ wirelessSend            Func.   g 0xFE2195
+ wirelessDebugMessage    Func.   g 0xFE21C2
+ wirelessFormattedDeb>   Func.   g 0xFE2211
+ wirelessInit            Func.   g 0xFE226D
+ wirelessSubscribe       Func.   g 0xFE229B
+ isSubscribed            Func.   g 0xFE22E0
+ wirelessUnsubscribe     Func.   g 0xFE2312
+ wirelessReceive         Func.   g 0xFE234E
+   subscribers           loc.    s 0x005B52
+   msg                   loc.    s 0x005C06
 
  === Module No. 19 (bluetooth) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Bluetooth_Layer1_Get>   Func.   s 0xFE23D3
- Bluetooth_Init          Func.   g 0xFE23F8
- getNextMessageToSend    Func.   s 0xFE24B2
- putStuffedByte          Func.   s 0xFE24D3
- startSendingNextMess>   Func.   s 0xFE24F6
-   message               loc.    s 0x005C80
- UART7_RxISR             Func.   s 0xFE2622
- UART7_TxISR             Func.   s 0xFE2652
- Bluetooth_Layer3_Rec>   Func.   s 0xFE2675
- Bluetooth_Send          Func.   g 0xFE2791
-   btxRxedChars          loc.    s 0x005C7E
-   sendSM                loc.    s 0x005C28
-   messagesLeftToSend    loc.    s 0x005CC5
-   sendQueue             loc.    s 0x005C26
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    40
+ Bluetooth_Layer1_Get>   Func.   s 0xFE238C
+ Bluetooth_Init          Func.   g 0xFE23B1
+ getNextMessageToSend    Func.   s 0xFE246B
+ putStuffedByte          Func.   s 0xFE248C
+ startSendingNextMess>   Func.   s 0xFE24AF
+   message               loc.    s 0x005CA6
+ UART7_RxISR             Func.   s 0xFE25DB
+ UART7_TxISR             Func.   s 0xFE260B
+ Bluetooth_Layer3_Rec>   Func.   s 0xFE262E
+ Bluetooth_Send          Func.   g 0xFE274A
+   btxRxedChars          loc.    s 0x005CA4
+   sendSM                loc.    s 0x005C4E
+   messagesLeftToSend    loc.    s 0x005CEB
+   sendQueue             loc.    s 0x005C4C
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    40
 
  === Module No. 20 (amb8420) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- AMB8420_config          Func.   s 0xFE27B7
- AMB8420_Init            Func.   g 0xFE2AAD
- sendCommandBuffer       Func.   s 0xFE2BBB
- AMB8420_CS_calc         Func.   s 0xFE2BD2
- getNextMessageToSend    Func.   s 0xFE2C02
+ AMB8420_config          Func.   s 0xFE2770
+ AMB8420_Init            Func.   g 0xFE2A66
+ sendCommandBuffer       Func.   s 0xFE2B74
+ AMB8420_CS_calc         Func.   s 0xFE2B8B
+ getNextMessageToSend    Func.   s 0xFE2BBB
    prioCounter           loc.    s 0x002292
- AMB8420_startSending>   Func.   s 0xFE2CE5
-   message               loc.    s 0x005D3E
+ AMB8420_startSending>   Func.   s 0xFE2C9E
+   message               loc.    s 0x005D64
    prioCounter           loc.    s 0x002292
- AMB8420_Send            Func.   g 0xFE2EA0
- UART8_TxISR             Func.   s 0xFE2EF6
- writeCommand            Func.   s 0xFE2F19
- readCommand             Func.   s 0xFE2F92
- AMB8420_GetChar_Asyn>   Func.   s 0xFE300C
- replyReceived           Func.   s 0xFE3031
- AMB8420_ReceiveMessa>   Func.   s 0xFE308B
-   returnedState         loc.    s 0x005D2E
- UART8_RxISR             Func.   s 0xFE3240
-   ambTask               loc.    s 0x005D2C
-   ambInitTask           loc.    s 0x005D2A
-   messagesLeftToSend    loc.    s 0x005D83
-   sendQueuePrio1        loc.    s 0x005D28
-   sendQueuePrio2        loc.    s 0x005D26
-   sendQueuePrio3        loc.    s 0x005D24
-   receiveSM             loc.    s 0x005D20
-   sendSM                loc.    s 0x005CC6
+ AMB8420_Send            Func.   g 0xFE2E59
+ UART8_TxISR             Func.   s 0xFE2EAF
+ writeCommand            Func.   s 0xFE2ED2
+ readCommand             Func.   s 0xFE2F4B
+ AMB8420_GetChar_Asyn>   Func.   s 0xFE2FC5
+ replyReceived           Func.   s 0xFE2FEA
+ AMB8420_ReceiveMessa>   Func.   s 0xFE3044
+   returnedState         loc.    s 0x005D54
+ UART8_RxISR             Func.   s 0xFE31F9
+   ambTask               loc.    s 0x005D52
+   ambInitTask           loc.    s 0x005D50
+   messagesLeftToSend    loc.    s 0x005DA9
+   sendQueuePrio1        loc.    s 0x005D4E
+   sendQueuePrio2        loc.    s 0x005D4C
+   sendQueuePrio3        loc.    s 0x005D4A
+   receiveSM             loc.    s 0x005D46
+   sendSM                loc.    s 0x005CEC
 
  === Module No. 21 (adc) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- ADC_Init                Func.   g 0xFE3272
- ADC_GetValue            Func.   g 0xFE331C
- irq_adc                 Func.   s 0xFE3342
-   adc_values            loc.    s 0x005D84
+ ADC_Init                Func.   g 0xFE322B
+ ADC_GetValue            Func.   g 0xFE32D5
+ irq_adc                 Func.   s 0xFE32FB
+   adc_values            loc.    s 0x005DAA
 
  === Module No. 22 (api) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- drive_barrierFrontDe>   Func.   g 0xFE3379
- drive_barrierRearDet>   Func.   g 0xFE338C
- api_init                Func.   g 0xFE339F
- driven_before           Func.   g 0xFE340B
- us_getFrontDistance     Func.   g 0xFE341D
- us_getLeftDistance      Func.   g 0xFE3421
- us_getRightDistance     Func.   g 0xFE3425
- us_getSensorMapData     Func.   g 0xFE3429
- api_StartScheduler      Func.   g 0xFE353C
- os_registerProcess      Func.   g 0xFE3543
- os_registerProcessSt>   Func.   g 0xFE3566
- os_registerProcessSt>   Func.   g 0xFE3590
- os_deleteTask           Func.   g 0xFE35BD
- os_suspendTask          Func.   g 0xFE35C9
- os_resumeTask           Func.   g 0xFE35D5
- os_isTaskSuspended      Func.   g 0xFE35E1
- os_wait                 Func.   g 0xFE35ED
- os_frequency            Func.   g 0xFE35F9
- os_getTime              Func.   g 0xFE3609
+ drive_barrierFrontDe>   Func.   g 0xFE3332
+ drive_barrierRearDet>   Func.   g 0xFE3345
+ api_init                Func.   g 0xFE3358
+ driven_before           Func.   g 0xFE33C4
+ us_getFrontDistance     Func.   g 0xFE33D6
+ us_getLeftDistance      Func.   g 0xFE33DA
+ us_getRightDistance     Func.   g 0xFE33DE
+ us_getSensorMapData     Func.   g 0xFE33E2
+ api_StartScheduler      Func.   g 0xFE34F5
+ os_registerProcess      Func.   g 0xFE34FC
+ os_registerProcessSt>   Func.   g 0xFE351F
+ os_registerProcessSt>   Func.   g 0xFE3549
+ os_deleteTask           Func.   g 0xFE3576
+ os_suspendTask          Func.   g 0xFE3582
+ os_resumeTask           Func.   g 0xFE358E
+ os_isTaskSuspended      Func.   g 0xFE359A
+ os_wait                 Func.   g 0xFE35A6
+ os_frequency            Func.   g 0xFE35B2
+ os_getTime              Func.   g 0xFE35C2
  Sema                    Var.    g 0x002296
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    41
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    41
 
  === Module No. 22 (api) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
  getOnlyDrivenMap        Var.    g 0x002294
- wakeLeft                Var.    g 0x005DCA
- wakeRight               Var.    g 0x005DC8
- wakeFront               Var.    g 0x005DC6
- wakeRear                Var.    g 0x005DC4
+ wakeLeft                Var.    g 0x005DF0
+ wakeRight               Var.    g 0x005DEE
+ wakeFront               Var.    g 0x005DEC
+ wakeRear                Var.    g 0x005DEA
 
  === Module No. 23 (battery) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Battery_Init            Func.   g 0xFE360D
- Battery_GetVoltage      Func.   g 0xFE363E
- battery_task            Func.   s 0xFE3664
-   measures              loc.    s 0x005DCC
-   nextPos               loc.    s 0x005E0C
+ Battery_Init            Func.   g 0xFE35C6
+ Battery_GetVoltage      Func.   g 0xFE35F7
+ battery_task            Func.   s 0xFE361D
+   measures              loc.    s 0x005DF2
+   nextPos               loc.    s 0x005E32
 
  === Module No. 24 (carid) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- CarId_Init              Func.   g 0xFE36C0
+ CarId_Init              Func.   g 0xFE3679
  carid                   Var.    g 0x002298
 
  === Module No. 25 (drive) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Drive_SetServo          Func.   g 0xFE36DB
- Drive_SetMotor          Func.   g 0xFE36FC
- Drive_SetMotorForDis>   Func.   g 0xFE3741
- Drive_Init              Func.   g 0xFE3797
- Drive_GetTotalDriven>   Func.   g 0xFE3861
- Drive_DistanceInterr>   Func.   s 0xFE3892
- Drive_Systick           Func.   s 0xFE38D6
+ Drive_SetServo          Func.   g 0xFE3694
+ Drive_SetMotor          Func.   g 0xFE36B5
+ Drive_SetMotorForDis>   Func.   g 0xFE36FA
+ Drive_Init              Func.   g 0xFE3750
+ Drive_GetTotalDriven>   Func.   g 0xFE381A
+ Drive_DistanceInterr>   Func.   s 0xFE384B
+ Drive_Systick           Func.   s 0xFE388F
    ppg_motor_last_pos>   loc.    s 0x00229A
    lastPower             loc.    s 0x0022B9
    lastServo             loc.    s 0x0022B8
@@ -2386,51 +2392,51 @@ Module(s)
 
  === Module No. 26 (fram) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- FRAM_Init               Func.   g 0xFE39CE
- FRAM_Available          Func.   g 0xFE3A58
- FRAM_Write              Func.   g 0xFE3A7D
- FRAM_Read               Func.   g 0xFE3AE1
-   enabledModules        loc.    s 0x005E0E
+ FRAM_Init               Func.   g 0xFE3987
+ FRAM_Available          Func.   g 0xFE3A11
+ FRAM_Write              Func.   g 0xFE3A36
+ FRAM_Read               Func.   g 0xFE3A9A
+   enabledModules        loc.    s 0x005E34
 
  === Module No. 27 (i2c) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- I2C_BUS0_Init           Func.   g 0xFE3B53
- I2C_BUS0_Acknowlegde    Func.   g 0xFE3B88
- I2C_BUS0_CheckAddres>   Func.   g 0xFE3B8D
- I2C_BUS0_Start          Func.   g 0xFE3BBE
- I2C_BUS0_Continue       Func.   g 0xFE3BF4
- I2C_BUS0_Stop           Func.   g 0xFE3C10
- I2C_BUS0_Write          Func.   g 0xFE3C1F
- I2C_BUS0_Read           Func.   g 0xFE3C33
- I2C_BUS0_LastRead       Func.   g 0xFE3C40
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    42
+ I2C_BUS0_Init           Func.   g 0xFE3B0C
+ I2C_BUS0_Acknowlegde    Func.   g 0xFE3B41
+ I2C_BUS0_CheckAddres>   Func.   g 0xFE3B46
+ I2C_BUS0_Start          Func.   g 0xFE3B77
+ I2C_BUS0_Continue       Func.   g 0xFE3BAD
+ I2C_BUS0_Stop           Func.   g 0xFE3BC9
+ I2C_BUS0_Write          Func.   g 0xFE3BD8
+ I2C_BUS0_Read           Func.   g 0xFE3BEC
+ I2C_BUS0_LastRead       Func.   g 0xFE3BF9
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    42
 
  === Module No. 27 (i2c) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- I2C_BUS1_Init           Func.   g 0xFE3C4D
- I2C_BUS1_Acknowlegde    Func.   g 0xFE3C88
- I2C_BUS1_CheckAddres>   Func.   g 0xFE3C8D
- I2C_BUS1_Start          Func.   g 0xFE3CBE
- I2C_BUS1_Continue       Func.   g 0xFE3CF4
- I2C_BUS1_Stop           Func.   g 0xFE3D10
- I2C_BUS1_Write          Func.   g 0xFE3D1F
- I2C_BUS1_Read           Func.   g 0xFE3D33
- I2C_BUS1_LastRead       Func.   g 0xFE3D40
+ I2C_BUS1_Init           Func.   g 0xFE3C06
+ I2C_BUS1_Acknowlegde    Func.   g 0xFE3C41
+ I2C_BUS1_CheckAddres>   Func.   g 0xFE3C46
+ I2C_BUS1_Start          Func.   g 0xFE3C77
+ I2C_BUS1_Continue       Func.   g 0xFE3CAD
+ I2C_BUS1_Stop           Func.   g 0xFE3CC9
+ I2C_BUS1_Write          Func.   g 0xFE3CD8
+ I2C_BUS1_Read           Func.   g 0xFE3CEC
+ I2C_BUS1_LastRead       Func.   g 0xFE3CF9
 
  === Module No. 28 (interrupts) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- interrupts_init         Func.   g 0xFE3D4D
- interrupts_setHandle>   Func.   g 0xFE3DAA
- interrupts_disableIn>   Func.   g 0xFE3E48
+ interrupts_init         Func.   g 0xFE3D06
+ interrupts_setHandle>   Func.   g 0xFE3D63
+ interrupts_disableIn>   Func.   g 0xFE3E01
    ivt                   loc.    s 0x007200
    initialized           loc.    s 0x0022BC
 
  === Module No. 29 (linesensor) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Linesensor_Init         Func.   g 0xFE3EBE
- readSensorData          Func.   g 0xFE3EE2
- Linesensor_calcLineP>   Func.   s 0xFE3F05
- Linesensor_Calibrate    Func.   g 0xFE4129
+ Linesensor_Init         Func.   g 0xFE3E77
+ readSensorData          Func.   g 0xFE3E9B
+ Linesensor_calcLineP>   Func.   s 0xFE3EBE
+ Linesensor_Calibrate    Func.   g 0xFE40E2
  linefound               Var.    g 0x00231C
  averagePos              Var.    g 0x002316
  averagePosNew           Var.    g 0x002312
@@ -2442,83 +2448,160 @@ Module(s)
  pos                     Var.    g 0x0022BE
  noline                  Var.    g 0x00231B
  bcLineFound             Var.    g 0x00231A
- xHandleCalcLinePos      Var.    g 0x005E10
+ xHandleCalcLinePos      Var.    g 0x005E36
 
  === Module No. 30 (printf_stdarg) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- prints                  Func.   s 0xFE41DC
- print                   Func.   g 0xFE4299
- printf                  Func.   g 0xFE45CF
- sprintf                 Func.   g 0xFE45E4
- snprintf                Func.   g 0xFE45FB
+ prints                  Func.   s 0xFE4195
+ print                   Func.   g 0xFE4252
+ printf                  Func.   g 0xFE4588
+ sprintf                 Func.   g 0xFE459D
+ snprintf                Func.   g 0xFE45B4
 
- === Module No. 31 (runtime_stats) ===
+ === Module No. 31 (regler) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- RuntimeStats_Print      Func.   g 0xFE4612
- runTimerValue           Var.    g 0x005E12
+ drive_barrierFrontDe>   Func.   g 0xFE45CB
+ drive_barrierRearDet>   Func.   g 0xFE45DE
+ api_init                Func.   g 0xFE45F1
+ driven_before           Func.   g 0xFE465D
+ us_getFrontDistance     Func.   g 0xFE466F
+ us_getLeftDistance      Func.   g 0xFE4673
+ us_getRightDistance     Func.   g 0xFE4677
+ us_getSensorMapData     Func.   g 0xFE467B
+ api_StartScheduler      Func.   g 0xFE478E
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    43
 
- === Module No. 32 (seg) ===
+ === Module No. 31 (regler) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Seg_Init                Func.   g 0xFE4613
- Seg_Hex                 Func.   g 0xFE461C
- Seg_Dec                 Func.   g 0xFE4637
-   DEC7SEG               loc.    s 0x00231E
-Local Symbol List                                                                                   2014-11-04 16:49:24  Page:    43
+ os_registerProcess      Func.   g 0xFE4795
+ os_registerProcessSt>   Func.   g 0xFE47B8
+ os_registerProcessSt>   Func.   g 0xFE47E2
+ os_deleteTask           Func.   g 0xFE480F
+ os_suspendTask          Func.   g 0xFE481B
+ os_resumeTask           Func.   g 0xFE4827
+ os_isTaskSuspended      Func.   g 0xFE4833
+ os_wait                 Func.   g 0xFE483F
+ os_frequency            Func.   g 0xFE484B
+ os_getTime              Func.   g 0xFE485B
+ Regler_set_Kp           Func.   g 0xFE485F
+ Regler_set_Ki           Func.   g 0xFE4876
+ Regler_set_Kd           Func.   g 0xFE488D
+ Regler_output           Func.   g 0xFE48A4
+ Regler_get_sensor       Func.   g 0xFE48B0
+ Regler_pid              Func.   g 0xFE48B4
+   esum                  loc.    s 0x002322
+   e_alt                 loc.    s 0x002320
+   e_aelter              loc.    s 0x00231E
+   e                     loc.    s 0x005E38
+ Kp                      Var.    g 0x005E52
+ Ki                      Var.    g 0x005E4A
+ Kd                      Var.    g 0x005E42
+ Sema                    Var.    g 0x002326
+ getOnlyDrivenMap        Var.    g 0x002324
+ wakeLeft                Var.    g 0x005E40
+ wakeRight               Var.    g 0x005E3E
+ wakeFront               Var.    g 0x005E3C
+ wakeRear                Var.    g 0x005E3A
 
- === Module No. 33 (serial) ===
+ === Module No. 32 (runtime_stats) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Serial_GetcharAsync     Func.   g 0xFE4652
- Serial_Getchar          Func.   g 0xFE4677
- Serial_Init             Func.   g 0xFE46A8
- Serial_PutChar          Func.   g 0xFE471A
- UART0_RxISR             Func.   s 0xFE4756
- UART0_TxISR             Func.   s 0xFE4785
-   xRxedChars            loc.    s 0x005E1A
-   xCharsForTx           loc.    s 0x005E18
-   sTHREEmpty            loc.    s 0x005E16
+ RuntimeStats_Print      Func.   g 0xFE4952
+ runTimerValue           Var.    g 0x005E5A
 
- === Module No. 34 (trigonometry) ===
+ === Module No. 33 (seg) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- sin_                    Func.   g 0xFE47B3
- cos_                    Func.   g 0xFE47C4
- uint16AngleToDegree     Func.   g 0xFE47F7
- AnglePlus               Func.   g 0xFE4820
- AngleMinus              Func.   g 0xFE4852
- uint16DegreeRelative>   Func.   g 0xFE4875
- angleToDegree           Func.   g 0xFE48BE
- DegreeToUint16          Func.   g 0xFE48DB
- cos_Taylor              Func.   g 0xFE4928
- sin_Taylor              Func.   g 0xFE4ACE
-   sinus                 loc.    s 0xFF81D2
+ Seg_Init                Func.   g 0xFE4953
+ Seg_Hex                 Func.   g 0xFE495C
+ Seg_Dec                 Func.   g 0xFE4977
+   DEC7SEG               loc.    s 0x002328
 
- === Module No. 35 (us) ===
+ === Module No. 34 (serial) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- Us_Init                 Func.   g 0xFE4C76
- Us_Cmd_Wait             Func.   g 0xFE4CBD
- Us_Calibrate            Func.   g 0xFE4CCD
- Us_IO_DDR               Func.   g 0xFE4CE8
- Us_IO_Value             Func.   g 0xFE4D2F
- Us_Systick              Func.   s 0xFE4D76
- irq_us2_Rx              Func.   g 0xFE4D8C
- Us_Data                 Var.    g 0x005E1C
- rxBuffer2               Var.    s 0x005E26
- timeout2                Var.    s 0x002330
- cmdReplyWait2           Var.    s 0x00232E
+ Serial_GetcharAsync     Func.   g 0xFE4992
+ Serial_Getchar          Func.   g 0xFE49B7
+ Serial_Init             Func.   g 0xFE49E8
+ Serial_PutChar          Func.   g 0xFE4A5A
+ UART0_RxISR             Func.   s 0xFE4A96
+ UART0_TxISR             Func.   s 0xFE4AC5
+   xRxedChars            loc.    s 0x005E62
+   xCharsForTx           loc.    s 0x005E60
+   sTHREEmpty            loc.    s 0x005E5E
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    44
 
- === Module No. 36 (us_i2c) ===
+ === Module No. 35 (speed) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- I2CUs_Init              Func.   g 0xFE4E14
- I2CUs_Systick           Func.   g 0xFE4EA9
-   moduleEnabled1        loc.    s 0x002334
-   moduleEnabled2        loc.    s 0x002333
-   moduleEnabled3        loc.    s 0x002332
+ drive_barrierFrontDe>   Func.   g 0xFE4AF3
+ drive_barrierRearDet>   Func.   g 0xFE4B06
+ api_init                Func.   g 0xFE4B19
+ driven_before           Func.   g 0xFE4B85
+ us_getFrontDistance     Func.   g 0xFE4B97
+ us_getLeftDistance      Func.   g 0xFE4B9B
+ us_getRightDistance     Func.   g 0xFE4B9F
+ us_getSensorMapData     Func.   g 0xFE4BA3
+ api_StartScheduler      Func.   g 0xFE4CB6
+ os_registerProcess      Func.   g 0xFE4CBD
+ os_registerProcessSt>   Func.   g 0xFE4CE0
+ os_registerProcessSt>   Func.   g 0xFE4D0A
+ os_deleteTask           Func.   g 0xFE4D37
+ os_suspendTask          Func.   g 0xFE4D43
+ os_resumeTask           Func.   g 0xFE4D4F
+ os_isTaskSuspended      Func.   g 0xFE4D5B
+ os_wait                 Func.   g 0xFE4D67
+ os_frequency            Func.   g 0xFE4D73
+ os_getTime              Func.   g 0xFE4D83
+ Kp                      Var.    g 0x005E7C
+ Ki                      Var.    g 0x005E74
+ Kd                      Var.    g 0x005E6C
+ Sema                    Var.    g 0x00233A
+ getOnlyDrivenMap        Var.    g 0x002338
+ wakeLeft                Var.    g 0x005E6A
+ wakeRight               Var.    g 0x005E68
+ wakeFront               Var.    g 0x005E66
+ wakeRear                Var.    g 0x005E64
 
- === Module No. 37 (util) ===
+ === Module No. 36 (trigonometry) ===
  --- symbol ---       -- kind --   --- val ---                                                                                     C
- abs8                    Func.   g 0xFE4FC7
- abs16                   Func.   g 0xFE4FD5
- abs32                   Func.   g 0xFE4FE2
- intToStr                Func.   g 0xFE4FF9
- wait                    Func.   g 0xFE5072
- wait1us                 Func.   g 0xFE508A
- wait1ms                 Func.   g 0xFE509C
+ sin_                    Func.   g 0xFE4D87
+ cos_                    Func.   g 0xFE4D98
+ uint16AngleToDegree     Func.   g 0xFE4DCB
+ AnglePlus               Func.   g 0xFE4DF4
+ AngleMinus              Func.   g 0xFE4E26
+ uint16DegreeRelative>   Func.   g 0xFE4E49
+ angleToDegree           Func.   g 0xFE4E92
+ DegreeToUint16          Func.   g 0xFE4EAF
+ cos_Taylor              Func.   g 0xFE4EFC
+ sin_Taylor              Func.   g 0xFE50A2
+   sinus                 loc.    s 0xFF81AC
+
+ === Module No. 37 (us) ===
+ --- symbol ---       -- kind --   --- val ---                                                                                     C
+ Us_Init                 Func.   g 0xFE524A
+ Us_Cmd_Wait             Func.   g 0xFE5291
+ Us_Calibrate            Func.   g 0xFE52A1
+ Us_IO_DDR               Func.   g 0xFE52BC
+ Us_IO_Value             Func.   g 0xFE5303
+ Us_Systick              Func.   s 0xFE534A
+ irq_us2_Rx              Func.   g 0xFE5360
+ Us_Data                 Var.    g 0x005E84
+ rxBuffer2               Var.    s 0x005E8E
+ timeout2                Var.    s 0x00233E
+ cmdReplyWait2           Var.    s 0x00233C
+Local Symbol List                                                                                   2014-11-11 19:55:42  Page:    45
+
+ === Module No. 38 (us_i2c) ===
+ --- symbol ---       -- kind --   --- val ---                                                                                     C
+ I2CUs_Init              Func.   g 0xFE53E8
+ I2CUs_Systick           Func.   g 0xFE547D
+   moduleEnabled1        loc.    s 0x002342
+   moduleEnabled2        loc.    s 0x002341
+   moduleEnabled3        loc.    s 0x002340
+
+ === Module No. 39 (util) ===
+ --- symbol ---       -- kind --   --- val ---                                                                                     C
+ abs8                    Func.   g 0xFE55EF
+ abs16                   Func.   g 0xFE55FD
+ abs32                   Func.   g 0xFE560A
+ intToStr                Func.   g 0xFE5621
+ wait                    Func.   g 0xFE569A
+ wait1us                 Func.   g 0xFE56B2
+ wait1ms                 Func.   g 0xFE56C4

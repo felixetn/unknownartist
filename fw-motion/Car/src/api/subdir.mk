@@ -14,9 +14,11 @@ C_SRCS += \
 ../src/api/interrupts.c \
 ../src/api/linesensor.c \
 ../src/api/printf_stdarg.c \
+../src/api/regler.c \
 ../src/api/runtime_stats.c \
 ../src/api/seg.c \
 ../src/api/serial.c \
+../src/api/speed.c \
 ../src/api/trigonometry.c \
 ../src/api/us.c \
 ../src/api/us_i2c.c \
@@ -33,9 +35,11 @@ OBJS += \
 ./src/api/interrupts.o \
 ./src/api/linesensor.o \
 ./src/api/printf_stdarg.o \
+./src/api/regler.o \
 ./src/api/runtime_stats.o \
 ./src/api/seg.o \
 ./src/api/serial.o \
+./src/api/speed.o \
 ./src/api/trigonometry.o \
 ./src/api/us.o \
 ./src/api/us_i2c.o \

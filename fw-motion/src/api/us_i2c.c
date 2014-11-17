@@ -13,7 +13,7 @@ static uint8_t moduleEnabled3 = 0;
 static void I2CUs_startMeasurement(void) {
 	I2C_BUS0_Start(0, 1); // address broadcast
 	I2C_BUS0_Write(0x00); // command register
-	I2C_BUS0_Write(0x51); // request result in cm
+	I2C_BUS0_Write(0x52); // request result in µs
 	I2C_BUS0_Stop();
 }
 
@@ -43,6 +43,9 @@ static int16_t I2CUs_getMeasurement(uint8_t module, uint8_t echo) {
 	result = I2C_BUS0_Read();
 	result = (result << 8);
 	result |= I2C_BUS0_LastRead();
+
+	//Measurement µs -> mm @unknownartist
+	result = result / 6.8 ;
 
 	I2C_BUS0_Stop();
 	return result;
@@ -140,7 +143,7 @@ void I2CUs_Systick(void) {
 		if (result > 0)
 			Us_Data.Left_Distance = result;
 		else
-			Us_Data.Left_Distance = 300;
+			Us_Data.Left_Distance = 3000;
 	}
 
 	os_wait(5); // To allow other tasks some time, reading measurements is a quite slow process
@@ -152,7 +155,7 @@ void I2CUs_Systick(void) {
 		if (result > 0)
 			Us_Data.Front_Distance = result;
 		else
-			Us_Data.Front_Distance = 300;
+			Us_Data.Front_Distance = 3000;
 	}
 
 	os_wait(5); // To allow other tasks some time, reading measurements is a quite slow process
@@ -164,7 +167,7 @@ void I2CUs_Systick(void) {
 		if (result > 0)
 			Us_Data.Right_Distance = result;
 		else
-			Us_Data.Right_Distance = 300;
+			Us_Data.Right_Distance = 3000;
 	}
 
 	os_wait(5); // To allow other tasks some time, reading measurements is a quite slow process

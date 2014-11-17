@@ -5,18 +5,18 @@
 #               ...
 #
         16	S	_testtask
-	->	E	_Battery_GetVoltage
-	->	E	_Drive_GetTotalDrivenDistance
 	->	E	_Drive_SetMotor
 	->	E	_Drive_SetServo
+	->	E	_Regler_get_sensor
+	->	E	_Regler_output
+	->	E	_Regler_pid
+	->	E	_Regler_set_Kd
+	->	E	_Regler_set_Ki
+	->	E	_Regler_set_Kp
 	->	E	_os_frequency
 	->	E	_os_getTime
-	->	E	_us_getFrontDistance
-	->	E	_us_getLeftDistance
-	->	E	_wirelessFormattedDebugMessage
 #
         12	E	_main
-	->	E	_Drive_SetMotor
 	->	E	_Init_AndroidBTControl
 	->	E	_api_StartScheduler
 	->	E	_api_init
