@@ -4,6 +4,7 @@
  * @file ausweichen.c
  * @author Nixi	
  * @brief TODO - insert a brief description of that module
+ * @Version 1.0
  **/
 
 #include "ausweichen.h"

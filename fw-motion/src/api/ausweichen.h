@@ -4,6 +4,7 @@
  * @file ausweichen.h
  * @author Nixi	
  * @brief TODO - insert a brief description of that interface
+ * @Version 1.0
  **/
 
 #ifndef AUSWEICHEN_H_
