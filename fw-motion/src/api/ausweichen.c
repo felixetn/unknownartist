@@ -17,26 +17,25 @@
 
 uint8_t object = 0;
 uint8_t objectpassed = 0;
-int16_t soll_distance = get_right_distance();
 
-void ausweichmanöver(void){
-if( (us_getFrontDistance < 1000 ) && (us_getRightDistance()< 1000) && !(objectpassed))
+
+int16_t ausweichmanoever(void){
+
+if( (us_getFrontDistance() < 1000 ) && (us_getRightDistance()< 1000) && !(objectpassed))
 {
 
 	object = 1;
-	set_right_distance(solldistance+STANDARTDISTANCE);
+	return STANDARTDISTANCE ;
 
-	if(object && us_getRigtDistance < 100){
-		set_right_distance(solldistance);
+	if(object && (us_getRightDistance() < 100)){
 		object = 0;
 		objectpassed = 1;
-
 	}
-
-
-
 }
 if( get_right_distance() - us_getRightDistance() < 10 ){
 	objectpassed = 0;
+	return 0;
 }
+return 0;
 }
+
