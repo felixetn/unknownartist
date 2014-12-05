@@ -28,6 +28,7 @@
  */
 
 double Kp, Ki, Kd;
+int16_t sollwert;
 
 /*
  * Global and local functions
@@ -38,11 +39,19 @@ double Kp, Ki, Kd;
  * @param percent Servo position (-100 left .. +100 right)
  */
 extern void Regler_set_Kp(double);
+
 /**
  * Set Ki (K_integral)
  * @param percent Servo position (-100 left .. +100 right)
  */
 extern void Regler_set_Ki(double);
+
+/**
+ * Set Sollwert
+ * @param sollwert
+ */
+extern void Regler_set_sollwert(int16_t);
+
 /**
  * Set Kd (K_differential)
  * @param percent Servo position (-100 left .. +100 right)
@@ -61,6 +70,6 @@ extern int16_t Regler_get_fdif();
  * Get the output of the PID-Controller
  * @param percent Servo position (-100 left .. +100 right)
  */
-extern int16_t Regler_pid(int16_t, int16_t);
+extern int16_t Regler_pid(int16_t);
 
 #endif /* REGLER_H_ */
