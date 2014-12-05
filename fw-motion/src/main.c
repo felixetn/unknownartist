@@ -69,86 +69,153 @@ void SDCardThread(void) {
 }
 #endif
 
-static void testtask(void) {
-	portTickType lastWakeTime = os_getTime();
+//Globale Variablen
 
-	/*int16_t soll = 70;
-	int16_t fehler = 0;
-	int16_t fsum = 0;
-	int16_t fdif = 0;
-	int16_t ist = 0;
-	int16_t fprev = us_getRightDistance();
-	int16_t i;
-	int16_t res = 0;
-	int16_t count = 0;*/
+//Aktueller Zustand des Autos (z.B. Geradeaus, Kurve, Parken)
+int8_t zustand = 0; // 0 = IDLE
 
-	 Drive_SetMotor(3);
-	 Drive_SetServo(0);
+//Jeder Task repräsentiert einen Zustand, oder eine Extension eines Zustandes
+xTaskHandle pruefeZustandXTask;
+xTaskHandle fahrenXTask;
+xTaskHandle gablungXTask;
+xTaskHandle ausweichenXTask;
+xTaskHandle parklueckeSuchenXTask;
+xTaskHandle parkenXTask;
+
+/*
+ * Initialisiere PID-Regler
+ * Definiere bei welchem Zustand begonnen wird!
+ */
+void init(){
 
 	Regler_set_Kp(0.4);
 	Regler_set_Ki(0.0);
 	Regler_set_Kd(1.0);
+	zustand = 0;
+
+}
+
+/*
+ *Checkt in welchem Zustand sich das Auto befindet und
+ *Aktiviert bzw. deaktiviert Tasks.
+ */
+static void pruefeZustand(void) {
+	portTickType lastWakeTime = os_getTime();
+	init();
+	//os_suspendTask(testi);
+
 
 	for (;;) {
 		os_frequency(&lastWakeTime, 100);
 
+
+
+		//HIER DIE TRANSITIONEN
+		//z.B. if (us_getFrontDistance() < 50){
+		//			zustand = 5;
+		//			}
+
+
+		//Zustände
+		//0 IDLE
+		//1 Fahren
+		//2 Gablung
+		//3 Ausweichen
+		//4 Parklücke_Suchen
+		//5 Parken
+
+
+		switch(zustand){
+		//IDLE
+			case 0: zustand = 1;break;
+		//Fahren
+			case 1: os_resumeTask(fahrenXTask);
+
+					os_suspendTask(gablungXTask);
+					os_suspendTask(ausweichenXTask);
+					os_suspendTask(parklueckeSuchenXTask);
+					os_suspendTask(parkenXTask);
+					break;
+		//Gablung
+			case 2: os_resumeTask(gablungXTask);
+
+					os_suspendTask(fahrenXTask);
+					os_suspendTask(ausweichenXTask);
+					os_suspendTask(parklueckeSuchenXTask);
+					os_suspendTask(parkenXTask);
+					break;
+		//Ausweichen
+			case 3:	os_resumeTask(ausweichenXTask);
+
+					os_suspendTask(fahrenXTask);
+					os_suspendTask(gablungXTask);
+					os_suspendTask(parklueckeSuchenXTask);
+					os_suspendTask(parkenXTask);
+					break;
+		//Parklücke_Suchen
+			case 4: os_resumeTask(parklueckeSuchenXTask);
+					os_resumeTask(fahrenXTask);
+
+					os_suspendTask(gablungXTask);
+					os_suspendTask(ausweichenXTask);
+					os_suspendTask(parkenXTask);
+					break;
+		//Parken
+			case 5:	os_resumeTask(parkenXTask);
+
+					os_suspendTask(fahrenXTask);
+					os_suspendTask(gablungXTask);
+					os_suspendTask(parklueckeSuchenXTask);
+					os_suspendTask(ausweichenXTask);
+					break;
+
+
+		}
+
+	}
+}
+
+/*
+ * Die Verschiedenen Tasks
+ */
+
+static void fahren(void) {
+	portTickType lastWakeTime = os_getTime();
+
+
+	for (;;) {
+		os_frequency(&lastWakeTime, 100);
 		Regler_output(Regler_pid(500, Regler_get_sensor())); //Das Programm gibt ständig die Stellgröße aus, welche sich aus
 		                                     //dem PID-Regler mit Sollwert von 100 (Beispielwert), und dem Sensorwert
 
-		/*if(us_getFrontDistance() > 0 && us_getFrontDistance() < 50){
-			Drive_SetMotor(-1);
-		}
-		else if(us_getFrontDistance() >= 50){
-			Drive_SetMotor(2);
 
-		count++;
-
-		ist= us_getRightDistance();
-		fehler = ist-soll;
-		if(count > 5)
-			{
-			fdif = ist - fprev;
-			fsum = ( fsum + fehler);
-			count = 0;
-
-			}/*else{
-				fdif = 0;
-				fprev = ist;
-			}*//*
-
-		if(count == 0){
-			fdif = 0;
-			fprev = ist;
-		}
-
-		res = fdif*30 + 5*fehler + fsum/250;
-
-		if(res < -100){
-			res = -100;
-		}
-		if (res > 100){
-			res = 100;
-		}
-		Drive_SetServo(res);
-
-		}else if(Drive_Servo < 0){
-			Drive_SetMotor(1);
-			Drive_SetServo(-100);
-		}else{
-			Drive_SetMotor(1);
-			Drive_SetServo(100);
-		}
-	}*/
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Dist before: %d", (uint16_t) Drive_GetTotalDrivenDistance());
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "batterie power: %d", Battery_GetVoltage());
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Distanz Vorne: %d", us_getFrontDistance());
-		//		RuntimeStats_Print();
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Fehler: %d", Regler_get_fehler());
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Summe: %d", fsum);
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Differenz: %d", Regler_get_fdif());
-		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Lenkung: %d", res);
 	}
 }
+
+static void gablung(void) {
+	portTickType lastWakeTime = os_getTime();
+
+
+}
+
+static void ausweichen(void) {
+	portTickType lastWakeTime = os_getTime();
+
+
+}
+
+static void parklueckeSuchen(void) {
+	portTickType lastWakeTime = os_getTime();
+
+
+}
+
+static void parken(void) {
+	portTickType lastWakeTime = os_getTime();
+
+
+}
+
 
 
 void main(void) {
@@ -182,8 +249,17 @@ void main(void) {
 	DDR03 = 0xff;
 	PDR03 = 0x00;
 
-	os_registerProcessStack(testtask, "RuntimeStats", 700);
-
+	//Tasks registrieren
+	pruefeZustandXTask = os_registerProcessStack(pruefeZustand, "RuntimeStats", 700);
+	fahrenXTask = os_registerProcessStack(fahren, "RuntimeStats", 700);
+	gablungXTask = os_registerProcessStack(gablung, "RuntimeStats", 700);
+	ausweichenXTask = os_registerProcessStack(ausweichen, "RuntimeStats", 700);
+	parklueckeSuchenXTask = os_registerProcessStack(parklueckeSuchen, "RuntimeStats", 700);
+	parkenXTask = os_registerProcessStack(parken, "RuntimeStats", 700);
+	os_suspendTask(gablungXTask);
+	os_suspendTask(ausweichenXTask);
+	os_suspendTask(parklueckeSuchenXTask);
+	os_suspendTask(parkenXTask);
 	// don't remove!
 	api_StartScheduler();
 }
