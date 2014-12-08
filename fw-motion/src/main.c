@@ -88,9 +88,10 @@ xTaskHandle parkenXTask;
  */
 void init(){
 
-	Regler_set_Kp(0.4);
-	Regler_set_Ki(0.0);
-	Regler_set_Kd(1.0);
+	Regler_set_Kp(0.6);
+	Regler_set_Ki(0.0025);
+	Regler_set_Kd(2.0);			//Wert suchen zwischen 1.5 < x < 3.0
+	Regler_set_sollwert(150);
 	zustand = 0;
 
 }
