@@ -111,17 +111,14 @@ static void pruefeZustand(void) {
 
 
 		//HIER DIE TRANSITIONEN
-		//z.B. if (us_getFrontDistance() < 50){
-		//			zustand = 5;
-		//			}
-
+		zustand = transition_berechneNaechstenZustand(zustand);
 
 		//Zustände
 		//0 IDLE
 		//1 Fahren
 		//2 Gablung
 		//3 Ausweichen
-		//4 Parklücke_Suchen
+		//4 Parklücke_Suchen KEIN EIGENER ZUSTAND -> EINE ERWEITERUNG ZU FAHREN
 		//5 Parken
 
 
@@ -139,6 +136,8 @@ static void pruefeZustand(void) {
 		//Gablung
 			case 2: os_resumeTask(gablungXTask);
 
+
+
 					os_suspendTask(fahrenXTask);
 					os_suspendTask(ausweichenXTask);
 					os_suspendTask(parklueckeSuchenXTask);
@@ -152,7 +151,7 @@ static void pruefeZustand(void) {
 					os_suspendTask(parklueckeSuchenXTask);
 					os_suspendTask(parkenXTask);
 					break;
-		//Parklücke_Suchen
+		//4 Parklücke_Suchen KEIN EIGENER ZUSTAND -> EINE ERWEITERUNG ZU FAHREN
 			case 4: os_resumeTask(parklueckeSuchenXTask);
 					os_resumeTask(fahrenXTask);
 
@@ -194,7 +193,7 @@ static void fahren(void) {
 
 static void gablung(void) {
 	portTickType lastWakeTime = os_getTime();
-
+	gablung_entscheideRichtung();
 
 }
 
