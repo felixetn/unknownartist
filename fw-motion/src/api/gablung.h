@@ -14,6 +14,9 @@
  */
 #include "api.c"
 #include "api.h"
+#include "navigation.h"
+#include "transition.h"
+#include "us_i2c.h"
 /*
  * Global pre-processor symbols/macros ('#define')
  */
@@ -29,6 +32,10 @@
 /*
  * Global and local functions
  */
+
+void rechtsKurve();
+void linksKurve();
+void gablung_entscheideRichtung();
 
 /**
  * @brief Put a message in the transmit buffer.

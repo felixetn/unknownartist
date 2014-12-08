@@ -26,31 +26,57 @@
  * Global and local functions
  */
 
-void gablung_scan(){
-	/*int8_t navigation[3]; // kommt später in die Main
+void gablung_entscheideRichtung(){
+	switch(richtungen[0]){
+		case 0:
+				if(kannLinks == 1){
+					linksKurve();
+				}else if(kannVorne){
+					geradeUeberDieKreuzung();
+				}else{
+					rechtsKurve();
+				}
+				break;
 
-	switch(navigation[0]){
-	case 1:
-		if(us_getRightDistance() > 200){
+		case 1:
+				if(kannVorne == 1){
+					geradeUeberDieKreuzung()
+				}else if(kannLinks){
+					linksKurve();
+				}else{
+					rechtsKurve();
+				}
+				break;
 
-		}
-		break;
-
-	case 2:
-		if(us_getFrontDistance() > 250){
-		}
-		break;
-
-	case 3:
-
-	if(us_getRightDistance() > 200){
+		case 2:
+				if(kannRechts == 1){
+					RechtsKurve();
+				}else if(kannVorne){
+					geradeUeberDieKreuzung();
+				}else{
+					linksKurve();
+				}
+				break;
 	}
-	break;
+	geradeUeberDieKreuzung();
+}
 
-	case default:	break;
-
+void rechtsKurve(){
+	inEinerKurve == 1;
+	//TODO
+}
+void linksKurve(){
+	inEinerKurve == 1;
+	//TODO
+}
+void geradeUeberDieKreuzung(){
+	inEinerKurve == 1;
+	if (us_getLeftDistance()+us_getRightDistance() > 4000){
+		Drive_SetMotor(1);
+	}else{
+		inEinerKurve = 0;
 	}
-*/
+	//TODO
 }
 
 /**

@@ -31,6 +31,7 @@
 /*
  * Global and local functions
  */
+int8_t transition_berechneNaechstenZustand(int8_t zustand);
 
 int8_t fahrenTransition();
 
