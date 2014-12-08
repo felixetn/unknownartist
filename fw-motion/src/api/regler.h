@@ -47,16 +47,18 @@ extern void Regler_set_Kp(double);
 extern void Regler_set_Ki(double);
 
 /**
+ * Set Kd (K_differential)
+ * @param percent Servo position (-100 left .. +100 right)
+ */
+extern void Regler_set_Kd(double);
+
+/**
  * Set Sollwert
  * @param sollwert
  */
 extern void Regler_set_sollwert(int16_t);
 
-/**
- * Set Kd (K_differential)
- * @param percent Servo position (-100 left .. +100 right)
- */
-extern void Regler_set_Kd(double);
+extern int16_t Regler_get_sollwert();
 
 extern void Regler_output(int16_t);
 

@@ -47,6 +47,10 @@ void Regler_set_sollwert(int16_t w){
 	sollwert = w;
 }
 
+int16_t Regler_get_sollwert(){
+	return sollwert;
+}
+
 void Regler_output(int16_t y){
 	Drive_SetServo(y); 				//Beispielfunktion zum Senden eines Analogsignals für die Stellgröße y
 }
