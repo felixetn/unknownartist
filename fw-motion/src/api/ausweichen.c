@@ -10,32 +10,42 @@
 #include "ausweichen.h"
 #include "api.h"
 #include "regler.h"
-#include "right_distance.h"
+
+int8_t Drive_Speed = 0;
+int8_t Counter = 0;
+int8_t Distance = 0;
 
 
-#define STANDARTDISTANCE 300 //Millimeter
+void ausweichmanoever(void){
 
-uint8_t object = 0;
-uint8_t objectpassed = 0;
+	Counter = 0;
+	Distance = 0;
+	Drive_Speed = Drive_GetMotor();
 
 
-int16_t ausweichmanoever(void){
+	while( us_getFrontDistance() < (500 + Drive_Speed * 200)){
 
-if( (us_getFrontDistance() < 1000 ) && (us_getRightDistance()< 1000) && !(objectpassed))
-{
+		//PD Regler Ausschalten!!!
+		Drive_SetServo((1/Drive_Speed)* 2);
+		Counter++;
 
-	object = 1;
-	return STANDARTDISTANCE ;
-
-	if(object && (us_getRightDistance() < 100)){
-		object = 0;
-		objectpassed = 1;
 	}
-}
-if( get_right_distance() - us_getRightDistance() < 10 ){
-	objectpassed = 0;
-	return 0;
-}
-return 0;
+
+	Drive_SetServo(0);
+
+	if(us_getRightDistance()  < 100){
+		Distance = us_getRightDistance();
+		Drive_SetServo(-Counter*(1/Drive_Speed)* 2);
+
+	}
+
+	if(us_getRightDistance() > us_getRightDistance()+20){
+
+		setAusweichen();
+
+	}
+
+
+
 }
 

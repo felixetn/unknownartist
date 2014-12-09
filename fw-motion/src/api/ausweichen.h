@@ -10,6 +10,6 @@
 #ifndef AUSWEICHEN_H_
 #define AUSWEICHEN_H_
 
-extern int16_t ausweichmanoever();
+extern void ausweichmanoever();
 
 #endif
