@@ -10,8 +10,10 @@
 #include "ausweichen.h"
 #include "api.h"
 #include "regler.h"
+#include "base_type.h"
+#include "drive.h"
 
-int8_t Drive_Speed = 0;
+int8_t Drive_Speed1 = 0;
 int8_t Counter = 0;
 int8_t Distance = 0;
 
@@ -20,7 +22,7 @@ void ausweichmanoever(void){
 
 	Counter = 0;
 	Distance = 0;
-	Drive_Speed = Drive_GetMotor();
+	Drive_Speed1 = Drive_GetMotor();
 
 
 	while(( us_getFrontDistance() <= (500 + Drive_Speed * 200)) & ( us_getFrontDistance() >= 200)){
@@ -29,7 +31,7 @@ void ausweichmanoever(void){
 		if(us_getFrontDistance() <= 200) //Notstop, sollte das Auto zu nah an einer Wand/Gegenstand sein
 					{
 						Drive_SetMotor(0);
-						os_frequency(&lastWakeTime, 100); // Kurze Zeit warten
+					//	os_frequency(&lastWakeTime, 100); // Kurze Zeit warten
 						Drive_SetServo(-50);
 						Drive_SetMotorForDistance(-1 , 1000); //Einlenken Rückwärts fahren
 						Drive_SetServo(50);
