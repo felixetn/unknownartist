@@ -13,6 +13,9 @@
 #include "us.h"
 #include "us_i2c.h"
 #include "regler.h"
+#include "ausweichen.h"
+#include "api.h"
+#include "regler.h"
 
 
 
@@ -40,8 +43,12 @@ int8_t sucheParkluecke = 0;
 int8_t ausweichen = 0;
 int8_t parkLueckeGefunden = 0;
 int8_t inEinerKurve = 0;
+int8_t interception = 0;
 
 int8_t transition_berechneNaechstenZustand(int8_t zustand){
+
+	//Stetige Abfragen
+	transition_kollisionAbfrage();
 
 	switch(zustand){
 
@@ -53,6 +60,7 @@ int8_t transition_berechneNaechstenZustand(int8_t zustand){
 		//3 Ausweichen
 		//4 Parklücke_Suchen KEIN EIGENER ZUSTAND -> EINE ERWEITERUNG ZU FAHREN
 		//5 Parken
+		//6 Notstop
 
 		case 0 : return 1;
 		case 1 : return fahrenTransition();
@@ -60,6 +68,7 @@ int8_t transition_berechneNaechstenZustand(int8_t zustand){
 		case 3 : return ausweichenTransition();
 		case 4 : return parklueckeSuchenTransition();
 		case 5 : return ParkenTransition();
+		case 6 : return macheNotstop();
 	}
 
 	return 0;
@@ -126,8 +135,11 @@ int8_t ausweichenTransition(){
 	}
 
 	//TODO Julian
-
+	if(ausweichen == 1){
 	return 3;
+	}
+
+	return 1;
 
 }
 
@@ -149,6 +161,41 @@ int8_t ParkenTransition(){
 	//Gehe in IDLE
 	return 0;
 }
+
+void transition_kollisionAbfrage(){
+
+	if (us_getFrontDistance() < (500 + Drive_GetMotor() * 200)){
+		ausweichen = 1;
+	}else{
+		ausweichen = 0;
+	}
+
+}
+
+void setAusweichen(){
+	ausweichen = 0;
+}
+
+
+//TODO***********************************
+
+int8_t interceptionFunc(int8_t modi){
+
+	if(interception){
+		interception = 0;
+		return modi;
+	}
+}
+
+int8_t macheNotstop(){
+
+	if(us_getFrontDistance() < 150){
+		interception = 1;
+		return 6;
+		}
+}
+
+//***************************************
 
 
 

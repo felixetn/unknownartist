@@ -43,6 +43,9 @@ int8_t parklueckeSuchenTransition();
 
 int8_t ParkenTransition();
 
+void transition_kollisionAbfrage();
+
+void setAusweichen();
 /**
  * @brief Put a message in the transmit buffer.
  * @param param one
