@@ -50,4 +50,15 @@ extern void Drive_SetServo(int8_t percent);
  */
 extern uint32_t Drive_GetTotalDrivenDistance(void);
 
+/**
+ * @ Julian
+ */
+int8_t Drive_GetMotor();
+
+/**
+ * @ Julian
+ */
+int8_t Drive_GetServo();
+
+
 #endif /* DRIVE_H_ */
