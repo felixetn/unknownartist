@@ -82,9 +82,19 @@ void Drive_SetServo(int8_t percent) {
 	Drive_Servo = getInRange(percent, -100, 100);
 }
 
+int8_t Drive_GetServo()
+{
+	return Drive_Servo;
+}
+
 void Drive_SetMotor(int8_t power) {
 	setCounter(60000);
 	Drive_Speed = getInRange(power, -10, 10);
+}
+
+int8_t Drive_GetMotor()
+{
+	return Drive_Speed;
 }
 
 void Drive_SetMotorForDistance(int8_t power, uint32_t distance) {
