@@ -4,6 +4,7 @@
 #include "api.h"
 #include "interrupts.h"
 #include "carid.c" // Für die ID!!! Nicht löschen
+#include "carid.h"
 
 #include "wireless/wireless.h"
 
@@ -25,8 +26,8 @@ static volatile uint32_t Drive_TotalDistance = 0;
 /*****************************************************************************/
 /* Local variable definitions ('static')                                     */
 /*****************************************************************************/
+static int8_t steeringOffset = 0;
 static uint16_t ppg_motor_values[] = { 0, 79, 84, 93, 105, 120, 140, 170, 200, 250, 270 };
-static uint8_t ID ;
 
 //static volatile uint16_t ppg_motor_dest = PPG_MOTOR_NULL;
 //static volatile uint16_t ppg_motor_curr = PPG_MOTOR_NULL;
@@ -80,35 +81,42 @@ static void setCounter(uint16_t cnt) {
 	TMCSR1_TRG = 1;
 }
 
-void Drive_SetServo(int8_t percent) {
+void Drive_SetServo(int16_t percent) {
 
-	//Thanks to Artur And The Chipmunks
+
 	//Offset um einheitlich für die Autos zu setzen , damit sie alle grade fahren
+
 	switch(carid){
 		case 1:
-			steeringOffset = 17.77 * (PPG_SERVO_RANGE / 100); // 17,77
+			steeringOffset = 18; // 17,77
 			break;
 		case 2:
-			steeringOffset = 25.26 * (PPG_SERVO_RANGE / 100); // 25,26
+			steeringOffset = 25; // NEW
 			break;
 		case 3:
-			steeringOffset = -6.08 * (PPG_SERVO_RANGE / 100); //-6,08
+			steeringOffset = 6; //-6,08
 			break;
 		case 4:
-			steeringOffset = 16.94 * (PPG_SERVO_RANGE / 100); //16,94
+			steeringOffset = 17; //NEW
 			break;
 		case 5:
-			steeringOffset = -1.23 * (PPG_SERVO_RANGE / 100); //-1,23
+			steeringOffset = 3; //NEW
 			break;
 		case 6:
-			steeringOffset = 7.99 * (PPG_SERVO_RANGE / 100); //7,99
+			steeringOffset = 7; //NEW
 			break;
 		case 7:
+			steeringOffset = 8; //NEW
+			break;
+		default:
 			steeringOffset = 0;
 			break;
+
 	}
 
 	Drive_Servo = getInRange(percent+steeringOffset, -100, 100);
+	//Sollte man vielleicht auf -75 , 75 stellen ?
+
 
 }
 

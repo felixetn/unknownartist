@@ -29,7 +29,10 @@
 
 double Kp, Ki, Kd;
 int16_t sollwert;
+int16_t tempSollwert;
+int16_t nebenDerSpur;
 
+int16_t regulierSollwertZustand = 0;
 /*
  * Global and local functions
  */
@@ -52,6 +55,8 @@ extern void Regler_set_Ki(double);
  */
 extern void Regler_set_Kd(double);
 
+
+
 /**
  * Set Sollwert
  * @param sollwert
@@ -60,14 +65,18 @@ extern void Regler_set_sollwert(int16_t);
 
 extern int16_t Regler_get_sollwert();
 
+extern int16_t Regler_get_tempSollwert();
+
+
 extern void Regler_output(int16_t);
 
-extern uint16_t Regler_get_sensor();
+extern int16_t Regler_get_sensor();
 
 extern int16_t Regler_get_fehler();
 
 extern int16_t Regler_get_fdif();
 
+void regulierSollwert();
 /**
  * Get the output of the PID-Controller
  * @param percent Servo position (-100 left .. +100 right)

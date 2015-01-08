@@ -4,9 +4,15 @@
 #       ->     {E|S}   {call function}
 #               ...
 #
-         2	E	_Drive_SetServo
+         0	E	_CarId_Init
+#
+         4	E	_Drive_SetServo
+#
+         0	E	_Drive_GetServo
 #
          2	E	_Drive_SetMotor
+#
+         0	E	_Drive_GetMotor
 #
         10	E	_Drive_SetMotorForDistance
 	->	E	DIVUL

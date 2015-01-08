@@ -1,0 +1,29 @@
+@..\src\api\regler.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         4	E	_Regler_set_Kp
+#
+         4	E	_Regler_set_Ki
+#
+         4	E	_Regler_set_Kd
+#
+         2	E	_Regler_set_sollwert
+#
+         0	E	_Regler_get_sollwert
+#
+         0	E	_Regler_get_tempSollwert
+#
+         8	E	_Regler_output
+	->	E	_Drive_SetServo
+#
+         4	E	_Regler_get_sensor
+	->	E	_us_getRightDistance
+#
+        26	E	_Regler_pid
+	->	E	DTOI
+	->	E	FMULL
+	->	E	ITOD
+	->	E	_us_getRightDistance

@@ -1,5 +1,4 @@
 /* Demo application includes. */
-// TEST2122222222222muddi
 #include "api/api.h"
 #include "api/seg.h"
 #include "AndroidBTControl.h"
@@ -24,9 +23,12 @@
 #include "api/wireless/wireless.h"
 #include "gps/navigation.h"
 
-#include "api/regler.h" // @unknownartist
-#include "api/base_type.h"
 
+
+//@UnknownArtist
+#include "api/transitionen.h"
+#include "api/gablung.h"
+#include "api/ausweichen.h"
 //#define ANDROID_BT_CONTROL
 //#define GPSCONTROL_DEMO
 //#define LINESENSOR_DEMO
@@ -69,152 +71,133 @@ void SDCardThread(void) {
 }
 #endif
 
-//Globale Variablen
+//@UnknownArtist
+//Variablen
 
-//Aktueller Zustand des Autos (z.B. Geradeaus, Kurve, Parken)
-int8_t zustand = 0; // 0 = IDLE
+//Aktueller Zustand
+int8_t zustand = 0;
+//0 = Parallel; 1 = Rückwärts;
+int8_t parkZustand = 0;
 
-//Jeder Task repräsentiert einen Zustand, oder eine Extension eines Zustandes
-xTaskHandle pruefeZustandXTask;
-xTaskHandle fahrenXTask;
-xTaskHandle gablungXTask;
-xTaskHandle ausweichenXTask;
-xTaskHandle parklueckeSuchenXTask;
-xTaskHandle parkenXTask;
-
-/*
- * Initialisiere PID-Regler
- * Definiere bei welchem Zustand begonnen wird!
- */
 void init(){
 
 	Regler_set_Kp(0.6);
 	Regler_set_Ki(0.0025);
-	Regler_set_Kd(2.0);			//Wert suchen zwischen 1.5 < x < 3.0
-	Regler_set_sollwert(150);
+	Regler_set_Kd(3.0);			//Wert suchen zwischen 1.5 < x < 3.0
+	Regler_set_sollwert(380);
 	zustand = 0;
 
+
+	//Test Einparken
+	//Transition_setParken(1);
+	//rückwärts parken
+	//parkZustand = 1;
 }
 
-/*
- *Checkt in welchem Zustand sich das Auto befindet und
- *Aktiviert bzw. deaktiviert Tasks.
- */
-static void pruefeZustand(void) {
+
+void fahren(void) {
 	portTickType lastWakeTime = os_getTime();
+
+		//os_suspendTask(fahrenXTask);
+		os_frequency(&lastWakeTime, 100);
+
+
+		Drive_SetMotor(3);
+
+		Regler_output(Regler_pid(Regler_get_sensor())); //Das Programm gibt ständig die Stellgröße aus, welche sich aus
+														//dem PID-Regler mit Sollwert von 100 (Beispielwert), und dem Sensorwert
+
+}
+
+void gablung(void) {
+
+	portTickType lastWakeTime = os_getTime();
+
+
+		os_frequency(&lastWakeTime, 100);
+	Gablung_entscheideRichtung();
+
+}
+
+void ausweichen(void) {
+	portTickType lastWakeTime = os_getTime();
+
+		os_frequency(&lastWakeTime, 100);
+		ausweichmanoever();
+
+}
+
+void parken(void) {
+	portTickType lastWakeTime = os_getTime();
+
+	os_frequency(&lastWakeTime, 100);
+	if(parkZustand == 0){
+		PARKEN_parallel();
+	}else{
+		PARKEN_rueckwaerts();
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Implementierung eines endlichen Automates. Dieser Wechselt zwischen den Verschiedenen Zuständen des Autos
+ * |Fahren|Gablung|Ausweichen|Parken|
+ */
+static void Automat(void) {
+	portTickType lastWakeTime = os_getTime();
+
+	//Einmalige Initialisierungen
 	init();
-	//os_suspendTask(testi);
 
 
 	for (;;) {
 		os_frequency(&lastWakeTime, 100);
 
+		//wirelessFormattedDebugMessage(WI_IF_AMB8420, "Dist before: %d", (uint16_t) Drive_GetTotalDrivenDistance());
+
+		zustand = Transitionen_getNextZustand(zustand);
 
 
-		//HIER DIE TRANSITIONEN
-		zustand = transition_berechneNaechstenZustand(zustand);
-
-		//Zustände
-		//0 IDLE
-		//1 Fahren
-		//2 Gablung
-		//3 Ausweichen
-		//4 Parklücke_Suchen KEIN EIGENER ZUSTAND -> EINE ERWEITERUNG ZU FAHREN
-		//5 Parken
-
+		//fahren();
+		//Seg_Dec(zustand);
 
 		switch(zustand){
-		//IDLE
-			case 0: zustand = 1;break;
-		//Fahren
-			case 1: os_resumeTask(fahrenXTask);
-
-					os_suspendTask(gablungXTask);
-					os_suspendTask(ausweichenXTask);
-					os_suspendTask(parklueckeSuchenXTask);
-					os_suspendTask(parkenXTask);
-					break;
-		//Gablung
-			case 2: os_resumeTask(gablungXTask);
-
-
-
-					os_suspendTask(fahrenXTask);
-					os_suspendTask(ausweichenXTask);
-					os_suspendTask(parklueckeSuchenXTask);
-					os_suspendTask(parkenXTask);
-					break;
-		//Ausweichen
-			case 3:	os_resumeTask(ausweichenXTask);
-
-					os_suspendTask(fahrenXTask);
-					os_suspendTask(gablungXTask);
-					os_suspendTask(parklueckeSuchenXTask);
-					os_suspendTask(parkenXTask);
-					break;
-		//4 Parklücke_Suchen KEIN EIGENER ZUSTAND -> EINE ERWEITERUNG ZU FAHREN
-			case 4: os_resumeTask(parklueckeSuchenXTask);
-					os_resumeTask(fahrenXTask);
-
-					os_suspendTask(gablungXTask);
-					os_suspendTask(ausweichenXTask);
-					os_suspendTask(parkenXTask);
-					break;
-		//Parken
-			case 5:	os_resumeTask(parkenXTask);
-
-					os_suspendTask(fahrenXTask);
-					os_suspendTask(gablungXTask);
-					os_suspendTask(parklueckeSuchenXTask);
-					os_suspendTask(ausweichenXTask);
-					break;
-
-
+			case 0 : fahren();Seg_Dec(0);break;
+			case 1 : gablung();Seg_Dec(1);break;
+			case 2 : ausweichen();Seg_Dec(2);break;
+			case 3 : parken();Seg_Dec(3);break;
 		}
 
-	}
-}
-
-/*
- * Die Verschiedenen Tasks
- */
-
-static void fahren(void) {
-	portTickType lastWakeTime = os_getTime();
-
-
-	for (;;) {
-		os_frequency(&lastWakeTime, 100);
-		Regler_output(Regler_pid(500, Regler_get_sensor())); //Das Programm gibt ständig die Stellgröße aus, welche sich aus
-		                                     //dem PID-Regler mit Sollwert von 100 (Beispielwert), und dem Sensorwert
 
 
 	}
 }
 
-static void gablung(void) {
-	portTickType lastWakeTime = os_getTime();
-	gablung_entscheideRichtung();
-
-}
-
-static void ausweichen(void) {
-	portTickType lastWakeTime = os_getTime();
 
 
-}
-
-static void parklueckeSuchen(void) {
-	portTickType lastWakeTime = os_getTime();
 
 
-}
 
-static void parken(void) {
-	portTickType lastWakeTime = os_getTime();
-
-
-}
 
 
 
@@ -231,7 +214,7 @@ void main(void) {
 
 	//Starte Szenarien
 #ifdef ANDROID_SCENARIO
-	Init_AndroidBTControl();
+	//Init_AndroidBTControl();
 #endif
 #ifdef GPS_SCENARIO
 	Init_GPS_Handler();
@@ -244,22 +227,13 @@ void main(void) {
 	ownID = carid;
 #endif
 
-//	Drive_SetMotorForDistance(-1, 300);
+
 
 	DDR03 = 0xff;
 	PDR03 = 0x00;
+	//2385 Byte ist der Maximale Stack
+	os_registerProcessStack(Automat, "RuntimeStats", 2385);
 
-	//Tasks registrieren
-	pruefeZustandXTask = os_registerProcessStack(pruefeZustand, "RuntimeStats", 700);
-	fahrenXTask = os_registerProcessStack(fahren, "RuntimeStats", 700);
-	gablungXTask = os_registerProcessStack(gablung, "RuntimeStats", 700);
-	ausweichenXTask = os_registerProcessStack(ausweichen, "RuntimeStats", 700);
-	parklueckeSuchenXTask = os_registerProcessStack(parklueckeSuchen, "RuntimeStats", 700);
-	parkenXTask = os_registerProcessStack(parken, "RuntimeStats", 700);
-	os_suspendTask(gablungXTask);
-	os_suspendTask(ausweichenXTask);
-	os_suspendTask(parklueckeSuchenXTask);
-	os_suspendTask(parkenXTask);
 	// don't remove!
 	api_StartScheduler();
 }

@@ -1,0 +1,14 @@
+@..\src\api\navigation.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         4	E	_Navigation_setElement_i
+#
+         2	E	_Navigation_getElement_i
+#
+         8	E	_Navigation_Kurve_gefahren
+	->	E	_rand
+#
+         0	E	_ModuleFoo_DooFoo

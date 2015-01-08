@@ -10,7 +10,7 @@
  * Include files
  */
 
-#include "regler.h"
+#include "base_type.h"
 #include <stdlib.h>
 
 /*
@@ -24,22 +24,25 @@
 /*
  * Global and local variable declarations
  */
-
-//Element 1 entscheidet, wohin das Auto an der nächsten Kreuzung fahren soll (wenn möglich)
-//Element 2 entscheidet bei der übernächstenKreuzung
-//USW...
-int8_t* richtungen = malloc(4 * sizeof(int8_t));
+// 0 = links; 1 = gerade; 2 = rechts
+int8_t richtungen[4] = {2, 2, 2, 2};
 
 /*
  * Global and local functions
  */
-void aender_ites_Element(int8_t i, int8_t richtung){
-	richtungen[i] = richtung;
+
+
+void Navigation_setElement_i(int8_t Element_i, int8_t wert){
+	richtungen[Element_i] = wert;
+}
+
+int8_t Navigation_getElement_i(int8_t Element_i){
+	return richtungen[Element_i];
 }
 //0 links
 //1 gerade aus
 //2 rechts
-void kurve_gefahren(){
+void Navigation_Kurve_gefahren(){
 	int8_t i = 0;
 	for (i =0; i < 4; i++){
 		if(i > 0){
@@ -50,6 +53,7 @@ void kurve_gefahren(){
 	richtungen[4] = rand() % 3;
 
 }
+
 
 
 /**

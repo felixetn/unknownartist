@@ -13,7 +13,7 @@
  * Include files
  */
 
-#include "regler.h"
+#include "base_type.h"
 
 /*
  * Global pre-processor symbols/macros ('#define')
@@ -26,11 +26,16 @@
 /*
  * Global and local variable declarations
  */
-int8_t* richtungen;
+
 /*
  * Global and local functions
  */
 
+void Navigation_setElement_i(int8_t Element_i);
+
+int8_t Navigation_getElement_i(int8_t Element_i);
+
+void Navigation_Kurve_gefahren();
 /**
  * @brief Put a message in the transmit buffer.
  * @param param one

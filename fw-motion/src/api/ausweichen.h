@@ -2,7 +2,7 @@
  * (c) Real-time systems project seminar, TU Darmstadt
  * 
  * @file ausweichen.h
- * @author Nixi	
+ * @author Nixi
  * @brief TODO - insert a brief description of that interface
  * @Version 1.0
  **/

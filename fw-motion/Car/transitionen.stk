@@ -1,0 +1,35 @@
+@..\src\api\transitionen.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         4	E	_Transitionen_fahrenTransition
+	->	E	_Regler_get_sensor
+	->	E	_us_getFrontDistance
+	->	E	_us_getLeftDistance
+	->	E	_us_getRightDistance
+#
+         0	E	_Transitionen_gablungTransition
+#
+         0	E	_Transitionen_ausweichenTransition
+#
+         0	E	_Transitionen_parkenTransition
+#
+         8	E	_Transitionen_getNextZustand
+	->	E	_Regler_get_sensor
+	->	E	_us_getFrontDistance
+	->	E	_us_getLeftDistance
+	->	E	_us_getRightDistance
+#
+         0	E	_Transitionen_getKannLinks
+#
+         0	E	_Transitionen_getKannRechts
+#
+         0	E	_Transitionen_getKannVorne
+#
+         2	E	_Transition_setInEinerKurve
+#
+         2	E	_Transition_setAusweichen
+#
+         2	E	_Transition_setParken

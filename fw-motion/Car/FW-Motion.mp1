@@ -1,4 +1,4 @@
-F2MC-16 Family SOFTUNE Linker Control List                                                      2014-11-11 19:55:42  Page:     1
+F2MC-16 Family SOFTUNE Linker Control List                                                      2015-01-08 16:39:52  Page:     1
 
 Option File(s)
   ** no use **
@@ -45,132 +45,118 @@ Input Module(s)
     20 ./src/api/wireless/AMB8420/amb8420.o(amb8420)
     21 ./src/api/adc.o(adc)
     22 ./src/api/api.o(api)
-    23 ./src/api/battery.o(battery)
-    24 ./src/api/carid.o(carid)
-    25 ./src/api/drive.o(drive)
-    26 ./src/api/fram.o(fram)
-    27 ./src/api/i2c.o(i2c)
-    28 ./src/api/interrupts.o(interrupts)
-    29 ./src/api/linesensor.o(linesensor)
-    30 ./src/api/printf_stdarg.o(printf_stdarg)
-    31 ./src/api/regler.o(regler)
-    32 ./src/api/runtime_stats.o(runtime_stats)
-    33 ./src/api/seg.o(seg)
-    34 ./src/api/serial.o(serial)
-    35 ./src/api/speed.o(speed)
-F2MC-16 Family SOFTUNE Linker Control List                                                      2014-11-11 19:55:42  Page:     2
+    23 ./src/api/ausweichen.o(ausweichen)
+    24 ./src/api/battery.o(battery)
+    25 ./src/api/carid.o(carid)
+    26 ./src/api/drive.o(drive)
+    27 ./src/api/fram.o(fram)
+    28 ./src/api/gablung.o(gablung)
+    29 ./src/api/i2c.o(i2c)
+    30 ./src/api/interrupts.o(interrupts)
+    31 ./src/api/linesensor.o(linesensor)
+    32 ./src/api/navigation.o(navigation)
+    33 ./src/api/parken.o(parken)
+    34 ./src/api/printf_stdarg.o(printf_stdarg)
+    35 ./src/api/regler.o(regler)
+F2MC-16 Family SOFTUNE Linker Control List                                                      2015-01-08 16:39:52  Page:     2
 
-    36 ./src/api/trigonometry.o(trigonometry)
-    37 ./src/api/us.o(us)
-    38 ./src/api/us_i2c.o(us_i2c)
-    39 ./src/api/util.o(util)
-    40 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_divl)
-    41 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_divul)
-    42 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fadto_)
-    43 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafaddl)
-    44 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafdivl)
-    45 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafmull)
-    46 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fa_itod)
-    47 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fa_ltod)
-    48 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_modul)
-    49 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_mull)
-    50 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_mulul)
-    51 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fashl)
-    52 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fashr)
-    53 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_free)
-    54 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_malloc)
-    55 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_memcpy)
-    56 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_memset)
-    57 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_pow)
-    58 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_strcat)
-    59 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_strlen)
-    60 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_strncpy)
-    61 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafcmpl)
-    62 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_balloc)
-    63 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_math)
-    64 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_noreentrant)
-    65 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_errno)
-    66 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_otherinit)
+    36 ./src/api/runtime_stats.o(runtime_stats)
+    37 ./src/api/seg.o(seg)
+    38 ./src/api/serial.o(serial)
+    39 ./src/api/transitionen.o(transitionen)
+    40 ./src/api/trigonometry.o(trigonometry)
+    41 ./src/api/us.o(us)
+    42 ./src/api/us_i2c.o(us_i2c)
+    43 ./src/api/util.o(util)
+    44 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_divl)
+    45 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_divul)
+    46 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fadto_)
+    47 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafaddl)
+    48 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafdivl)
+    49 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafmull)
+    50 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fa_itod)
+    51 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fa_ltod)
+    52 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_modul)
+    53 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_mull)
+    54 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_mulul)
+    55 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fashl)
+    56 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fashr)
+    57 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_free)
+    58 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_malloc)
+    59 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_memcpy)
+    60 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_memset)
+    61 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_pow)
+    62 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_rand)
+    63 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_strcat)
+    64 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_strlen)
+    65 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_strncpy)
+    66 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_fafcmpl)
+    67 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_balloc)
+    68 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_math)
+    69 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_noreentrant)
+    70 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_errno)
+    71 c:\Program Files (x86)\Eclipse-ES-ProSem\Softune\bin\..\lib\907\lib904m.lib(__STD_LIB_otherinit)
 
 Error(s)
-*** W1327L: Duplicate symbol definition (_os_isTaskSuspended)
-*** W1327L: Duplicate symbol definition (_us_getFrontDistance)
-*** W1327L: Duplicate symbol definition (_wakeLeft)
 *** W1327L: Duplicate symbol definition (_Kp)
-*** W1327L: Duplicate symbol definition (_drive_barrierRearDetected)
+*** W1327L: Duplicate symbol definition (_regulierSollwertZustand)
+*** W1327L: Duplicate symbol definition (_nebenDerSpur)
 *** W1327L: Duplicate symbol definition (_Kd)
-*** W1327L: Duplicate symbol definition (_Sema)
-*** W1327L: Duplicate symbol definition (_os_resumeTask)
-*** W1327L: Duplicate symbol definition (_os_frequency)
-*** W1327L: Duplicate symbol definition (_us_getRightDistance)
-*** W1327L: Duplicate symbol definition (_os_registerProcessStack)
-*** W1327L: Duplicate symbol definition (_us_getLeftDistance)
-*** W1327L: Duplicate symbol definition (_drive_barrierFrontDetected)
-*** W1327L: Duplicate symbol definition (_driven_before)
-*** W1327L: Duplicate symbol definition (_api_init)
-*** W1327L: Duplicate symbol definition (_us_getSensorMapData)
-*** W1327L: Duplicate symbol definition (_os_registerProcessStackPriority)
-*** W1327L: Duplicate symbol definition (_getOnlyDrivenMap)
-*** W1327L: Duplicate symbol definition (_api_StartScheduler)
-*** W1327L: Duplicate symbol definition (_os_registerProcess)
-*** W1327L: Duplicate symbol definition (_os_getTime)
-*** W1327L: Duplicate symbol definition (_wakeRight)
-*** W1327L: Duplicate symbol definition (_os_deleteTask)
+*** W1327L: Duplicate symbol definition (_tempSollwert)
+*** W1327L: Duplicate symbol definition (_sucheParkluecke)
+*** W1327L: Duplicate symbol definition (_sollwert)
+*** W1327L: Duplicate symbol definition (_init)
 *** W1327L: Duplicate symbol definition (_Ki)
-*** W1327L: Duplicate symbol definition (_wakeFront)
-F2MC-16 Family SOFTUNE Linker Control List                                                      2014-11-11 19:55:42  Page:     3
-
-*** W1327L: Duplicate symbol definition (_os_suspendTask)
-*** W1327L: Duplicate symbol definition (_wakeRear)
-*** W1327L: Duplicate symbol definition (_os_wait)
-*** W1327L: Duplicate symbol definition (_os_isTaskSuspended)
-*** W1327L: Duplicate symbol definition (_us_getFrontDistance)
-*** W1327L: Duplicate symbol definition (_wakeLeft)
+*** W1327L: Duplicate symbol definition (_carid)
+*** W1327L: Duplicate symbol definition (_CarId_Init)
+*** W1327L: Duplicate symbol definition (_start)
+*** W1327L: Duplicate symbol definition (_ModuleFoo_DooFoo)
 *** W1327L: Duplicate symbol definition (_Kp)
-*** W1327L: Duplicate symbol definition (_drive_barrierRearDetected)
+*** W1327L: Duplicate symbol definition (_regulierSollwertZustand)
+*** W1327L: Duplicate symbol definition (_nebenDerSpur)
 *** W1327L: Duplicate symbol definition (_Kd)
-*** W1327L: Duplicate symbol definition (_Sema)
-*** W1327L: Duplicate symbol definition (_os_resumeTask)
-*** W1327L: Duplicate symbol definition (_os_frequency)
-*** W1327L: Duplicate symbol definition (_us_getRightDistance)
-*** W1327L: Duplicate symbol definition (_os_registerProcessStack)
-*** W1327L: Duplicate symbol definition (_us_getLeftDistance)
-*** W1327L: Duplicate symbol definition (_drive_barrierFrontDetected)
-*** W1327L: Duplicate symbol definition (_driven_before)
-*** W1327L: Duplicate symbol definition (_api_init)
-*** W1327L: Duplicate symbol definition (_us_getSensorMapData)
-*** W1327L: Duplicate symbol definition (_os_registerProcessStackPriority)
-*** W1327L: Duplicate symbol definition (_getOnlyDrivenMap)
-*** W1327L: Duplicate symbol definition (_api_StartScheduler)
-*** W1327L: Duplicate symbol definition (_os_registerProcess)
-*** W1327L: Duplicate symbol definition (_os_getTime)
-*** W1327L: Duplicate symbol definition (_wakeRight)
-*** W1327L: Duplicate symbol definition (_os_deleteTask)
+*** W1327L: Duplicate symbol definition (_tempSollwert)
+*** W1327L: Duplicate symbol definition (_sollwert)
 *** W1327L: Duplicate symbol definition (_Ki)
-*** W1327L: Duplicate symbol definition (_wakeFront)
-*** W1327L: Duplicate symbol definition (_os_suspendTask)
-*** W1327L: Duplicate symbol definition (_wakeRear)
-*** W1327L: Duplicate symbol definition (_os_wait)
+F2MC-16 Family SOFTUNE Linker Control List                                                      2015-01-08 16:39:52  Page:     3
 
-F2MC-16 Family SOFTUNE Linker Mapping List                                                      2014-11-11 19:55:42  Page:     4
+*** W1327L: Duplicate symbol definition (_Kp)
+*** W1327L: Duplicate symbol definition (_regulierSollwertZustand)
+*** W1327L: Duplicate symbol definition (_nebenDerSpur)
+*** W1327L: Duplicate symbol definition (_Kd)
+*** W1327L: Duplicate symbol definition (_tempSollwert)
+*** W1327L: Duplicate symbol definition (_sollwert)
+*** W1327L: Duplicate symbol definition (_Ki)
+*** W1327L: Duplicate symbol definition (_parken)
+*** W1327L: Duplicate symbol definition (_Kp)
+*** W1327L: Duplicate symbol definition (_regulierSollwertZustand)
+*** W1327L: Duplicate symbol definition (_nebenDerSpur)
+*** W1327L: Duplicate symbol definition (_Kd)
+*** W1327L: Duplicate symbol definition (_tempSollwert)
+*** W1327L: Duplicate symbol definition (_sucheParkluecke)
+*** W1327L: Duplicate symbol definition (_sollwert)
+*** W1327L: Duplicate symbol definition (_Ki)
+*** W1327L: Duplicate symbol definition (_ausweichen)
+
+F2MC-16 Family SOFTUNE Linker Mapping List                                                      2015-01-08 16:39:52  Page:     4
 
 S_Addr. -E_Addr.   Size      Section Type Al     Sec.(Top 81)                                                                      C
 00000000-000000E6  000000E7  IO    N RW-- 00 ABS  IOBASE
 00000100-0000012F  00000030  DATA  N RW-- 00 ABS  DMADESCRIPTOR
 00000180-0000018F  00000010  DATA  N RW-- 01 ABS  Register Bank No. 00
 00000380-000008CE  0000054F  DATA  N RW-- 00 ABS  IOXTND
-00002240-000023DF  000001A0  DATA  P RW-- 02 REL  INIT
+00002240-00002409  000001CA  DATA  P RW-- 02 REL  INIT
 00002240-........  00000000  DIR   P RW-- 02 REL  DIRDATA
 00002240-........  00000000  DIR   P RW-- 02 REL  DIRINIT
-000023E0-00005E93  00003AB4  DATA  P RW-- 02 REL  DATA
-00005E94-........  00000000  DATA  P RW-- 02 REL  DATA2
-00005E94-........  00000000  DATA  P RW-- 02 REL  LIBDATA
-00005E94-........  00000000  DATA  P RW-- 02 REL  INIT2
-00005E94-........  00000000  DATA  P RW-- 02 REL  LIBINIT
-00005E94-........  00000000  DATA  P RW-- 02 REL  CINIT
-00005E94-........  00000000  DATA  P RW-- 02 REL  CINIT2
-00005E94-00006693  00000800  STACK P RW-- 02 REL  SSTACK
-00006694-00006695  00000002  STACK P RW-- 02 REL  USTACK
+0000240A-00005F11  00003B08  DATA  P RW-- 02 REL  DATA
+00005F12-........  00000000  DATA  P RW-- 02 REL  DATA2
+00005F12-........  00000000  DATA  P RW-- 02 REL  LIBDATA
+00005F12-........  00000000  DATA  P RW-- 02 REL  INIT2
+00005F12-........  00000000  DATA  P RW-- 02 REL  LIBINIT
+00005F12-........  00000000  DATA  P RW-- 02 REL  CINIT
+00005F12-........  00000000  DATA  P RW-- 02 REL  CINIT2
+00005F12-00006711  00000800  STACK P RW-- 02 REL  SSTACK
+00006712-00006713  00000002  STACK P RW-- 02 REL  USTACK
 00007200-000073FF  00000200  DATA  N RW-- 00 ABS  ivt
 00DE0000-00DE001B  0000001C  CONST N R--I 00 ABS  FLASH_B_SECURITY
 00DE001C-00DE002F  00000014  CONST N R--I 00 ABS  FLASH_B_PROTECT
@@ -181,62 +167,66 @@ S_Addr. -E_Addr.   Size      Section Type Al     Sec.(Top 81)                   
 00DF0040-00DF007F  00000040  CONST N R--I 00 ABS  BDM_CONFIG
 00FE0000-00FE01C2  000001C3  CODE  P R-XI 01 REL  CODE_androidbtcontrol
 00FE01C3-00FE02BE  000000FC  CODE  P R-XI 01 REL  CODE_linesensordemo
-00FE02BF-00FE0355  00000097  CODE  P R-XI 01 REL  CODE_main
-00FE0356-00FE04A4  0000014F  CODE  P R-XI 01 REL  CODE_mode_controller
-00FE04A5-00FE04A5  00000001  CODE  P R-XI 01 REL  CODE_modes
-00FE04A6-00FE0593  000000EE  CODE  P R-XI 01 REL  CODE_scanf_stdarg
-00FE0594-00FE0676  000000E3  CODE  P R-XI 01 REL  CODE_START
-00FE0677-00FE06D5  0000005F  CODE  P R-XI 01 REL  CODE_vectors
-00FE06D6-00FE07A1  000000CC  CODE  P R-XI 01 REL  CODE_list
-00FE07A2-00FE0E02  00000661  CODE  P R-XI 01 REL  CODE_queue
-00FE0E03-00FE1F40  0000113E  CODE  P R-XI 01 REL  CODE_tasks
-00FE1F41-00FE1F6D  0000002D  CODE  P R-XI 01 REL  CODE___std_lib_sbrk
-00FE1F6E-00FE2154  000001E7  CODE  P R-XI 01 REL  CODE_port
-00FE2155-00FE2162  0000000E  CODE  P R-XI 01 REL  CODE
-00FE2163-00FE2194  00000032  CODE  P R-XI 01 REL  CODE_heap_3
-00FE2195-00FE238B  000001F7  CODE  P R-XI 01 REL  CODE_wireless
-00FE238C-00FE276F  000003E4  CODE  P R-XI 01 REL  CODE_bluetooth
-00FE2770-00FE322A  00000ABB  CODE  P R-XI 01 REL  CODE_amb8420
-00FE322B-00FE3331  00000107  CODE  P R-XI 01 REL  CODE_adc
-00FE3332-00FE35C5  00000294  CODE  P R-XI 01 REL  CODE_api
-00FE35C6-00FE3678  000000B3  CODE  P R-XI 01 REL  CODE_battery
-00FE3679-00FE3693  0000001B  CODE  P R-XI 01 REL  CODE_carid
-00FE3694-00FE3986  000002F3  CODE  P R-XI 01 REL  CODE_drive
-00FE3987-00FE3B0B  00000185  CODE  P R-XI 01 REL  CODE_fram
-00FE3B0C-00FE3D05  000001FA  CODE  P R-XI 01 REL  CODE_i2c
-00FE3D06-00FE3E76  00000171  CODE  P R-XI 01 REL  CODE_interrupts
-00FE3E77-00FE4194  0000031E  CODE  P R-XI 01 REL  CODE_linesensor
-00FE4195-00FE45CA  00000436  CODE  P R-XI 01 REL  CODE_printf_stdarg
-00FE45CB-00FE4951  00000387  CODE  P R-XI 01 REL  CODE_regler
-00FE4952-00FE4952  00000001  CODE  P R-XI 01 REL  CODE_runtime_stats
-00FE4953-00FE4991  0000003F  CODE  P R-XI 01 REL  CODE_seg
-00FE4992-00FE4AF2  00000161  CODE  P R-XI 01 REL  CODE_serial
-00FE4AF3-00FE4D86  00000294  CODE  P R-XI 01 REL  CODE_speed
-F2MC-16 Family SOFTUNE Linker Mapping List                                                      2014-11-11 19:55:42  Page:     5
+00FE02BF-00FE04CD  0000020F  CODE  P R-XI 01 REL  CODE_main
+00FE04CE-00FE061C  0000014F  CODE  P R-XI 01 REL  CODE_mode_controller
+00FE061D-00FE061D  00000001  CODE  P R-XI 01 REL  CODE_modes
+00FE061E-00FE070B  000000EE  CODE  P R-XI 01 REL  CODE_scanf_stdarg
+00FE070C-00FE07EE  000000E3  CODE  P R-XI 01 REL  CODE_START
+00FE07EF-00FE084D  0000005F  CODE  P R-XI 01 REL  CODE_vectors
+00FE084E-00FE0919  000000CC  CODE  P R-XI 01 REL  CODE_list
+00FE091A-00FE0F7A  00000661  CODE  P R-XI 01 REL  CODE_queue
+00FE0F7B-00FE20B8  0000113E  CODE  P R-XI 01 REL  CODE_tasks
+00FE20B9-00FE20E5  0000002D  CODE  P R-XI 01 REL  CODE___std_lib_sbrk
+00FE20E6-00FE22CC  000001E7  CODE  P R-XI 01 REL  CODE_port
+00FE22CD-00FE22DA  0000000E  CODE  P R-XI 01 REL  CODE
+00FE22DB-00FE230C  00000032  CODE  P R-XI 01 REL  CODE_heap_3
+00FE230D-00FE2503  000001F7  CODE  P R-XI 01 REL  CODE_wireless
+00FE2504-00FE28E7  000003E4  CODE  P R-XI 01 REL  CODE_bluetooth
+00FE28E8-00FE33A2  00000ABB  CODE  P R-XI 01 REL  CODE_amb8420
+00FE33A3-00FE34A9  00000107  CODE  P R-XI 01 REL  CODE_adc
+00FE34AA-00FE373D  00000294  CODE  P R-XI 01 REL  CODE_api
+00FE373E-00FE373E  00000001  CODE  P R-XI 01 REL  CODE_ausweichen
+00FE373F-00FE37F1  000000B3  CODE  P R-XI 01 REL  CODE_battery
+00FE37F2-00FE380C  0000001B  CODE  P R-XI 01 REL  CODE_carid
+00FE380D-00FE3B70  00000364  CODE  P R-XI 01 REL  CODE_drive
+00FE3B71-00FE3CF5  00000185  CODE  P R-XI 01 REL  CODE_fram
+00FE3CF6-00FE414E  00000459  CODE  P R-XI 01 REL  CODE_gablung
+00FE414F-00FE4348  000001FA  CODE  P R-XI 01 REL  CODE_i2c
+00FE4349-00FE44B9  00000171  CODE  P R-XI 01 REL  CODE_interrupts
+00FE44BA-00FE47D7  0000031E  CODE  P R-XI 01 REL  CODE_linesensor
+00FE47D8-00FE4826  0000004F  CODE  P R-XI 01 REL  CODE_navigation
+00FE4827-00FE4B49  00000323  CODE  P R-XI 01 REL  CODE_parken
+00FE4B4A-00FE4F7F  00000436  CODE  P R-XI 01 REL  CODE_printf_stdarg
+00FE4F80-00FE509F  00000120  CODE  P R-XI 01 REL  CODE_regler
+F2MC-16 Family SOFTUNE Linker Mapping List                                                      2015-01-08 16:39:52  Page:     5
 
 S_Addr. -E_Addr.   Size      Section Type Al     Sec.(Top 81)                                                                      C
-00FE4D87-00FE5249  000004C3  CODE  P R-XI 01 REL  CODE_trigonometry
-00FE524A-00FE53E7  0000019E  CODE  P R-XI 01 REL  CODE_us
-00FE53E8-00FE55EE  00000207  CODE  P R-XI 01 REL  CODE_us_i2c
-00FE55EF-00FE56DF  000000F1  CODE  P R-XI 01 REL  CODE_util
-00FE56E0-00FE6D8A  000016AB  CODE  P R-XI 01 REL  LIBCODE
-00FE6D8C-00FE6F2B  000001A0  CONST P R--I 02 REL  DCONST
-00FE6F2C-........  00000000  CONST P R--I 02 REL  LIBDCONST
-00FE6F2C-........  00000000  CONST P R--I 02 REL  CONST2
-00FE6F2C-00FE6F43  00000018  CONST P R--I 02 REL  DCLEAR
-00FE6F44-00FE6F75  00000032  CONST P R--I 02 REL  DTRANS
-00FE6F76-........  00000000  DIRC  P R--I 02 REL  DIRCONST
-00FF8000-00FF83C0  000003C1  CONST P R--I 02 REL  CONST
+00FE50A0-00FE50A0  00000001  CODE  P R-XI 01 REL  CODE_runtime_stats
+00FE50A1-00FE50DF  0000003F  CODE  P R-XI 01 REL  CODE_seg
+00FE50E0-00FE5240  00000161  CODE  P R-XI 01 REL  CODE_serial
+00FE5241-00FE53F3  000001B3  CODE  P R-XI 01 REL  CODE_transitionen
+00FE53F4-00FE58B6  000004C3  CODE  P R-XI 01 REL  CODE_trigonometry
+00FE58B7-00FE5A54  0000019E  CODE  P R-XI 01 REL  CODE_us
+00FE5A55-00FE5C5B  00000207  CODE  P R-XI 01 REL  CODE_us_i2c
+00FE5C5C-00FE5D4C  000000F1  CODE  P R-XI 01 REL  CODE_util
+00FE5D4D-00FE7435  000016E9  CODE  P R-XI 01 REL  LIBCODE
+00FE7436-00FE75FF  000001CA  CONST P R--I 02 REL  DCONST
+00FE7600-........  00000000  CONST P R--I 02 REL  LIBDCONST
+00FE7600-........  00000000  CONST P R--I 02 REL  CONST2
+00FE7600-00FE7617  00000018  CONST P R--I 02 REL  DCLEAR
+00FE7618-00FE7649  00000032  CONST P R--I 02 REL  DTRANS
+00FE764A-........  00000000  DIRC  P R--I 02 REL  DIRCONST
+00FF8000-00FF8412  00000413  CONST P R--I 02 REL  CONST
 00FFFE14-00FFFFD3  000001C0  CONST N R--I 00 ABS  INTVECT
 00FFFFDC-00FFFFDF  00000004  CONST N R--I 00 ABS  RESVECT
-F2MC-16 Family SOFTUNE Linker ROM/RAM Used Info List                                            2014-11-11 19:55:42  Page:     6
+F2MC-16 Family SOFTUNE Linker ROM/RAM Used Info List                                            2015-01-08 16:39:52  Page:     6
 
   S_Addr. -E_Addr.  Size     Remain    Name/State                                                                                  C
 # 00002240-00007FFF 00005DC0 --------- _INRAM01
   00002240-000073FF 000051C0 +00000C00
 
-  00002240-00006695 00004456 --------- USED
-  00006696-000071FF 00000B6A --------- GAP
+  00002240-00006713 000044D4 --------- USED
+  00006714-000071FF 00000AEC --------- GAP
   00007200-000073FF 00000200 --------- USED
   00007400-00007FFF 00000C00 --------- FREE
 
@@ -245,13 +235,11 @@ S_Addr. -E_Addr.   Size      Section Type Al     Sec.(Top 81)                   
 # 00FE0000-00FFFFFF 00020000 --------- _INROM01
   00FE0000-00FFFFDF 0001FFE0 +00000020
 
-  00FE0000-00FE6D8A 00006D8B --------- USED
-  00FE6D8B-00FE6D8B 00000001 --------- GAP
-  00FE6D8C-00FE6F75 000001EA --------- USED
-  00FE6F76-00FEFFFF 0000908A --------- GAP
+  00FE0000-00FE7649 0000764A --------- USED
+  00FE764A-00FEFFFF 000089B6 --------- GAP
   00FF0000-00FF7FFF 00008000 --------- GAP
-  00FF8000-00FF83C0 000003C1 --------- USED
-  00FF83C1-00FFFE13 00007A53 --------- GAP
+  00FF8000-00FF8412 00000413 --------- USED
+  00FF8413-00FFFE13 00007A01 --------- GAP
   00FFFE14-00FFFFD3 000001C0 --------- USED
   00FFFFD4-00FFFFDB 00000008 --------- GAP
   00FFFFDC-00FFFFDF 00000004 --------- USED
@@ -259,103 +247,136 @@ S_Addr. -E_Addr.   Size      Section Type Al     Sec.(Top 81)                   
 
   ROM -- Total(00020000)  Used(0001FFE0)  Remainder(+00000020)
 
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:     7
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:     7
 
 Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
- 00FE56E0(ABS)      Addr.  LIB    DIVL
- 00FE5757(ABS)      Addr.  LIB    DIVUL
- 00FE57AA(ABS)      Addr.  LIB    DTOI
- 00FE57AA(ABS)      Addr.  LIB    DTOL
- 00FE57AA(ABS)      Addr.  LIB    DTOUI
- 00FE57AA(ABS)      Addr.  LIB   @DTOUL
- 00FE5821(ABS)      Addr.  LIB    FADDL
- 00FE6BB0(ABS)      Addr.  LIB    FCMPL
- 00FE5A4C(ABS)      Addr.  LIB    FDIVL
- 00FE5D97(ABS)      Addr.  LIB    FMULL
- 00FE5FD2(ABS)      Addr.  LIB    ITOD
- 00FE6033(ABS)      Addr.  LIB    LTOD
- 00FE607E(ABS)      Addr.  LIB    MODUL
- 00FE60B2(ABS)      Addr.  LIB    MULL
- 00FE60EF(ABS)      Addr.  LIB    MULUL
- 00FE5FCF(ABS)      Addr.  LIB    UITOD
- 00FE6018(ABS)      Addr.  LIB   @ULTOD
- 00FE32D5(ABS)      Addr.  OM/LM  _ADC_GetValue
- 00FE322B(ABS)      Addr.  OM/LM  _ADC_Init
- 00FE2A66(ABS)      Addr.  OM/LM  _AMB8420_Init
- 00FE2E59(ABS)      Addr.  OM/LM  _AMB8420_Send
- 00FE4E26(ABS)      Addr.  OM/LM @_AngleMinus
- 00FE4DF4(ABS)      Addr.  OM/LM @_AnglePlus
- 00FE35F7(ABS)      Addr.  OM/LM  _Battery_GetVoltage
- 00FE35C6(ABS)      Addr.  OM/LM  _Battery_Init
- 00FE23B1(ABS)      Addr.  OM/LM  _Bluetooth_Init
- 00FE274A(ABS)      Addr.  OM/LM  _Bluetooth_Send
- 00FE3679(ABS)      Addr.  OM/LM  _CarId_Init
- 00FE069F(ABS)      Addr.  OM/LM @_DefaultIRQHandler
- 00FE4EAF(ABS)      Addr.  OM/LM @_DegreeToUint16
- 00FE381A(ABS)      Addr.  OM/LM @_Drive_GetTotalDrivenDistance
- 00FE3750(ABS)      Addr.  OM/LM  _Drive_Init
- 000022BB(ABS)      Addr.  OM/LM @_Drive_Servo
- 00FE36B5(ABS)      Addr.  OM/LM  _Drive_SetMotor
- 00FE36FA(ABS)      Addr.  OM/LM @_Drive_SetMotorForDistance
- 00FE3694(ABS)      Addr.  OM/LM  _Drive_SetServo
- 000022BA(ABS)      Addr.  OM/LM @_Drive_Speed
- 00FE3A11(ABS)      Addr.  OM/LM @_FRAM_Available
- 00FE3987(ABS)      Addr.  OM/LM  _FRAM_Init
- 00FE3A9A(ABS)      Addr.  OM/LM @_FRAM_Read
- 00FE3A36(ABS)      Addr.  OM/LM @_FRAM_Write
- 00FE53E8(ABS)      Addr.  OM/LM  _I2CUs_Init
- 00FE547D(ABS)      Addr.  OM/LM  _I2CUs_Systick
- 00FE3B41(ABS)      Addr.  OM/LM @_I2C_BUS0_Acknowlegde
- 00FE3B46(ABS)      Addr.  OM/LM  _I2C_BUS0_CheckAddressPresence
- 00FE3BAD(ABS)      Addr.  OM/LM  _I2C_BUS0_Continue
- 00FE3B0C(ABS)      Addr.  OM/LM  _I2C_BUS0_Init
- 00FE3BF9(ABS)      Addr.  OM/LM  _I2C_BUS0_LastRead
- 00FE3BEC(ABS)      Addr.  OM/LM  _I2C_BUS0_Read
- 00FE3B77(ABS)      Addr.  OM/LM  _I2C_BUS0_Start
- 00FE3BC9(ABS)      Addr.  OM/LM  _I2C_BUS0_Stop
- 00FE3BD8(ABS)      Addr.  OM/LM  _I2C_BUS0_Write
- 00FE3C41(ABS)      Addr.  OM/LM @_I2C_BUS1_Acknowlegde
- 00FE3C46(ABS)      Addr.  OM/LM  _I2C_BUS1_CheckAddressPresence
- 00FE3CAD(ABS)      Addr.  OM/LM  _I2C_BUS1_Continue
- 00FE3C06(ABS)      Addr.  OM/LM  _I2C_BUS1_Init
- 00FE3CF9(ABS)      Addr.  OM/LM  _I2C_BUS1_LastRead
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:     8
+ 00FE5D4D(ABS)      Addr.  LIB    DIVL
+ 00FE5DC4(ABS)      Addr.  LIB    DIVUL
+ 00FE5E17(ABS)      Addr.  LIB    DTOI
+ 00FE5E17(ABS)      Addr.  LIB    DTOL
+ 00FE5E17(ABS)      Addr.  LIB    DTOUI
+ 00FE5E17(ABS)      Addr.  LIB   @DTOUL
+ 00FE5E8E(ABS)      Addr.  LIB    FADDL
+ 00FE725B(ABS)      Addr.  LIB    FCMPL
+ 00FE60B9(ABS)      Addr.  LIB    FDIVL
+ 00FE6404(ABS)      Addr.  LIB    FMULL
+ 00FE663F(ABS)      Addr.  LIB    ITOD
+ 00FE66A0(ABS)      Addr.  LIB    LTOD
+ 00FE66EB(ABS)      Addr.  LIB    MODUL
+ 00FE671F(ABS)      Addr.  LIB    MULL
+ 00FE675C(ABS)      Addr.  LIB    MULUL
+ 00FE663C(ABS)      Addr.  LIB    UITOD
+ 00FE6685(ABS)      Addr.  LIB   @ULTOD
+ 00FE344D(ABS)      Addr.  OM/LM  _ADC_GetValue
+ 00FE33A3(ABS)      Addr.  OM/LM  _ADC_Init
+ 00FE2BDE(ABS)      Addr.  OM/LM  _AMB8420_Init
+ 00FE2FD1(ABS)      Addr.  OM/LM  _AMB8420_Send
+ 00FE5493(ABS)      Addr.  OM/LM @_AngleMinus
+ 00FE5461(ABS)      Addr.  OM/LM @_AnglePlus
+ 00FE3770(ABS)      Addr.  OM/LM  _Battery_GetVoltage
+ 00FE373F(ABS)      Addr.  OM/LM  _Battery_Init
+ 00FE2529(ABS)      Addr.  OM/LM  _Bluetooth_Init
+ 00FE28C2(ABS)      Addr.  OM/LM  _Bluetooth_Send
+ 00FE37F2(ABS)      Addr.  OM/LM  _CarId_Init
+ 000022A2(ABS)      Addr.  OM/LM @_Counter
+ 00FE0817(ABS)      Addr.  OM/LM @_DefaultIRQHandler
+ 00FE551C(ABS)      Addr.  OM/LM @_DegreeToUint16
+ 000022A1(ABS)      Addr.  OM/LM @_Distance
+ 00FE38E0(ABS)      Addr.  OM/LM @_Drive_GetMotor
+ 00FE3897(ABS)      Addr.  OM/LM @_Drive_GetServo
+ 00FE3A04(ABS)      Addr.  OM/LM  _Drive_GetTotalDrivenDistance
+ 00FE393A(ABS)      Addr.  OM/LM  _Drive_Init
+ 000022CB(ABS)      Addr.  OM/LM @_Drive_Servo
+ 00FE389B(ABS)      Addr.  OM/LM  _Drive_SetMotor
+ 00FE38E4(ABS)      Addr.  OM/LM @_Drive_SetMotorForDistance
+ 00FE3828(ABS)      Addr.  OM/LM  _Drive_SetServo
+ 000022CA(ABS)      Addr.  OM/LM @_Drive_Speed
+ 000022A3(ABS)      Addr.  OM/LM @_Drive_Speed1
+ 00FE3BFB(ABS)      Addr.  OM/LM @_FRAM_Available
+ 00FE3B71(ABS)      Addr.  OM/LM  _FRAM_Init
+ 00FE3C84(ABS)      Addr.  OM/LM @_FRAM_Read
+ 00FE3C20(ABS)      Addr.  OM/LM @_FRAM_Write
+ 00FE3CF6(ABS)      Addr.  OM/LM  _Gablung_entscheideRichtung
+ 00FE4112(ABS)      Addr.  OM/LM @_Gablung_geradeUeberDieKreuzung
+ 00FE40CE(ABS)      Addr.  OM/LM @_Gablung_linksKurve
+ 00FE408A(ABS)      Addr.  OM/LM @_Gablung_rechtsKurve
+ 00FE5A55(ABS)      Addr.  OM/LM  _I2CUs_Init
+ 00FE5AEA(ABS)      Addr.  OM/LM  _I2CUs_Systick
+ 00FE4184(ABS)      Addr.  OM/LM @_I2C_BUS0_Acknowlegde
+ 00FE4189(ABS)      Addr.  OM/LM  _I2C_BUS0_CheckAddressPresence
+ 00FE41F0(ABS)      Addr.  OM/LM  _I2C_BUS0_Continue
+ 00FE414F(ABS)      Addr.  OM/LM  _I2C_BUS0_Init
+ 00FE423C(ABS)      Addr.  OM/LM  _I2C_BUS0_LastRead
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:     8
 
 Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
- 00FE3CEC(ABS)      Addr.  OM/LM  _I2C_BUS1_Read
- 00FE3C77(ABS)      Addr.  OM/LM  _I2C_BUS1_Start
- 00FE3CC9(ABS)      Addr.  OM/LM  _I2C_BUS1_Stop
- 00FE3CD8(ABS)      Addr.  OM/LM  _I2C_BUS1_Write
- 00FE0677(ABS)      Addr.  OM/LM  _InitIrqLevels
- 00FE017E(ABS)      Addr.  OM/LM  _Init_AndroidBTControl
+ 00FE422F(ABS)      Addr.  OM/LM  _I2C_BUS0_Read
+ 00FE41BA(ABS)      Addr.  OM/LM  _I2C_BUS0_Start
+ 00FE420C(ABS)      Addr.  OM/LM  _I2C_BUS0_Stop
+ 00FE421B(ABS)      Addr.  OM/LM  _I2C_BUS0_Write
+ 00FE4284(ABS)      Addr.  OM/LM @_I2C_BUS1_Acknowlegde
+ 00FE4289(ABS)      Addr.  OM/LM  _I2C_BUS1_CheckAddressPresence
+ 00FE42F0(ABS)      Addr.  OM/LM  _I2C_BUS1_Continue
+ 00FE4249(ABS)      Addr.  OM/LM  _I2C_BUS1_Init
+ 00FE433C(ABS)      Addr.  OM/LM  _I2C_BUS1_LastRead
+ 00FE432F(ABS)      Addr.  OM/LM  _I2C_BUS1_Read
+ 00FE42BA(ABS)      Addr.  OM/LM  _I2C_BUS1_Start
+ 00FE430C(ABS)      Addr.  OM/LM  _I2C_BUS1_Stop
+ 00FE431B(ABS)      Addr.  OM/LM  _I2C_BUS1_Write
+ 00FE07EF(ABS)      Addr.  OM/LM  _InitIrqLevels
+ 00FE017E(ABS)      Addr.  OM/LM @_Init_AndroidBTControl
  00FE01C3(ABS)      Addr.  OM/LM @_Init_LineSensorDemo
- 000023E2(ABS)      Addr.  OM/LM @_Kd
- 000023EA(ABS)      Addr.  OM/LM @_Ki
- 000023F2(ABS)      Addr.  OM/LM @_Kp
- 00FE40E2(ABS)      Addr.  OM/LM  _Linesensor_Calibrate
- 00FE3E77(ABS)      Addr.  OM/LM  _Linesensor_Init
- 00FE0364(ABS)      Addr.  OM/LM @_ModeControllerThread
- 00FE48B0(ABS)      Addr.  OM/LM  _Regler_get_sensor
- 00FE48A4(ABS)      Addr.  OM/LM  _Regler_output
- 00FE48B4(ABS)      Addr.  OM/LM  _Regler_pid
- 00FE488D(ABS)      Addr.  OM/LM  _Regler_set_Kd
- 00FE4876(ABS)      Addr.  OM/LM  _Regler_set_Ki
- 00FE485F(ABS)      Addr.  OM/LM  _Regler_set_Kp
- 00FE4952(ABS)      Addr.  OM/LM @_RuntimeStats_Print
- 00FE4977(ABS)      Addr.  OM/LM @_Seg_Dec
- 00FE495C(ABS)      Addr.  OM/LM  _Seg_Hex
- 00FE4953(ABS)      Addr.  OM/LM  _Seg_Init
- 00002296(ABS)      Addr.  OM/LM @_Sema
- 00FE49B7(ABS)      Addr.  OM/LM  _Serial_Getchar
- 00FE4992(ABS)      Addr.  OM/LM @_Serial_GetcharAsync
- 00FE49E8(ABS)      Addr.  OM/LM  _Serial_Init
- 00FE4A5A(ABS)      Addr.  OM/LM  _Serial_PutChar
- 00FE52A1(ABS)      Addr.  OM/LM  _Us_Calibrate
- 00FE5291(ABS)      Addr.  OM/LM  _Us_Cmd_Wait
- 00005E84(ABS)      Addr.  OM/LM  _Us_Data
- 00FE52BC(ABS)      Addr.  OM/LM  _Us_IO_DDR
- 00FE5303(ABS)      Addr.  OM/LM  _Us_IO_Value
- 00FE524A(ABS)      Addr.  OM/LM  _Us_Init
+ 00002412(ABS)      Addr.  OM/LM @_Kd
+ 0000241A(ABS)      Addr.  OM/LM @_Ki
+ 00002422(ABS)      Addr.  OM/LM @_Kp
+ 00FE4725(ABS)      Addr.  OM/LM  _Linesensor_Calibrate
+ 00FE44BA(ABS)      Addr.  OM/LM  _Linesensor_Init
+ 00FE04DC(ABS)      Addr.  OM/LM @_ModeControllerThread
+ 00FE414D(ABS)      Addr.  OM/LM @_ModuleFoo_DooFoo
+ 00FE47F5(ABS)      Addr.  OM/LM  _Navigation_Kurve_gefahren
+ 00FE47EA(ABS)      Addr.  OM/LM  _Navigation_getElement_i
+ 00FE47D8(ABS)      Addr.  OM/LM @_Navigation_setElement_i
+ 00FE4827(ABS)      Addr.  OM/LM @_PARKEN_init
+ 00FE4841(ABS)      Addr.  OM/LM  _PARKEN_parallel
+ 00FE49BB(ABS)      Addr.  OM/LM  _PARKEN_rueckwaerts
+ 00FE4FE2(ABS)      Addr.  OM/LM  _Regler_get_sensor
+ 00FE4FCE(ABS)      Addr.  OM/LM  _Regler_get_sollwert
+ 00FE4FD2(ABS)      Addr.  OM/LM @_Regler_get_tempSollwert
+ 00FE4FD6(ABS)      Addr.  OM/LM  _Regler_output
+ 00FE4FE6(ABS)      Addr.  OM/LM  _Regler_pid
+ 00FE4FAE(ABS)      Addr.  OM/LM  _Regler_set_Kd
+ 00FE4F97(ABS)      Addr.  OM/LM  _Regler_set_Ki
+ 00FE4F80(ABS)      Addr.  OM/LM  _Regler_set_Kp
+ 00FE4FC5(ABS)      Addr.  OM/LM  _Regler_set_sollwert
+ 00FE50A0(ABS)      Addr.  OM/LM @_RuntimeStats_Print
+ 00FE50C5(ABS)      Addr.  OM/LM  _Seg_Dec
+ 00FE50AA(ABS)      Addr.  OM/LM  _Seg_Hex
+ 00FE50A1(ABS)      Addr.  OM/LM  _Seg_Init
+ 0000229C(ABS)      Addr.  OM/LM @_Sema
+ 00FE5105(ABS)      Addr.  OM/LM  _Serial_Getchar
+ 00FE50E0(ABS)      Addr.  OM/LM @_Serial_GetcharAsync
+ 00FE5136(ABS)      Addr.  OM/LM  _Serial_Init
+ 00FE51A8(ABS)      Addr.  OM/LM  _Serial_PutChar
+ 00FE53E2(ABS)      Addr.  OM/LM @_Transition_setAusweichen
+ 00FE53D9(ABS)      Addr.  OM/LM  _Transition_setInEinerKurve
+ 00FE53EB(ABS)      Addr.  OM/LM @_Transition_setParken
+ 00FE52E3(ABS)      Addr.  OM/LM @_Transitionen_ausweichenTransition
+ 00FE5241(ABS)      Addr.  OM/LM @_Transitionen_fahrenTransition
+ 00FE52D8(ABS)      Addr.  OM/LM @_Transitionen_gablungTransition
+ 00FE53CD(ABS)      Addr.  OM/LM  _Transitionen_getKannLinks
+ 00FE53D1(ABS)      Addr.  OM/LM  _Transitionen_getKannRechts
+ 00FE53D5(ABS)      Addr.  OM/LM  _Transitionen_getKannVorne
+ 00FE52EF(ABS)      Addr.  OM/LM  _Transitionen_getNextZustand
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:     9
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
+ 00FE52ED(ABS)      Addr.  OM/LM @_Transitionen_parkenTransition
+ 00FE590E(ABS)      Addr.  OM/LM  _Us_Calibrate
+ 00FE58FE(ABS)      Addr.  OM/LM  _Us_Cmd_Wait
+ 00005F02(ABS)      Addr.  OM/LM  _Us_Data
+ 00FE5929(ABS)      Addr.  OM/LM  _Us_IO_DDR
+ 00FE5970(ABS)      Addr.  OM/LM  _Us_IO_Value
+ 00FE58B7(ABS)      Addr.  OM/LM  _Us_Init
  00000560(ABS)      Addr.  OM/LM @__acsr0
  00000562(ABS)      Addr.  OM/LM @__acsr1
  0000001A(ABS)      Addr.  OM/LM  __adcr
@@ -373,15 +394,12 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000001C(ABS)      Addr.  OM/LM  __adsr
  00000561(ABS)      Addr.  OM/LM @__aecsr0
  00000563(ABS)      Addr.  OM/LM @__aecsr1
- 00FE6BFE(ABS)      Addr.  LIB    __balloc
+ 00FE72A9(ABS)      Addr.  LIB    __balloc
  00000102(ABS)      Addr.  OM/LM  __baph0
  0000010A(ABS)      Addr.  OM/LM @__baph1
  00000112(ABS)      Addr.  OM/LM @__baph2
  0000011A(ABS)      Addr.  OM/LM @__baph3
  00000122(ABS)      Addr.  OM/LM @__baph4
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:     9
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000012A(ABS)      Addr.  OM/LM @__baph5
  00000100(ABS)      Addr.  OM/LM  __bapl0
  00000108(ABS)      Addr.  OM/LM @__bapl1
@@ -409,6 +427,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000545(ABS)      Addr.  OM/LM @__bgrh7
  0000054F(ABS)      Addr.  OM/LM @__bgrh8
  00000559(ABS)      Addr.  OM/LM @__bgrh9
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    10
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000000C6(ABS)      Addr.  OM/LM @__bgrl0
  000000D0(ABS)      Addr.  OM/LM @__bgrl1
  000000DA(ABS)      Addr.  OM/LM @__bgrl2
@@ -439,9 +460,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000041A(ABS)      Addr.  OM/LM @__cmpr
  0000041B(ABS)      Addr.  OM/LM @__cmprh
  0000041A(ABS)      Addr.  OM/LM @__cmprl
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    10
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000415(ABS)      Addr.  OM/LM @__coar
  00000416(ABS)      Addr.  OM/LM @__cocr0
  00000417(ABS)      Addr.  OM/LM @__cocr1
@@ -469,6 +487,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000116(ABS)      Addr.  OM/LM @__dct2
  0000011E(ABS)      Addr.  OM/LM @__dct3
  00000126(ABS)      Addr.  OM/LM @__dct4
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    11
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000012E(ABS)      Addr.  OM/LM @__dct5
  00000107(ABS)      Addr.  OM/LM @__dcth0
  0000010F(ABS)      Addr.  OM/LM @__dcth1
@@ -499,9 +520,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000003A4(ABS)      Addr.  OM/LM @__dirr
  00000380(ABS)      Addr.  OM/LM  __disel0
  00000381(ABS)      Addr.  OM/LM @__disel1
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    11
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000382(ABS)      Addr.  OM/LM @__disel2
  00000383(ABS)      Addr.  OM/LM @__disel3
  00000384(ABS)      Addr.  OM/LM @__disel4
@@ -529,6 +547,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000006E5(ABS)      Addr.  OM/LM @__each2
  000006E7(ABS)      Addr.  OM/LM @__each3
  000006E9(ABS)      Addr.  OM/LM @__each4
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    12
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000006EB(ABS)      Addr.  OM/LM @__each5
  000006E0(ABS)      Addr.  OM/LM @__eacl0
  000006E2(ABS)      Addr.  OM/LM @__eacl1
@@ -559,9 +580,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000003AC(ABS)      Addr.  OM/LM @__edsu2l
  00000059(ABS)      Addr.  OM/LM @__eirr0
  0000005D(ABS)      Addr.  OM/LM @__eirr1
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    12
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000005A(ABS)      Addr.  OM/LM @__elvr0
  0000005E(ABS)      Addr.  OM/LM @__elvr1
  0000005B(ABS)      Addr.  OM/LM @__elvrh0
@@ -589,6 +607,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000004C1(ABS)      Addr.  OM/LM @__epsr05
  000004C2(ABS)      Addr.  OM/LM @__epsr06
  000004C3(ABS)      Addr.  OM/LM @__epsr07
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    13
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000004C4(ABS)      Addr.  OM/LM @__epsr08
  000004C5(ABS)      Addr.  OM/LM @__epsr09
  000004C6(ABS)      Addr.  OM/LM @__epsr10
@@ -612,16 +633,13 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000546(ABS)      Addr.  OM/LM @__esir7
  00000550(ABS)      Addr.  OM/LM @__esir8
  0000055A(ABS)      Addr.  OM/LM @__esir9
- 00FE5D9B(ABS)      Addr.  LIB   @__fmull1
+ 00FE6408(ABS)      Addr.  LIB   @__fmull1
  000003F8(ABS)      Addr.  OM/LM @__fmwc0
  000003F9(ABS)      Addr.  OM/LM @__fmwc1
  000003FD(ABS)      Addr.  OM/LM @__fmwc5
  00000074(ABS)      Addr.  OM/LM  __gcn10
  00000098(ABS)      Addr.  OM/LM @__gcn11
  00000574(ABS)      Addr.  OM/LM @__gcn12
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    13
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000598(ABS)      Addr.  OM/LM @__gcn13
  00000075(ABS)      Addr.  OM/LM @__gcn1h0
  00000099(ABS)      Addr.  OM/LM @__gcn1h1
@@ -643,12 +661,15 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000009A(ABS)      Addr.  OM/LM @__gcn2l1
  00000576(ABS)      Addr.  OM/LM @__gcn2l2
  0000059A(ABS)      Addr.  OM/LM @__gcn2l3
- 00FF83B8(ABS)      Addr.  LIB    __huge_val
+ 00FF840A(ABS)      Addr.  LIB    __huge_val
  000000AD(ABS)      Addr.  OM/LM  __ibcr0
  000000B7(ABS)      Addr.  OM/LM  __ibcr1
  000000AC(ABS)      Addr.  OM/LM  __ibsr0
  000000B6(ABS)      Addr.  OM/LM  __ibsr1
  000000B5(ABS)      Addr.  OM/LM  __iccr0
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    14
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000000BF(ABS)      Addr.  OM/LM  __iccr1
  00000041(ABS)      Addr.  OM/LM @__ice01
  00000047(ABS)      Addr.  OM/LM @__ice23
@@ -679,9 +700,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000712(ABS)      Addr.  OM/LM @__if1cmsk0
  00000812(ABS)      Addr.  OM/LM @__if1cmsk1
  00000713(ABS)      Addr.  OM/LM @__if1cmskh0
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    14
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000813(ABS)      Addr.  OM/LM @__if1cmskh1
  00000712(ABS)      Addr.  OM/LM @__if1cmskl0
  00000812(ABS)      Addr.  OM/LM @__if1cmskl1
@@ -709,6 +727,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000822(ABS)      Addr.  OM/LM @__if1dtb1
  00000722(ABS)      Addr.  OM/LM @__if1dtb10
  00000822(ABS)      Addr.  OM/LM @__if1dtb11
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    15
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000723(ABS)      Addr.  OM/LM @__if1dtb1h0
  00000823(ABS)      Addr.  OM/LM @__if1dtb1h1
  00000722(ABS)      Addr.  OM/LM @__if1dtb1l0
@@ -739,9 +760,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000817(ABS)      Addr.  OM/LM @__if1msk2h1
  00000716(ABS)      Addr.  OM/LM @__if1msk2l0
  00000816(ABS)      Addr.  OM/LM @__if1msk2l1
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    15
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000748(ABS)      Addr.  OM/LM @__if2arb0
  00000848(ABS)      Addr.  OM/LM @__if2arb1
  00000748(ABS)      Addr.  OM/LM @__if2arb10
@@ -769,6 +787,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000740(ABS)      Addr.  OM/LM @__if2creql0
  00000840(ABS)      Addr.  OM/LM @__if2creql1
  0000074E(ABS)      Addr.  OM/LM @__if2dta0
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    16
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000084E(ABS)      Addr.  OM/LM @__if2dta1
  0000074E(ABS)      Addr.  OM/LM @__if2dta10
  0000084E(ABS)      Addr.  OM/LM @__if2dta11
@@ -799,9 +820,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000074C(ABS)      Addr.  OM/LM @__if2mctr0
  0000084C(ABS)      Addr.  OM/LM @__if2mctr1
  0000074D(ABS)      Addr.  OM/LM @__if2mctrh0
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    16
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000084D(ABS)      Addr.  OM/LM @__if2mctrh1
  0000074C(ABS)      Addr.  OM/LM @__if2mctrl0
  0000084C(ABS)      Addr.  OM/LM @__if2mctrl1
@@ -829,6 +847,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000007A0(ABS)      Addr.  OM/LM @__intpnd1l0
  000008A0(ABS)      Addr.  OM/LM @__intpnd1l1
  000007A2(ABS)      Addr.  OM/LM @__intpnd20
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    17
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000008A2(ABS)      Addr.  OM/LM @__intpnd21
  000007A3(ABS)      Addr.  OM/LM @__intpnd2h0
  000008A3(ABS)      Addr.  OM/LM @__intpnd2h1
@@ -859,9 +880,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000124(ABS)      Addr.  OM/LM @__ioal4
  0000012C(ABS)      Addr.  OM/LM @__ioal5
  00000042(ABS)      Addr.  OM/LM @__ipcp0
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    17
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000044(ABS)      Addr.  OM/LM @__ipcp1
  00000048(ABS)      Addr.  OM/LM @__ipcp2
  0000004A(ABS)      Addr.  OM/LM @__ipcp3
@@ -889,6 +907,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000000BC(ABS)      Addr.  OM/LM @__isba1
  000000B3(ABS)      Addr.  OM/LM @__ismk0
  000000BD(ABS)      Addr.  OM/LM @__ismk1
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    18
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000000AE(ABS)      Addr.  OM/LM @__itba0
  000000B8(ABS)      Addr.  OM/LM @__itba1
  000000AF(ABS)      Addr.  OM/LM @__itbah0
@@ -904,8 +925,8 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000003F1(ABS)      Addr.  OM/LM @__mcsra
  000003F5(ABS)      Addr.  OM/LM @__mcsrb
  00000409(ABS)      Addr.  OM/LM @__mctcr
- 00FE62BE(ABS)      Addr.  LIB   @__memcpyNN
- 00FE62D1(ABS)      Addr.  LIB   @__memsetN
+ 00FE692B(ABS)      Addr.  LIB   @__memcpyNN
+ 00FE693E(ABS)      Addr.  LIB   @__memsetN
  000007B0(ABS)      Addr.  OM/LM @__msgval0
  000008B0(ABS)      Addr.  OM/LM @__msgval1
  000007B0(ABS)      Addr.  OM/LM @__msgval10
@@ -919,9 +940,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000007B3(ABS)      Addr.  OM/LM @__msgval2h0
  000008B3(ABS)      Addr.  OM/LM @__msgval2h1
  000007B2(ABS)      Addr.  OM/LM @__msgval2l0
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    18
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000008B2(ABS)      Addr.  OM/LM @__msgval2l1
  000003F2(ABS)      Addr.  OM/LM @__mtcra
  000003F3(ABS)      Addr.  OM/LM @__mtcrah
@@ -944,11 +962,14 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000792(ABS)      Addr.  OM/LM @__newdt2l0
  00000892(ABS)      Addr.  OM/LM @__newdt2l1
  000003A5(ABS)      Addr.  OM/LM @__nmi
- 00FF83C0(ABS)      Addr.  LIB    __nul
+ 00FF8412(ABS)      Addr.  LIB    __nul
  0000002A(ABS)      Addr.  OM/LM @__occp0
  0000002C(ABS)      Addr.  OM/LM @__occp1
  00000030(ABS)      Addr.  OM/LM @__occp2
  00000032(ABS)      Addr.  OM/LM @__occp3
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    19
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000036(ABS)      Addr.  OM/LM @__occp4
  00000038(ABS)      Addr.  OM/LM @__occp5
  0000003C(ABS)      Addr.  OM/LM @__occp6
@@ -961,7 +982,7 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000035(ABS)      Addr.  OM/LM @__ocs5
  0000003A(ABS)      Addr.  OM/LM @__ocs6
  0000003B(ABS)      Addr.  OM/LM @__ocs7
- 00FE6D71(ABS)      Addr.  LIB   @__other_init
+ 00FE741C(ABS)      Addr.  LIB   @__other_init
  0000007E(ABS)      Addr.  OM/LM  __pcn0
  00000086(ABS)      Addr.  OM/LM  __pcn1
  0000058E(ABS)      Addr.  OM/LM @__pcn10
@@ -979,9 +1000,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000057E(ABS)      Addr.  OM/LM @__pcn8
  00000586(ABS)      Addr.  OM/LM @__pcn9
  0000007F(ABS)      Addr.  OM/LM @__pcnh0
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    19
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000087(ABS)      Addr.  OM/LM @__pcnh1
  0000058F(ABS)      Addr.  OM/LM @__pcnh10
  00000597(ABS)      Addr.  OM/LM @__pcnh11
@@ -1009,6 +1027,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000096(ABS)      Addr.  OM/LM @__pcnl3
  000000A2(ABS)      Addr.  OM/LM  __pcnl4
  000000AA(ABS)      Addr.  OM/LM @__pcnl5
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    20
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000056A(ABS)      Addr.  OM/LM @__pcnl6
  00000572(ABS)      Addr.  OM/LM @__pcnl7
  0000057E(ABS)      Addr.  OM/LM @__pcnl8
@@ -1039,9 +1060,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000007(ABS)      Addr.  OM/LM  __pdr07
  00000008(ABS)      Addr.  OM/LM @__pdr08
  00000009(ABS)      Addr.  OM/LM  __pdr09
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    20
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  0000000A(ABS)      Addr.  OM/LM @__pdr10
  0000007C(ABS)      Addr.  OM/LM  __pdut0
  00000084(ABS)      Addr.  OM/LM  __pdut1
@@ -1069,6 +1087,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000003CF(ABS)      Addr.  OM/LM @__pfah7
  000003B8(ABS)      Addr.  OM/LM @__pfal0
  000003BB(ABS)      Addr.  OM/LM @__pfal1
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    21
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000003BE(ABS)      Addr.  OM/LM @__pfal2
  000003C1(ABS)      Addr.  OM/LM @__pfal3
  000003C4(ABS)      Addr.  OM/LM @__pfal4
@@ -1099,9 +1120,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000003D3(ABS)      Addr.  OM/LM @__pfdh1
  000003D5(ABS)      Addr.  OM/LM @__pfdh2
  000003D7(ABS)      Addr.  OM/LM @__pfdh3
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    21
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000003D9(ABS)      Addr.  OM/LM @__pfdh4
  000003DB(ABS)      Addr.  OM/LM @__pfdh5
  000003DD(ABS)      Addr.  OM/LM @__pfdh6
@@ -1129,6 +1147,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000044D(ABS)      Addr.  OM/LM @__pier09
  0000044E(ABS)      Addr.  OM/LM @__pier10
  00000458(ABS)      Addr.  OM/LM @__pilr00
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    22
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000459(ABS)      Addr.  OM/LM @__pilr01
  0000045A(ABS)      Addr.  OM/LM @__pilr02
  0000045B(ABS)      Addr.  OM/LM @__pilr03
@@ -1159,9 +1180,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000661(ABS)      Addr.  OM/LM @__prrr11
  00000662(ABS)      Addr.  OM/LM @__prrr12
  00000663(ABS)      Addr.  OM/LM @__prrr13
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    22
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  000004D8(ABS)      Addr.  OM/LM @__prrr2
  000004D9(ABS)      Addr.  OM/LM @__prrr3
  000004DA(ABS)      Addr.  OM/LM @__prrr4
@@ -1186,10 +1204,13 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  0000056C(ABS)      Addr.  OM/LM @__ptmr7
  00000578(ABS)      Addr.  OM/LM @__ptmr8
  00000580(ABS)      Addr.  OM/LM @__ptmr9
- 000023DC(ABS)      Addr.  LIB    __ptr_mem
- 000023DA(ABS)      Addr.  LIB    __ptr_other
- 000023D2(ABS)      Addr.  LIB   @__ptrmem
- 00002344(ABS)      Addr.  LIB   @__ptrother
+ 00002406(ABS)      Addr.  LIB    __ptr_mem
+ 00002404(ABS)      Addr.  LIB    __ptr_other
+ 000023FC(ABS)      Addr.  LIB   @__ptrmem
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    23
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
+ 0000236E(ABS)      Addr.  LIB   @__ptrother
  000004A8(ABS)      Addr.  OM/LM @__pucr00
  000004A9(ABS)      Addr.  OM/LM @__pucr01
  000004AA(ABS)      Addr.  OM/LM @__pucr02
@@ -1219,12 +1240,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000000DF(ABS)      Addr.  OM/LM  __scr3
  0000053F(ABS)      Addr.  OM/LM  __scr7
  00000549(ABS)      Addr.  OM/LM  __scr8
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    23
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000553(ABS)      Addr.  OM/LM @__scr9
- 00FE6106(ABS)      Addr.  LIB    __shld
- 00FE6144(ABS)      Addr.  LIB    __shrd
+ 00FE6773(ABS)      Addr.  LIB    __shld
+ 00FE67B1(ABS)      Addr.  LIB    __shrd
  00000400(ABS)      Addr.  OM/LM @__smcr
  000000C0(ABS)      Addr.  OM/LM  __smr0
  000000CA(ABS)      Addr.  OM/LM @__smr1
@@ -1246,11 +1264,14 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000803(ABS)      Addr.  OM/LM @__statrh1
  00000702(ABS)      Addr.  OM/LM @__statrl0
  00000802(ABS)      Addr.  OM/LM @__statrl1
- 00FE6B48(ABS)      Addr.  LIB   @__strcatNN
- 00FE6B6B(ABS)      Addr.  LIB   @__strlenN
- 00FE6B80(ABS)      Addr.  LIB   @__strncpyNN
- 00005E94(ABS)      Addr.  OM/LM @__systemstack
- 00006694(ABS)      Addr.  OM/LM @__systemstack_top
+ 00FE71F3(ABS)      Addr.  LIB   @__strcatNN
+ 00FE7216(ABS)      Addr.  LIB   @__strlenN
+ 00FE722B(ABS)      Addr.  LIB   @__strncpyNN
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    24
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
+ 00005F12(ABS)      Addr.  OM/LM @__systemstack
+ 00006712(ABS)      Addr.  OM/LM @__systemstack_top
  000003A2(ABS)      Addr.  OM/LM  __tbr
  000003A3(ABS)      Addr.  OM/LM @__tbrh
  000003A2(ABS)      Addr.  OM/LM @__tbrl
@@ -1279,9 +1300,6 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000064(ABS)      Addr.  OM/LM  __tmcsr1
  00000068(ABS)      Addr.  OM/LM @__tmcsr2
  0000006C(ABS)      Addr.  OM/LM  __tmcsr3
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    24
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000070(ABS)      Addr.  OM/LM @__tmcsr6
  00000061(ABS)      Addr.  OM/LM @__tmcsrh0
  00000065(ABS)      Addr.  OM/LM @__tmcsrh1
@@ -1309,6 +1327,9 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000780(ABS)      Addr.  OM/LM @__treqr10
  00000880(ABS)      Addr.  OM/LM @__treqr11
  00000781(ABS)      Addr.  OM/LM @__treqr1h0
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    25
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
  00000881(ABS)      Addr.  OM/LM @__treqr1h1
  00000780(ABS)      Addr.  OM/LM @__treqr1l0
  00000880(ABS)      Addr.  OM/LM @__treqr1l1
@@ -1318,8 +1339,8 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  00000883(ABS)      Addr.  OM/LM @__treqr2h1
  00000782(ABS)      Addr.  OM/LM @__treqr2l0
  00000882(ABS)      Addr.  OM/LM @__treqr2l1
- 00006694(ABS)      Addr.  OM/LM @__userstack
- 00006696(ABS)      Addr.  OM/LM @__userstack_top
+ 00006712(ABS)      Addr.  OM/LM @__userstack
+ 00006714(ABS)      Addr.  OM/LM @__userstack_top
  0000042C(ABS)      Addr.  OM/LM @__vrcr
  0000040E(ABS)      Addr.  OM/LM @__wdtc
  0000040F(ABS)      Addr.  OM/LM @__wdtcp
@@ -1335,175 +1356,200 @@ Symbol Value        Type   Def.  Symbol Name (Top 97)                           
  000004E5(ABS)      Addr.  OM/LM @__wthr
  000004E4(ABS)      Addr.  OM/LM @__wtmr
  000004E3(ABS)      Addr.  OM/LM @__wtsr
- 00FE55FD(ABS)      Addr.  OM/LM @_abs16
- 00FE560A(ABS)      Addr.  OM/LM @_abs32
- 00FE55EF(ABS)      Addr.  OM/LM @_abs8
- 00FE4E92(ABS)      Addr.  OM/LM @_angleToDegree
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    25
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
- 00FE34F5(ABS)      Addr.  OM/LM  _api_StartScheduler
- 00FE3358(ABS)      Addr.  OM/LM  _api_init
- 00002316(ABS)      Addr.  OM/LM  _averagePos
- 00002312(ABS)      Addr.  OM/LM  _averagePosNew
- 0000230E(ABS)      Addr.  OM/LM  _averagePosOld
- 0000231A(ABS)      Addr.  OM/LM @_bcLineFound
+ 00005E22(ABS)      Addr.  OM/LM @_aStart
+ 00FE5C6A(ABS)      Addr.  OM/LM @_abs16
+ 00FE5C77(ABS)      Addr.  OM/LM @_abs32
+ 00FE5C5C(ABS)      Addr.  OM/LM @_abs8
+ 00FE54FF(ABS)      Addr.  OM/LM @_angleToDegree
+ 00FE366D(ABS)      Addr.  OM/LM  _api_StartScheduler
+ 00FE34D0(ABS)      Addr.  OM/LM  _api_init
+ 00FE0346(ABS)      Addr.  OM/LM @_ausweichen
+ 00FE373E(ABS)      Addr.  OM/LM  _ausweichmanoever
+ 0000232A(ABS)      Addr.  OM/LM  _averagePos
+ 00002326(ABS)      Addr.  OM/LM  _averagePosNew
+ 00002322(ABS)      Addr.  OM/LM  _averagePosOld
+ 0000232E(ABS)      Addr.  OM/LM @_bcLineFound
  00FE00CC(ABS)      Addr.  OM/LM @_bt_send_sensor_data
- 000022F0(ABS)      Addr.  OM/LM @_cal_sensor
+ 00002304(ABS)      Addr.  OM/LM @_cal_sensor
  00FE00C8(ABS)      Addr.  OM/LM @_calibrate_ls_bt
  00FE002B(ABS)      Addr.  OM/LM @_calibrate_us_bt
- 000022E6(ABS)      Addr.  OM/LM @_calibrated_sensor
- 00002298(ABS)      Addr.  OM/LM  _carid
- 00FE4D98(ABS)      Addr.  OM/LM @_cos_
- 00FE4EFC(ABS)      Addr.  OM/LM @_cos_Taylor
- 000023FC(ABS)      Addr.  OM/LM @_currentMode
- 00FE3332(ABS)      Addr.  OM/LM @_drive_barrierFrontDetected
- 00FE3345(ABS)      Addr.  OM/LM @_drive_barrierRearDetected
- 00FE33C4(ABS)      Addr.  OM/LM @_driven_before
- 000023DE(ABS)      Addr.  LIB    _errno
- 00002304(ABS)      Addr.  OM/LM @_final_sensor
- 00FE619E(ABS)      Addr.  LIB    _free
- 00002294(ABS)      Addr.  OM/LM @_getOnlyDrivenMap
- 00FE0356(ABS)      Addr.  OM/LM @_initModeController
+ 000022FA(ABS)      Addr.  OM/LM @_calibrated_sensor
+ 000022A6(ABS)      Addr.  OM/LM  _carid
+ 00FE5405(ABS)      Addr.  OM/LM @_cos_
+ 00FE5569(ABS)      Addr.  OM/LM @_cos_Taylor
+ 0000242C(ABS)      Addr.  OM/LM @_currentMode
+ 00FE34AA(ABS)      Addr.  OM/LM @_drive_barrierFrontDetected
+ 00FE34BD(ABS)      Addr.  OM/LM @_drive_barrierRearDetected
+ 00FE353C(ABS)      Addr.  OM/LM @_driven_before
+ 00002408(ABS)      Addr.  LIB    _errno
+ 000022CC(ABS)      Addr.  OM/LM @_faehrtGeradeaus
+ 00FE0300(ABS)      Addr.  OM/LM @_fahren
+ 00002318(ABS)      Addr.  OM/LM @_final_sensor
+ 00FE680B(ABS)      Addr.  LIB    _free
+ 00FE032B(ABS)      Addr.  OM/LM @_gablung
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    26
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
+ 0000229A(ABS)      Addr.  OM/LM @_getOnlyDrivenMap
+ 0000235F(ABS)      Addr.  OM/LM @_inEinerKurve
+ 000022CD(ABS)      Addr.  OM/LM @_inLinksKurve
+ 000022CE(ABS)      Addr.  OM/LM @_inRechtsKurve
+ 00FE02BF(ABS)      Addr.  OM/LM @_init
+ 00FE04CE(ABS)      Addr.  OM/LM @_initModeController
  00FF8040(ABS)      Addr.  OM/LM @_initialSpeed
- 00FE5621(ABS)      Addr.  OM/LM @_intToStr
- 00FE3E01(ABS)      Addr.  OM/LM @_interrupts_disableInterrupt
- 00FE3D06(ABS)      Addr.  OM/LM  _interrupts_init
- 00FE3D63(ABS)      Addr.  OM/LM  _interrupts_setHandler
- 00FE5360(ABS)      Addr.  OM/LM @_irq_us2_Rx
- 00FE22E0(ABS)      Addr.  OM/LM @_isSubscribed
+ 00FE5C8E(ABS)      Addr.  OM/LM @_intToStr
+ 0000235E(ABS)      Addr.  OM/LM @_interception
+ 00FE4444(ABS)      Addr.  OM/LM @_interrupts_disableInterrupt
+ 00FE4349(ABS)      Addr.  OM/LM  _interrupts_init
+ 00FE43A6(ABS)      Addr.  OM/LM  _interrupts_setHandler
+ 00FE59CD(ABS)      Addr.  OM/LM @_irq_us2_Rx
+ 00FE2458(ABS)      Addr.  OM/LM @_isSubscribed
+ 00002364(ABS)      Addr.  OM/LM @_kannLinks
+ 00002363(ABS)      Addr.  OM/LM @_kannRechts
+ 00002362(ABS)      Addr.  OM/LM @_kannVorne
  00FE01C4(ABS)      Addr.  OM/LM @_laneChange
- 0000231C(ABS)      Addr.  OM/LM  _linefound
- 00FE0322(ABS)      Addr.  OM/LM  _main
- 00FE62B2(ABS)      Addr.  LIB    _malloc
- 00FE62BE(ABS)      Addr.  LIB    _memcpy
- 00FE62D1(ABS)      Addr.  LIB    _memset
+ 00002330(ABS)      Addr.  OM/LM  _linefound
+ 00FE049E(ABS)      Addr.  OM/LM  _main
+ 00FE691F(ABS)      Addr.  LIB    _malloc
+ 00FE692B(ABS)      Addr.  LIB    _memcpy
+ 00FE693E(ABS)      Addr.  LIB    _memset
  00FE0000(ABS)      Addr.  OM/LM @_motorControlTest_bt
- 0000231B(ABS)      Addr.  OM/LM @_noline
- 00FE3576(ABS)      Addr.  OM/LM  _os_deleteTask
- 00FE35B2(ABS)      Addr.  OM/LM  _os_frequency
- 00FE35C2(ABS)      Addr.  OM/LM  _os_getTime
- 00FE359A(ABS)      Addr.  OM/LM @_os_isTaskSuspended
- 00FE34FC(ABS)      Addr.  OM/LM  _os_registerProcess
- 00FE351F(ABS)      Addr.  OM/LM  _os_registerProcessStack
- 00FE3549(ABS)      Addr.  OM/LM  _os_registerProcessStackPriority
- 00FE358E(ABS)      Addr.  OM/LM  _os_resumeTask
- 00FE3582(ABS)      Addr.  OM/LM  _os_suspendTask
- 00FE35A6(ABS)      Addr.  OM/LM  _os_wait
- 000022BE(ABS)      Addr.  OM/LM @_pos
- 00FE62E7(ABS)      Addr.  LIB    _pow
- 00FE4252(ABS)      Addr.  OM/LM  _print
- 00FE4588(ABS)      Addr.  OM/LM  _printf
- 00FE2081(ABS)      Addr.  OM/LM  _prvRLT0_TICKISR
- 00FE2163(ABS)      Addr.  OM/LM  _pvPortMalloc
- 0000228C(ABS)      Addr.  OM/LM  _pxCurrentTCB
- 00FE1F6E(ABS)      Addr.  OM/LM  _pxPortInitialiseStack
- 00FE3E9B(ABS)      Addr.  OM/LM @_readSensorData
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    26
-
-Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
- 00FE040E(ABS)      Addr.  OM/LM @_registerMode
- 00FE04A5(ABS)      Addr.  OM/LM @_registerModes
+ 0000240C(ABS)      Addr.  OM/LM @_nebenDerSpur
+ 0000232F(ABS)      Addr.  OM/LM @_noline
+ 00FE36EE(ABS)      Addr.  OM/LM  _os_deleteTask
+ 00FE372A(ABS)      Addr.  OM/LM  _os_frequency
+ 00FE373A(ABS)      Addr.  OM/LM  _os_getTime
+ 00FE3712(ABS)      Addr.  OM/LM @_os_isTaskSuspended
+ 00FE3674(ABS)      Addr.  OM/LM  _os_registerProcess
+ 00FE3697(ABS)      Addr.  OM/LM  _os_registerProcessStack
+ 00FE36C1(ABS)      Addr.  OM/LM  _os_registerProcessStackPriority
+ 00FE3706(ABS)      Addr.  OM/LM  _os_resumeTask
+ 00FE36FA(ABS)      Addr.  OM/LM  _os_suspendTask
+ 00FE371E(ABS)      Addr.  OM/LM  _os_wait
+ 00002256(ABS)      Addr.  OM/LM @_parkZustand
+ 00FE0361(ABS)      Addr.  OM/LM @_parken
+ 000022D2(ABS)      Addr.  OM/LM @_pos
+ 00FE6954(ABS)      Addr.  LIB    _pow
+ 00FE4C07(ABS)      Addr.  OM/LM  _print
+ 00FE4F3D(ABS)      Addr.  OM/LM  _printf
+ 00FE21F9(ABS)      Addr.  OM/LM  _prvRLT0_TICKISR
+ 00FE22DB(ABS)      Addr.  OM/LM  _pvPortMalloc
+ 00002292(ABS)      Addr.  OM/LM  _pxCurrentTCB
+ 00FE20E6(ABS)      Addr.  OM/LM  _pxPortInitialiseStack
+ 00FE71B5(ABS)      Addr.  LIB    _rand
+ 00FE44DE(ABS)      Addr.  OM/LM @_readSensorData
+ 00FE0586(ABS)      Addr.  OM/LM @_registerMode
+ 00FE061D(ABS)      Addr.  OM/LM @_registerModes
+ 00002254(ABS)      Addr.  OM/LM @_regulierSollwertZustand
+ 00002332(ABS)      Addr.  OM/LM @_richtungen
  00FE01F8(ABS)      Addr.  OM/LM @_runDemoLine
- 00005E5A(ABS)      Addr.  OM/LM @_runTimerValue
- 00FE1F41(ABS)      Addr.  OM/LM  _sbrk
- 00FE04A6(ABS)      Addr.  OM/LM @_scanWhitespaces
- 00FE04DD(ABS)      Addr.  OM/LM @_scanWord
- 000022FA(ABS)      Addr.  OM/LM @_sensor
- 00FE4D87(ABS)      Addr.  OM/LM @_sin_
- 00FE50A2(ABS)      Addr.  OM/LM @_sin_Taylor
- 00FE45B4(ABS)      Addr.  OM/LM @_snprintf
- 00FE459D(ABS)      Addr.  OM/LM  _sprintf
- 00FE0594(ABS)      Addr.  OM/LM @_start
- 00FE0357(ABS)      Addr.  OM/LM @_startModeController
- 00002264(ABS)      Addr.  OM/LM @_startModeHandlers
- 00FE0358(ABS)      Addr.  OM/LM @_stopModeController
- 00002254(ABS)      Addr.  OM/LM @_stopModeHandlers
- 00FE6B48(ABS)      Addr.  LIB    _strcat
- 00FE6B6B(ABS)      Addr.  LIB    _strlen
- 00FE6B80(ABS)      Addr.  LIB    _strncpy
- 00FE0437(ABS)      Addr.  OM/LM @_switchMode
- 00FE0C7C(ABS)      Addr.  OM/LM @_ucQueueGetQueueNumber
- 00FE0C93(ABS)      Addr.  OM/LM @_ucQueueGetQueueType
- 00FE4DCB(ABS)      Addr.  OM/LM @_uint16AngleToDegree
- 00FE4E49(ABS)      Addr.  OM/LM @_uint16DegreeRelativeToX
- 00FE33D6(ABS)      Addr.  OM/LM @_us_getFrontDistance
- 00FE33DA(ABS)      Addr.  OM/LM @_us_getLeftDistance
- 00FE33DE(ABS)      Addr.  OM/LM @_us_getRightDistance
- 00FE33E2(ABS)      Addr.  OM/LM @_us_getSensorMapData
- 00FE0775(ABS)      Addr.  OM/LM  _uxListRemove
- 00FE0C4A(ABS)      Addr.  OM/LM  _uxQueueMessagesWaiting
- 00FE0C5D(ABS)      Addr.  OM/LM @_uxQueueMessagesWaitingFromISR
- 00FE15EA(ABS)      Addr.  OM/LM @_uxTaskGetNumberOfTasks
- 00FE1E28(ABS)      Addr.  OM/LM @_uxTaskGetStackHighWaterMark
- 00FE1BC5(ABS)      Addr.  OM/LM @_uxTaskGetTaskNumber
- 00FE1138(ABS)      Addr.  OM/LM @_uxTaskPriorityGet
- 00FE06D6(ABS)      Addr.  OM/LM  _vListInitialise
- 00FE06F5(ABS)      Addr.  OM/LM  _vListInitialiseItem
- 00FE072D(ABS)      Addr.  OM/LM  _vListInsert
- 00FE06FF(ABS)      Addr.  OM/LM  _vListInsertEnd
- 00FE2080(ABS)      Addr.  OM/LM  _vPortEndScheduler
- 00FE217D(ABS)      Addr.  OM/LM  _vPortFree
- 00FE208D(ABS)      Addr.  OM/LM  _vPortYield
- 00FE20EB(ABS)      Addr.  OM/LM  _vPortYieldDelayed
- 00FE0C66(ABS)      Addr.  OM/LM @_vQueueDelete
- 00FE0C86(ABS)      Addr.  OM/LM @_vQueueSetQueueNumber
- 00FE10C2(ABS)      Addr.  OM/LM  _vTaskDelay
- 00FE101C(ABS)      Addr.  OM/LM  _vTaskDelayUntil
- 00FE0FB8(ABS)      Addr.  OM/LM  _vTaskDelete
- 00FE1446(ABS)      Addr.  OM/LM @_vTaskEndScheduler
- 00FE195B(ABS)      Addr.  OM/LM  _vTaskIncrementTick
- 00FE15EE(ABS)      Addr.  OM/LM @_vTaskList
- 00FE1BC0(ABS)      Addr.  OM/LM  _vTaskMissedYield
- 00FE1A72(ABS)      Addr.  OM/LM  _vTaskPlaceOnEventList
- 00FE1EF9(ABS)      Addr.  OM/LM  _vTaskPriorityDisinherit
- 00FE1E87(ABS)      Addr.  OM/LM  _vTaskPriorityInherit
- 00FE1155(ABS)      Addr.  OM/LM @_vTaskPrioritySet
-F2MC-16 Family SOFTUNE Linker Symbol List                                                       2014-11-11 19:55:42  Page:    27
+ 00005EDA(ABS)      Addr.  OM/LM @_runTimerValue
+ 00FE20B9(ABS)      Addr.  OM/LM  _sbrk
+ 00FE061E(ABS)      Addr.  OM/LM @_scanWhitespaces
+ 00FE0655(ABS)      Addr.  OM/LM @_scanWord
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    27
 
 Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
- 00FE12E2(ABS)      Addr.  OM/LM  _vTaskResume
- 00FE1BD8(ABS)      Addr.  OM/LM @_vTaskSetTaskNumber
- 00FE1B54(ABS)      Addr.  OM/LM  _vTaskSetTimeOutState
- 00FE1405(ABS)      Addr.  OM/LM  _vTaskStartScheduler
- 00FE11F4(ABS)      Addr.  OM/LM  _vTaskSuspend
- 00FE1450(ABS)      Addr.  OM/LM  _vTaskSuspendAll
- 00FE1A28(ABS)      Addr.  OM/LM  _vTaskSwitchContext
- 00FE569A(ABS)      Addr.  OM/LM @_wait
- 00FE56C4(ABS)      Addr.  OM/LM @_wait1ms
- 00FE56B2(ABS)      Addr.  OM/LM @_wait1us
- 00005DEC(ABS)      Addr.  OM/LM @_wakeFront
- 00005DF0(ABS)      Addr.  OM/LM @_wakeLeft
- 00005DEA(ABS)      Addr.  OM/LM @_wakeRear
- 00005DEE(ABS)      Addr.  OM/LM @_wakeRight
- 00FE21C2(ABS)      Addr.  OM/LM  _wirelessDebugMessage
- 00FE2211(ABS)      Addr.  OM/LM  _wirelessFormattedDebugMessage
- 00FE226D(ABS)      Addr.  OM/LM  _wirelessInit
- 00FE234E(ABS)      Addr.  OM/LM  _wirelessReceive
- 00FE2195(ABS)      Addr.  OM/LM  _wirelessSend
- 00FE229B(ABS)      Addr.  OM/LM  _wirelessSubscribe
- 00FE2312(ABS)      Addr.  OM/LM @_wirelessUnsubscribe
- 00FE2155(ABS)      Addr.  OM/LM @_xGet_DPR_ADB_bank
- 00FE215C(ABS)      Addr.  OM/LM @_xGet_DTB_PCB_bank
- 00005E36(ABS)      Addr.  OM/LM @_xHandleCalcLinePos
- 000023FA(ABS)      Addr.  OM/LM @_xHandleModeController
- 00FE2049(ABS)      Addr.  OM/LM  _xPortStartScheduler
- 00FE085D(ABS)      Addr.  OM/LM @_xQueueCreateMutex
- 00FE080F(ABS)      Addr.  OM/LM  _xQueueGenericCreate
- 00FE0A9D(ABS)      Addr.  OM/LM  _xQueueGenericReceive
- 00FE07A2(ABS)      Addr.  OM/LM @_xQueueGenericReset
- 00FE08B5(ABS)      Addr.  OM/LM  _xQueueGenericSend
- 00FE09F2(ABS)      Addr.  OM/LM  _xQueueGenericSendFromISR
- 00FE0DC1(ABS)      Addr.  OM/LM @_xQueueIsQueueEmptyFromISR
- 00FE0DEF(ABS)      Addr.  OM/LM @_xQueueIsQueueFullFromISR
- 00FE0BE0(ABS)      Addr.  OM/LM  _xQueueReceiveFromISR
- 00FE1B67(ABS)      Addr.  OM/LM  _xTaskCheckForTimeOut
- 00FE0E03(ABS)      Addr.  OM/LM  _xTaskGenericCreate
- 00FE1E70(ABS)      Addr.  OM/LM  _xTaskGetCurrentTaskHandle
- 00FE1E74(ABS)      Addr.  OM/LM @_xTaskGetSchedulerState
- 00FE15D8(ABS)      Addr.  OM/LM  _xTaskGetTickCount
- 00FE15E6(ABS)      Addr.  OM/LM @_xTaskGetTickCountFromISR
- 00FE12A7(ABS)      Addr.  OM/LM  _xTaskIsTaskSuspended
- 00FE1AF6(ABS)      Addr.  OM/LM  _xTaskRemoveFromEventList
- 00FE1455(ABS)      Addr.  OM/LM  _xTaskResumeAll
- 00FE1374(ABS)      Addr.  OM/LM @_xTaskResumeFromISR
+ 0000230E(ABS)      Addr.  OM/LM @_sensor
+ 00FE53F4(ABS)      Addr.  OM/LM @_sin_
+ 00FE570F(ABS)      Addr.  OM/LM @_sin_Taylor
+ 00FE4F69(ABS)      Addr.  OM/LM @_snprintf
+ 00002410(ABS)      Addr.  OM/LM @_sollwert
+ 00FE4F52(ABS)      Addr.  OM/LM  _sprintf
+ 00FE71E5(ABS)      Addr.  LIB   @_srand
+ 00FE070C(ABS)      Addr.  OM/LM @_start
+ 00FE04CF(ABS)      Addr.  OM/LM @_startModeController
+ 0000226A(ABS)      Addr.  OM/LM @_startModeHandlers
+ 00FE04D0(ABS)      Addr.  OM/LM @_stopModeController
+ 0000225A(ABS)      Addr.  OM/LM @_stopModeHandlers
+ 00FE71F3(ABS)      Addr.  LIB    _strcat
+ 00FE7216(ABS)      Addr.  LIB    _strlen
+ 00FE722B(ABS)      Addr.  LIB    _strncpy
+ 00002258(ABS)      Addr.  OM/LM @_sucheParkluecke
+ 00FE05AF(ABS)      Addr.  OM/LM @_switchMode
+ 0000240E(ABS)      Addr.  OM/LM @_tempSollwert
+ 00FE0DF4(ABS)      Addr.  OM/LM @_ucQueueGetQueueNumber
+ 00FE0E0B(ABS)      Addr.  OM/LM @_ucQueueGetQueueType
+ 00FE5438(ABS)      Addr.  OM/LM @_uint16AngleToDegree
+ 00FE54B6(ABS)      Addr.  OM/LM @_uint16DegreeRelativeToX
+ 00FE354E(ABS)      Addr.  OM/LM  _us_getFrontDistance
+ 00FE3552(ABS)      Addr.  OM/LM  _us_getLeftDistance
+ 00FE3556(ABS)      Addr.  OM/LM  _us_getRightDistance
+ 00FE355A(ABS)      Addr.  OM/LM @_us_getSensorMapData
+ 00FE08ED(ABS)      Addr.  OM/LM  _uxListRemove
+ 00FE0DC2(ABS)      Addr.  OM/LM  _uxQueueMessagesWaiting
+ 00FE0DD5(ABS)      Addr.  OM/LM @_uxQueueMessagesWaitingFromISR
+ 00FE1762(ABS)      Addr.  OM/LM @_uxTaskGetNumberOfTasks
+ 00FE1FA0(ABS)      Addr.  OM/LM @_uxTaskGetStackHighWaterMark
+ 00FE1D3D(ABS)      Addr.  OM/LM @_uxTaskGetTaskNumber
+ 00FE12B0(ABS)      Addr.  OM/LM @_uxTaskPriorityGet
+ 00FE084E(ABS)      Addr.  OM/LM  _vListInitialise
+ 00FE086D(ABS)      Addr.  OM/LM  _vListInitialiseItem
+ 00FE08A5(ABS)      Addr.  OM/LM  _vListInsert
+ 00FE0877(ABS)      Addr.  OM/LM  _vListInsertEnd
+ 00FE21F8(ABS)      Addr.  OM/LM  _vPortEndScheduler
+ 00FE22F5(ABS)      Addr.  OM/LM  _vPortFree
+ 00FE2205(ABS)      Addr.  OM/LM  _vPortYield
+ 00FE2263(ABS)      Addr.  OM/LM  _vPortYieldDelayed
+ 00FE0DDE(ABS)      Addr.  OM/LM @_vQueueDelete
+ 00FE0DFE(ABS)      Addr.  OM/LM @_vQueueSetQueueNumber
+ 00FE123A(ABS)      Addr.  OM/LM  _vTaskDelay
+ 00FE1194(ABS)      Addr.  OM/LM  _vTaskDelayUntil
+ 00FE1130(ABS)      Addr.  OM/LM  _vTaskDelete
+ 00FE15BE(ABS)      Addr.  OM/LM @_vTaskEndScheduler
+ 00FE1AD3(ABS)      Addr.  OM/LM  _vTaskIncrementTick
+ 00FE1766(ABS)      Addr.  OM/LM @_vTaskList
+ 00FE1D38(ABS)      Addr.  OM/LM  _vTaskMissedYield
+ 00FE1BEA(ABS)      Addr.  OM/LM  _vTaskPlaceOnEventList
+ 00FE2071(ABS)      Addr.  OM/LM  _vTaskPriorityDisinherit
+ 00FE1FFF(ABS)      Addr.  OM/LM  _vTaskPriorityInherit
+ 00FE12CD(ABS)      Addr.  OM/LM @_vTaskPrioritySet
+ 00FE145A(ABS)      Addr.  OM/LM  _vTaskResume
+ 00FE1D50(ABS)      Addr.  OM/LM @_vTaskSetTaskNumber
+ 00FE1CCC(ABS)      Addr.  OM/LM  _vTaskSetTimeOutState
+F2MC-16 Family SOFTUNE Linker Symbol List                                                       2015-01-08 16:39:52  Page:    28
+
+Symbol Value        Type   Def.  Symbol Name (Top 97)                                                                              C
+ 00FE157D(ABS)      Addr.  OM/LM  _vTaskStartScheduler
+ 00FE136C(ABS)      Addr.  OM/LM  _vTaskSuspend
+ 00FE15C8(ABS)      Addr.  OM/LM  _vTaskSuspendAll
+ 00FE1BA0(ABS)      Addr.  OM/LM  _vTaskSwitchContext
+ 00FE5D07(ABS)      Addr.  OM/LM @_wait
+ 00FE5D31(ABS)      Addr.  OM/LM @_wait1ms
+ 00FE5D1F(ABS)      Addr.  OM/LM @_wait1us
+ 00005E1C(ABS)      Addr.  OM/LM @_wakeFront
+ 00005E20(ABS)      Addr.  OM/LM @_wakeLeft
+ 00005E1A(ABS)      Addr.  OM/LM @_wakeRear
+ 00005E1E(ABS)      Addr.  OM/LM @_wakeRight
+ 00FE233A(ABS)      Addr.  OM/LM  _wirelessDebugMessage
+ 00FE2389(ABS)      Addr.  OM/LM  _wirelessFormattedDebugMessage
+ 00FE23E5(ABS)      Addr.  OM/LM  _wirelessInit
+ 00FE24C6(ABS)      Addr.  OM/LM  _wirelessReceive
+ 00FE230D(ABS)      Addr.  OM/LM  _wirelessSend
+ 00FE2413(ABS)      Addr.  OM/LM  _wirelessSubscribe
+ 00FE248A(ABS)      Addr.  OM/LM @_wirelessUnsubscribe
+ 00FE22CD(ABS)      Addr.  OM/LM @_xGet_DPR_ADB_bank
+ 00FE22D4(ABS)      Addr.  OM/LM @_xGet_DTB_PCB_bank
+ 00005E8C(ABS)      Addr.  OM/LM @_xHandleCalcLinePos
+ 0000242A(ABS)      Addr.  OM/LM @_xHandleModeController
+ 00FE21C1(ABS)      Addr.  OM/LM  _xPortStartScheduler
+ 00FE09D5(ABS)      Addr.  OM/LM @_xQueueCreateMutex
+ 00FE0987(ABS)      Addr.  OM/LM  _xQueueGenericCreate
+ 00FE0C15(ABS)      Addr.  OM/LM  _xQueueGenericReceive
+ 00FE091A(ABS)      Addr.  OM/LM @_xQueueGenericReset
+ 00FE0A2D(ABS)      Addr.  OM/LM  _xQueueGenericSend
+ 00FE0B6A(ABS)      Addr.  OM/LM  _xQueueGenericSendFromISR
+ 00FE0F39(ABS)      Addr.  OM/LM @_xQueueIsQueueEmptyFromISR
+ 00FE0F67(ABS)      Addr.  OM/LM @_xQueueIsQueueFullFromISR
+ 00FE0D58(ABS)      Addr.  OM/LM  _xQueueReceiveFromISR
+ 00FE1CDF(ABS)      Addr.  OM/LM  _xTaskCheckForTimeOut
+ 00FE0F7B(ABS)      Addr.  OM/LM  _xTaskGenericCreate
+ 00FE1FE8(ABS)      Addr.  OM/LM  _xTaskGetCurrentTaskHandle
+ 00FE1FEC(ABS)      Addr.  OM/LM @_xTaskGetSchedulerState
+ 00FE1750(ABS)      Addr.  OM/LM  _xTaskGetTickCount
+ 00FE175E(ABS)      Addr.  OM/LM @_xTaskGetTickCountFromISR
+ 00FE141F(ABS)      Addr.  OM/LM  _xTaskIsTaskSuspended
+ 00FE1C6E(ABS)      Addr.  OM/LM  _xTaskRemoveFromEventList
+ 00FE15CD(ABS)      Addr.  OM/LM  _xTaskResumeAll
+ 00FE14EC(ABS)      Addr.  OM/LM @_xTaskResumeFromISR
+ 00002257(ABS)      Addr.  OM/LM @_zustand

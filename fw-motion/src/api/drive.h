@@ -42,23 +42,12 @@ extern void Drive_SetMotorForDistance(int8_t power, uint32_t distance);
  * Set servo level
  * @param percent Servo position (-100 left .. +100 right)
  */
-extern void Drive_SetServo(int8_t percent);
 
+extern void Drive_SetServo(int16_t percent);
 /**
  * Get the total driven distance since boot in millimeters
  * Komplett neues Idiotenkommentar
  */
 extern uint32_t Drive_GetTotalDrivenDistance(void);
-
-/**
- * @ Julian
- */
-int8_t Drive_GetMotor();
-
-/**
- * @ Julian
- */
-int8_t Drive_GetServo();
-
 
 #endif /* DRIVE_H_ */

@@ -1,0 +1,31 @@
+@..\src\api\parken.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+         6	E	_PARKEN_init
+	->	E	_Drive_SetMotor
+	->	E	_Regler_get_sensor
+#
+        18	E	_PARKEN_parallel
+	->	E	_Drive_GetTotalDrivenDistance
+	->	E	_Drive_SetMotor
+	->	E	_Drive_SetServo
+	->	E	_Regler_get_sensor
+	->	E	_Regler_get_sollwert
+	->	E	_Regler_output
+	->	E	_Regler_pid
+	->	E	_Regler_set_sollwert
+	->	E	_wirelessFormattedDebugMessage
+#
+        18	E	_PARKEN_rueckwaerts
+	->	E	_Drive_GetTotalDrivenDistance
+	->	E	_Drive_SetMotor
+	->	E	_Drive_SetServo
+	->	E	_Regler_get_sensor
+	->	E	_Regler_get_sollwert
+	->	E	_Regler_output
+	->	E	_Regler_pid
+	->	E	_Regler_set_sollwert
+	->	E	_wirelessFormattedDebugMessage

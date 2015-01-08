@@ -1,0 +1,39 @@
+@..\src\api\gablung.c
+#  E=Extern  S=Static  I=Interrupt
+#   {Stack}    {E|S|I} {function name} [A]
+#       ->     {E|S}   {call function}
+#               ...
+#
+        12	E	_Gablung_entscheideRichtung
+	->	E	_Drive_GetTotalDrivenDistance
+	->	E	_Drive_SetServo
+	->	E	_Navigation_Kurve_gefahren
+	->	E	_Navigation_getElement_i
+	->	E	_Transition_setInEinerKurve
+	->	E	_Transitionen_getKannLinks
+	->	E	_Transitionen_getKannRechts
+	->	E	_Transitionen_getKannVorne
+	->	E	_wirelessFormattedDebugMessage
+#
+         8	E	_Gablung_rechtsKurve
+	->	E	_Drive_GetTotalDrivenDistance
+	->	E	_Drive_SetServo
+	->	E	_Navigation_Kurve_gefahren
+	->	E	_Transition_setInEinerKurve
+	->	E	_wirelessFormattedDebugMessage
+#
+         8	E	_Gablung_linksKurve
+	->	E	_Drive_GetTotalDrivenDistance
+	->	E	_Drive_SetServo
+	->	E	_Navigation_Kurve_gefahren
+	->	E	_Transition_setInEinerKurve
+	->	E	_wirelessFormattedDebugMessage
+#
+         8	E	_Gablung_geradeUeberDieKreuzung
+	->	E	_Drive_GetTotalDrivenDistance
+	->	E	_Drive_SetServo
+	->	E	_Navigation_Kurve_gefahren
+	->	E	_Transition_setInEinerKurve
+	->	E	_wirelessFormattedDebugMessage
+#
+         0	E	_ModuleFoo_DooFoo
